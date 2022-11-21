@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+// import 'package:intl/intl.dart';
 import './gosync_text.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const GoSync());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class GoSync extends StatelessWidget {
+  const GoSync({super.key});
 
   // This widget is the root of your application.
   @override
@@ -23,15 +24,18 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.red,
+        primarySwatch: Colors.green,
+        primaryColorDark: Colors.amber,
+        primaryColorLight: Colors.pinkAccent,
       ),
-      home: const MyHomePage(title: 'goSync 221118 pixel 4a'),
+      home: const GoSyncHome(title: gosyncetitle),
+      // home: const GoSyncHome(title: 'goSync 221121 pixel 4a'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class GoSyncHome extends StatefulWidget {
+  const GoSyncHome({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -45,10 +49,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<GoSyncHome> createState() => _GoSyncHomeState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _GoSyncHomeState extends State<GoSyncHome> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -72,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // than having to individually change instances of widgets.
     return Scaffold(
       appBar: AppBar(
-        // Here we take the value from the MyHomePage object that was created by
+        // Here we take the value from the GoSyncHome object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
@@ -106,16 +110,14 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Install Golang and GoEth Geth bare bones',
               style: TextStyle(
-                  fontSize: 20.0,
-                  fontStyle: FontStyle.italic,
-                  color: Colors.blue),
+                  color: Colors.blueAccent,
+                  fontSize: 15.0,
+                  fontStyle: FontStyle.italic),
             ),
             const Text(
               ethSyncPrimaryGoals,
-              textAlign: TextAlign.center,
-              style: TextStyle(color: Colors.redAccent),
-              // textDirection: TextDirection.rtl,
-              // softWrap: true,
+              style: TextStyle(
+                  color: Colors.green, backgroundColor: Colors.yellowAccent),
             ),
             Text(
               '$_counter',
@@ -124,6 +126,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',

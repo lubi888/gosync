@@ -1,4 +1,4 @@
-const String title = "ethSync.dev 221118 pixel 4a";
+const String gosyncetitle = "ethSync.dev 221121 pixel 4a";
 
 const String ethSyncPrimaryGoals =
     ('1, The primary goal of this mobile app is to educate the reader about the ethereum blockchain in general and to also learn of one of the easiest ways to synchronise with it.\n\n'
