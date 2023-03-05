@@ -74,6 +74,7 @@ class _GoSyncHomeState extends State<GoSyncHome> {
           children: <Widget>[
             const Text(
               'Install Golang and GoEth Geth bare bones',
+              textAlign: TextAlign.center,
               style: TextStyle(
                   backgroundColor: Colors.amber,
                   color: Colors.indigo,
@@ -81,6 +82,7 @@ class _GoSyncHomeState extends State<GoSyncHome> {
             ),
             const Text(
               'Install Golang and GoEth Geth bare bones',
+              textAlign: TextAlign.end,
               style: TextStyle(
                   color: Colors.blueAccent,
                   fontSize: 40.0,
