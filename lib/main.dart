@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
+import './gosync_appbar.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
 
@@ -35,15 +36,23 @@ class GoSync extends StatelessWidget {
         // primaryColorDark: Colors.amber,
         // primaryColorLight: Colors.pinkAccent,
         brightness: Brightness.dark,
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.red,
         // accentColor: Colors.green,
         // accentColorBrightness: Brightness.light,
         // textSelectionTheme: Colors.purple,
         // Colors.orange,
       ),
-      home: const GoSyncHome(
-        title: goSyncTitle,
+      home: const DefaultTabController(
+        length: 1,
+        child: Scaffold(
+          appBar: GoSyncAppBar(),
+          // drawer: GoSyndDrawer(),
+          body: GoSyncHome(
+            title: goSyncTitle,
+          ),
+        ),
       ),
+
       // home: const GoSyncHome(title: 'goSync 221121 pixel 4a'),
     );
   }

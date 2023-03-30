@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './gosync_text.dart';
-import "./appbar.dart";
-
+import 'package:gosync/gosync_scrollbar0.dart';
+// import './gosync_text.dart';
+// import "./appbar.dart";
 // import 'dart:async';
 
 class GoSyncHome extends StatefulWidget {
@@ -38,74 +38,53 @@ class _GoSyncHomeState extends State<GoSyncHome> {
 
   @override
   Widget build(BuildContext context) {
+    print("gosync_home loaded");
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
     // The Flutter framework has been optimized to make rerunning build methods
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
-    return Scaffold(
-      // ignore: prefer_const_constructors
-      appBar: GoSyncAppBar(),
-      // appBar: AppBar(
-      //   // Here we take the value from the GoSyncHome object that was created by
-      //   // the App.build method, and use it to set our appbar title.
-      //   title: Text(widget.title),
-      // ),
-      body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
-        child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Install Golang and GoEth Geth bare bones',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  backgroundColor: Colors.amber,
-                  color: Colors.indigo,
-                  fontSize: 50.0),
-            ),
-            const Text(
-              'Install Golang and GoEth Geth bare bones',
-              textAlign: TextAlign.end,
-              style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 40.0,
-                  fontStyle: FontStyle.italic),
-            ),
-            const Text(
-              ethSyncPrimaryGoals,
-              style: TextStyle(
-                  color: Colors.green, backgroundColor: Colors.yellowAccent),
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
-          ],
-        ),
-      ),
+    // return Scaffold(
+    // return Scrollbar(child: ListView(children: <Widget>[
 
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
-    );
+    // ],),))
+    return GoSyncScrollbar0();
+
+    // return Scrollbar(
+    //     child: Container(
+    //   color: Colors.amber,
+    //   child: ListView(
+    //     children: <Widget>[
+    //       Container(
+    //         child: const Text(
+    //           'Install Golang and GoEth Geth bare bones',
+    //           textAlign: TextAlign.center,
+    //           style: TextStyle(
+    //               backgroundColor: Colors.amber,
+    //               color: Colors.indigo,
+    //               fontSize: 50.0),
+    //         ),
+    //       ),
+    //       Container(
+    //         child: const Text(
+    //           'Install Golang and GoEth Geth bare bones',
+    //           textAlign: TextAlign.end,
+    //           style: TextStyle(
+    //               color: Colors.blueAccent,
+    //               fontSize: 40.0,
+    //               fontStyle: FontStyle.italic),
+    //         ),
+    //       ),
+    //       Container(
+    //         child: const Text(
+    //           ethSyncPrimaryGoals,
+    //           style: TextStyle(
+    //               color: Colors.green, backgroundColor: Colors.yellowAccent),
+    //         ),
+    //       ),
+    //     ],
+    //   ),
+    // ));
   }
 }
