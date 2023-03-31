@@ -43,7 +43,7 @@ class GoSync extends StatelessWidget {
         // Colors.orange,
       ),
       home: const DefaultTabController(
-        length: 1,
+        length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),
           // drawer: GoSyndDrawer(),
