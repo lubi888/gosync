@@ -15,7 +15,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
         children: <Widget>[
           Container(
             child: const Text(
-              'Install Golang and GoEth Geth bare bones',
+              'Install Golang and GoEth Geth bare bones Page 0',
               textAlign: TextAlign.center,
               style: TextStyle(
                   backgroundColor: Colors.amber,
@@ -26,7 +26,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
           Container(
             child: const Text(
               'Install Golang and GoEth Geth bare bones',
-              textAlign: TextAlign.end,
+              textAlign: TextAlign.center,
               style: TextStyle(
                   color: Colors.blueAccent,
                   fontSize: 40.0,
@@ -35,6 +35,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
           ),
           Container(
             child: const Text(
+              textAlign: TextAlign.center,
               ethSyncPrimaryGoals,
               style: TextStyle(
                   color: Colors.green, backgroundColor: Colors.yellowAccent),
