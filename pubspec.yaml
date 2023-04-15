@@ -36,6 +36,9 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  # flutter_linkify: ^5.0.2
+  # url_launcher: ^6.1.10
+  # extended_image: ^7.0.2
   # intl: ^0.17.0
 
 dev_dependencies:
@@ -66,6 +69,53 @@ flutter:
     # - images/a_dot_ham.jpeg
   assets:
     - assets/images/go-3-folders.png
+    # - assets/images/go-download-website.png
+    # - assets/images/ethBullet.png
+    # - assets/images/etcBullet.png
+    # - assets/images/duIcon.png
+    # - assets/images/wallpaper-homestead.jpg
+    # - assets/images/ethSync.jpg
+    # - assets/images/logo.png
+    # - assets/images/ethGreenHelp.png
+    # - assets/images/logoHyg.png
+    # - assets/images/logoCli.png
+    # - assets/images/gethTerm.png
+    # - assets/images/devcon1.png
+    # - assets/images/etceth-asia.jpg
+    # - assets/images/bleachBitSwap.png
+    # - assets/images/geth1win.png
+    # - assets/images/geth2win.png
+    # - assets/images/kraken-eth-eur.png
+    # - assets/images/ethStackExchange.png
+    # - assets/images/ethereum_Web_Xi.png
+    # - assets/images/ethereum_youtube.png
+    # - assets/images/loading.gif
+    # - assets/images/go-download-website.png
+    # - assets/images/footer-gopher.jpg
+    # - assets/images/go-env.png
+    # - assets/images/go-3-folders.png
+    # - assets/images/go-hello.png
+    # - assets/images/go-build-install.png
+    # - assets/images/geth-web.png
+    # - assets/images/gethdl-os.png
+    # - assets/images/geth-install-help.png
+    # - assets/images/geth-command-help.png
+    # - assets/images/go-help-1.png
+    # - assets/images/go-help-2.png
+    # - assets/images/go-build-run-local.png
+    # - assets/images/go-install-systemwide.png
+    # - assets/images/github-go-ethereum-list.png
+    # - assets/images/which-geth-list.png
+    # - assets/images/geth-help-1.png
+    # - assets/images/geth-help-2.png
+    # - assets/images/geth-help-3.png
+    # - assets/images/geth-help-4.png
+    # - assets/images/geth-help-5.png
+    # - assets/images/geth-help-6.png
+    # - assets/images/geth-syncmode-begin.png
+    # - assets/images/geth-blockchain-p2p.png
+    # - assets/images/ethsync-complete-closed.png
+    # - assets/images/blockchain-size.png
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
