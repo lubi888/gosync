@@ -69,6 +69,8 @@ flutter:
     # - images/a_dot_ham.jpeg
   assets:
     - assets/images/go-3-folders.png
+    - assets/images/devcon1.png
+
     # - assets/images/go-download-website.png
     # - assets/images/ethBullet.png
     # - assets/images/etcBullet.png

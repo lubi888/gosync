@@ -1,4 +1,4 @@
-const String goSyncTitle = "ethSync.go 20230415 pixel 4a Win mobi app";
+const String goSyncTitle = "ethSync.go 20230426 pixel 4a Win mobi app";
 const String home = "home";
 const String code = "code";
 const String online = "online";

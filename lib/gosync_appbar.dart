@@ -24,32 +24,31 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       // title: const Text(goSyncTitle),
       centerTitle: true,
-      backgroundColor: Colors.amber,
-      foregroundColor: Colors.red,
+      // backgroundColor: Colors.amber,
+      // foregroundColor: Colors.red,
       elevation: 30.0,
       title: const SelectableText(goSyncTitle),
-      bottom: const TabBar(tabs: [
+      bottom: const TabBar(tabs: <Widget>[
         Tab(
+            icon: Icon(Icons.home, color: Colors.redAccent),
             child: Align(
               alignment: Alignment.center,
               child: Text(home),
-            ),
-            icon: Icon(Icons.home, color: Colors.redAccent)),
+            )),
         Tab(
-          child: Align(
-            alignment: Alignment.center,
-            child: Text(code),
-            // install golang and geth
-          ),
-          icon: Icon(Icons.code, color: Colors.orangeAccent),
-        ),
+            icon: Icon(Icons.code, color: Colors.orangeAccent),
+            child: Align(
+              alignment: Alignment.center,
+              child: Text(code),
+              // install golang and geth
+            )),
         Tab(
+            icon: Icon(Icons.laptop, color: Colors.greenAccent),
             child: Align(
               alignment: Alignment.center,
               child: Text(online),
               // presence
-            ),
-            icon: Icon(Icons.laptop, color: Colors.greenAccent)),
+            )),
         // Tab(
         //     child: Align(
         //       alignment: Alignment.center,
