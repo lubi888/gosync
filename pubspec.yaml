@@ -36,8 +36,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-  # flutter_linkify: ^5.0.2
-  # url_launcher: ^6.1.10
+  flutter_linkify: ^5.0.2
+  url_launcher: ^6.1.10
   # extended_image: ^7.0.2
   # intl: ^0.17.0
 
@@ -67,9 +67,11 @@ flutter:
   # assets:
   #   - images/a_dot_burr.jpeg
     # - images/a_dot_ham.jpeg
+    # - allets/images/
   assets:
-    - assets/images/go-3-folders.png
-    - assets/images/devcon1.png
+    - assets/images/
+    # - assets/images/go-3-folders.png
+    # - assets/images/devcon1.png
 
     # - assets/images/go-download-website.png
     # - assets/images/ethBullet.png

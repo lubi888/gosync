@@ -6,7 +6,7 @@ class GoSyncScrollbar2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Online resources loaded GoSyncScrollbar2");
+    print("online community & resources loaded GoSyncScrollbar2");
     // return const Placeholder();
     return Scrollbar(
         child: Container(
@@ -16,7 +16,7 @@ class GoSyncScrollbar2 extends StatelessWidget {
           // Container(
           // child:
           Text(
-            'Online Community \nInstall Golang and GoEth Geth bare bones Page 2',
+            'Online Community & Resources \nInstall Golang and GoEth Geth bare bones Page 2',
             textAlign: TextAlign.center,
             style: TextStyle(
                 backgroundColor: Colors.amber,
@@ -49,10 +49,6 @@ class GoSyncScrollbar2 extends StatelessWidget {
     ));
   }
 }
-
-
-
-
 
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';

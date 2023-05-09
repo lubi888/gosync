@@ -6,7 +6,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Home loaded GoSyncScrollbar0");
+    print("home loaded GoSyncScrollbar0");
     // return const Placeholder();
     return Scrollbar(
         child: Container(
