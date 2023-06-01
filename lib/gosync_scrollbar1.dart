@@ -73,6 +73,17 @@ class GoSyncScrollbar1 extends StatelessWidget {
                   fontSize: 40.0,
                   fontStyle: FontStyle.italic),
             ),
+            // const
+            Image(image: AssetImage('assets/images/go-download-website.png')),
+            Image(image: AssetImage('assets/images/go-3-folders.png')),
+
+            Image(image: AssetImage("_kAsset2")),
+            // _kAsset2,
+            // height: 100.0,
+            // width: 200.0,
+            // ),
+            // ),
+
             // Container(
             //   padding: EdgeInsets.all(15.0),
             //   width: 300.0,
@@ -83,7 +94,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
             //   ),
             // child:
-            SelectableText(
+            Text(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
@@ -166,7 +177,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethCheckGoHelp,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -211,7 +222,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // },
             // ),
             // Container(
-            SelectableText(
+            Text(
               ethCheckGoEnv,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -241,7 +252,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethCheckGoPath3Folders,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -279,7 +290,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
             //   ),
             //   child: const
-            SelectableText(
+            Text(
               ethGolangTestHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -291,7 +302,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethGoTestYourInstallation,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -303,7 +314,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethGoHello,
               textAlign: TextAlign.left,
               style: TextStyle(
@@ -333,7 +344,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //container-intl-linkify
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethGoBuild,
               textAlign: TextAlign.left,
               style: TextStyle(
@@ -423,7 +434,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //     color: Colors.yellow.shade500,
             //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             //   ),
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethInstallGethHeading,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -535,7 +546,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   // onPressed: EthSyncUrl.launchURLGethWebInstall,
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethWebsiteManyImplementations,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -582,7 +593,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   },
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethVersion,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -593,7 +604,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   ),
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethWhichGethList,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -621,7 +632,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   },
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethHelp,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -743,7 +754,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //     color: Colors.yellow.shade500,
             //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             //   ),
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethWebsite,
             //     // ethGethRunHeading,
             //     textAlign: TextAlign.center,
@@ -755,7 +766,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   ),
             // ),
             // // Container(
-            // //   child: const SelectableText(
+            // //   child: const Text(
             // //     ethGethCommandHelp,
             // //     textAlign: TextAlign.center,
             // //     style: TextStyle(
@@ -785,7 +796,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   ),
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethBlockchainMassDifferentiation,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -796,7 +807,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   ),
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethSyncmodeLightIntroduction,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -846,7 +857,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   },
             // ),
             // Container(
-            //   child: const SelectableText(
+            //   child: const Text(
             //     ethGethBlockchainSyncing,
             //     textAlign: TextAlign.center,
             //     style: TextStyle(
@@ -875,7 +886,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethGethSyncingCompletedDisconnected,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -904,7 +915,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // ),
             // Container(
             //   child: const
-            SelectableText(
+            Text(
               ethGethBlockchainLocation,
               textAlign: TextAlign.center,
               style: TextStyle(

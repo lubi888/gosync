@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20230509 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20230601 pixel 4a Win mobi app";
 const String home = "home";
 const String code = "code golang";
 const String online = "online community learning";
@@ -10,23 +10,31 @@ const String danger = "dangr";
 const String ethSyncPrimaryGoals =
     ('1, The primary goal of this mobile app is to educate the reader about golang installation.\n\n'
         '2, The secondary goal is to learning programming.\n\n'
-        '3, The tertiary goal is find golang resources online.'
-        '1, The primary goal of this mobile app is to educate the reader about golang installation.\n\n'
-        '2, The secondary goal is to learning programming.\n\n'
-        '3, The tertiary goal is find golang resources online.'
-        '1, The primary goal of this mobile app is to educate the reader about golang installation.\n\n'
-        '2, The secondary goal is to learning programming.\n\n'
         '3, The tertiary goal is find golang resources online.');
+
+const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 
 const String ethEhSyncHeading = 'Ethereum Synchronisation';
 const String ethInstallGolandHeading = 'Install Golang';
-// const String ethInstallGolangHeading = 'Install Go';
+const String ethInstallGolangHeading = 'Install Go';
+
+const String ethInstallGolangInstallInstructions =
+    ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'
+        'For windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system.\n'
+        '\'C:\\Go\' is preferable when wanting to program.\n'
+        'Otherwise Go can run from Program Files.\n'
+        'For linux the easiest way is to download the \'.tar.gz\' compressed file and then to uncompress it in the \'/usr/local/go\' folder.\n'
+        'The golang website recommends this command:\n'
+        '\'tar -C /usr/local -xzf go\$VERSION.\$OS-\$ARCH.tar.gz\' \nfor linux, macOS and freeBSD.\n'
+        'With linux the last operation is to pass the location of this go folder into the .profile or .bashrc file in the /home folder.\n\n'
+        'The golang website recommends the following command from a shell:\n'
+        'export PATH=\$PATH:/usr/local/go/bin\n');
 const String ethGolangTestHeading = 'Testing Go Installation';
 const String ethInstallGethHeading = 'Install Geth - GoEthereum';
 const String ethInstallContract =
     "dapp readmin\\ndifi decentri phi  \\nhow to end and ethereum smart contract etc";
 
-const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
+// const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String ethEtherscanIOPrice = "https://etherscan.io/chart/etherprice";
 
 const String ethTextFonts =
@@ -143,17 +151,6 @@ const String ethEthSyncPrimaryGoal =
 
 const String ethEthSimpleQuiz =
     ('Collapsable Pop Quiz: What tech do you already know? Have you heard of bittorrent? p2p ring any bells? what is dlt? Is it like a blt but with dill pickles rather than bacon?\n\n');
-
-const String ethInstallGolangInstallInstructions =
-    ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'
-        'For windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system.\n'
-        '\'C:\\Go\' is fine.\n\n'
-        'For linux the easiest way is to download the \'.tar.gz\' compressed file and then to uncompress it in the \'/usr/local/go\' folder.\n'
-        'The golang website recommends this command:\n'
-        '\'tar -C /usr/local -xzf go\$VERSION.\$OS-\$ARCH.tar.gz\' \nfor linux, macOS and freeBSD.\n'
-        'With linux the last operation is to pass the location of this go folder into the .profile or .bashrc file in the /home folder.\n\n'
-        'The golang website recommends the following command:\n\n'
-        'export PATH=\$PATH:/usr/local/go/bin\n');
 
 const String ethCheckGoHelp =
     ('Now let us check that our installation of golang is working.\n'
