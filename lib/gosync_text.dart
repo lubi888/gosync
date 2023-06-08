@@ -1,9 +1,9 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20230601 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20230608 pixel 4a Win mobi app";
 const String home = "home";
 const String code = "code golang";
-const String online = "online community learning";
+const String online = "online community";
 const String learn = "learn";
 const String danger = "dangr";
 

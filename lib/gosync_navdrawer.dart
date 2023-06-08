@@ -91,20 +91,21 @@ class GoSyncNavDrawer extends StatelessWidget {
                 color: Colors.redAccent,
               ),
               title: const Text(
-                'add eth|etc address - acccount',
+                // 'add eth|etc address - acccount',
+                'visit go playground',
                 style: TextStyle(color: Colors.purpleAccent),
               ),
               subtitle: const Text(
-                'personal firebase storage',
+                'https://play.golang.com/',
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.redAccent),
               ),
               trailing: const Icon(Icons.add_alert, color: Colors.purpleAccent),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const GoSyncScrollbar2()));
+                //   Navigator.push(
+                //       context,
+                //       MaterialPageRoute(
+                //           builder: (context) => const GoSyncScrollbar2()));
               }),
           ListTile(
               // leading:

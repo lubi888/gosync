@@ -49,7 +49,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
     // return const Placeholder();
     return Scrollbar(
       child: Container(
-        color: Colors.amber,
+        // color: Colors.amber,
         child: ListView(
           children: const <Widget>[
             // Container(

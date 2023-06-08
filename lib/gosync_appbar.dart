@@ -17,7 +17,6 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     // return const Placeholder();
-
     print("ethsync appbar loaded");
     print(TimeOfDay.now());
 
