@@ -93,7 +93,7 @@ const String ethTextLinks =
     "of this work is then going to reward the program designer and only a pittance of any generated crypto coins will "
     "be passed on to the mobile phone owner. Note that this is legal as these apps wouldn't be on the Play store if they "
     "were not. However, there are general moves by the web browser companies to stop this very same occurrance from "
-    "happening online. 2018.09 saw Firefox forbid \'cryptojacking using cryptocsrypts\' for doing the exact same thing; using up the users\'s "
+    "happening online. 2018.09 saw Firefox forbid 'cryptojacking using cryptocsrypts' for doing the exact same thing; using up the users's "
     "computer processing cycles in the background while the webpage is open. cf link Firefox Upgrades to Ban Crypto Mining Malware "
     "https://coinpedia.org/news/firefox-upgrades-to-ban-crypto-mining-malware"
     "\n\n";
@@ -129,7 +129,7 @@ const String ethTextMiners =
     "and before any mining is done. "
     "\n\nInstead of spending time to run a blockchain||website it is possible to spend time studying the blockchain technologies, ideas, theories, "
     "conundrums and challenges. It is possible and necessary to also spend time on programming languages. Throw in some finance theories for the fun. "
-    "Perhaps start with \'fractional reserve banking\' to get a picture of retail banking and then advance from there."
+    "Perhaps start with 'fractional reserve banking' to get a picture of retail banking and then advance from there."
     "\n\n2: The author doesn't currently have a comfortable computing environment broad enough to stabally sync; large RAM, ROM storage, processors & cores, net bandwidth. "
     "\n\n3: The author is currently not usinetheum in a daily, monetary life. Most transactions are for certain expendetures on the "
     "net and are completed using a web wallet, like MyEthernetWallet, an exchange, like Kraken, or a dedicated app (often "
@@ -173,9 +173,9 @@ const String ethGoTestYourInstallation =
         '\nInside this new file write the following code:');
 
 const String ethGoHello = ('package main\n\n'
-        'import \"fmt\"\n\n'
+        'import "fmt"\n\n'
         'func main() {\n'
-        'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
+        'fmt.Printf("hello again golang on windows|linux|mac.\\n")\n'
         '\n}'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
     // 'fmt.Printf(\"isn\'t this exciting?!\")'
@@ -199,7 +199,7 @@ const String ethGethWebsite =
     ('Visit https://eth.ethereum.org and take a look at eth which we are going to use to synchronise with the ethereum blockchain.');
 
 const String ethGethWebsite3Implementations = ('\nNotice from the website:\n'
-    '\"Go Ethereum is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3.\"\n'
+    '"Go Ethereum is one of the three original implementations (along with C++ and Python) of the Ethereum protocol. It is written in Go, fully open source and licensed under the GNU LGPL v3."\n'
     '\nThe reason this author finds the go implementation of ether the best is because golang https://en.wikipedia.org/wiki/Go_(programming_language) is more modern programming language than Python and C++. Go was written by Ken Thompson, Rob Pike and Robert Griesemer with concurrency https://talks.golang.org/2012/concurrency.slide#1 built in.'
     'This matters a lot because the blockchain is changing continually all over the world concurrently.');
 
@@ -210,7 +210,7 @@ const String ethGethWebsiteInstallHelp =
     ('Visit https://eth.ethereum.org/install-and-build/Installing-Geth and read some of the docs and notes on each Operating System download.');
 
 const String ethGethWebsiteManyImplementations = ('Notice from the website:\n'
-    '\"The Go implementation of Ethereum can be installed using a variety of ways. These include obtaining it as part of Mist; installing it via your favorite package manager; downloading a standalone pre-built bundle; running as a docker container; or building it yourself. This document will detail all of these possibilities to get you quickly joining the Ethereum network using whatever means you prefer.\"\n');
+    '"The Go implementation of Ethereum can be installed using a variety of ways. These include obtaining it as part of Mist; installing it via your favorite package manager; downloading a standalone pre-built bundle; running as a docker container; or building it yourself. This document will detail all of these possibilities to get you quickly joining the Ethereum network using whatever means you prefer."\n');
 const String ethGithubGoEthereumList =
     ('Change to the \'\\go\\src\\github.com\\ethereum\\go-ethereum\\\' directory and then type \'ls\' to list the contents.\n'
         'This is a mirror image of the \'https://github.com/ethereum/go-ethereum\' repository where all the eth programmers commit new code to frequently.\n');
@@ -264,6 +264,6 @@ const String ethGethBlockchainLocation =
     ('Notice that the  address of the blockchain is listed in the last line. Here it is \'C:Users\\iveagh-win10\\AppData\\Roaming\\Ethereum\\eth\\lightchaindata\'\n'
         'Change to this address and in the ethereum do a right-click to find the properties of the folder. This will give you the size of the bloackchain is taking up on your system.\n');
 const String ethUrlEthereumOrg =
-    ('https://www.ethereum.org \https://www.golang.org');
+    ('https://www.ethereum.org https://www.golang.org');
 
 const String ethImgTermGreen = ('1st green terminal page try turning page');

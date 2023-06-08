@@ -48,913 +48,913 @@ class GoSyncScrollbar1 extends StatelessWidget {
     print("code loaded GoSyncScrollbar1");
     // return const Placeholder();
     return Scrollbar(
-      child: Container(
-        // color: Colors.amber,
-        child: ListView(
-          children: const <Widget>[
-            // Container(
-            // child:
-            Text(
-              'Code \nInstall Golang and GoEth Geth bare bones Page 1',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  backgroundColor: Colors.amber,
-                  color: Colors.indigo,
-                  fontSize: 50.0),
+      // child: Container(
+      // color: Colors.amber,
+      child: ListView(
+        children: const <Widget>[
+          // Container(
+          // child:
+          Text(
+            'Code \nInstall Golang and GoEth Geth bare bones Page 1',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                backgroundColor: Colors.amber,
+                color: Colors.indigo,
+                fontSize: 50.0),
+          ),
+          // ),
+          // Container(
+          // child:
+          Text(
+            'Install Golang and GoEth Geth bare bones',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.blueAccent,
+                fontSize: 40.0,
+                fontStyle: FontStyle.italic),
+          ),
+          // const
+          Image(image: AssetImage('assets/images/go-download-website.png')),
+          Image(image: AssetImage('assets/images/go-3-folders.png')),
+
+          Image(image: AssetImage("_kAsset2")),
+          // _kAsset2,
+          // height: 100.0,
+          // width: 200.0,
+          // ),
+          // ),
+
+          // Container(
+          //   padding: EdgeInsets.all(15.0),
+          //   width: 300.0,
+          //   height: 60.0,
+          //   decoration: BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow.shade500,
+          //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
+          //   ),
+          // child:
+          Text(
+            // ethInstallGolangHeading,
+            ethInstallGolandHeading,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 24.0,
             ),
-            // ),
-            // Container(
-            // child:
-            Text(
-              'Install Golang and GoEth Geth bare bones',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  color: Colors.blueAccent,
-                  fontSize: 40.0,
-                  fontStyle: FontStyle.italic),
+          ),
+          // ),
+          // //container-intl-linkify
+
+          // child:
+          //  Linkify(
+          //   onOpen: (link) async {
+          //     if (await canLaunch(link.url)) {
+          //       await launch(link.url);
+          //     } else {
+          //       throw 'Could not launch $link';
+          //     }
+          //   },
+
+          // humanize: true,
+          Text(
+            ethInstallGolandGoGetWebsite,
+            // ethInstallGolangGoGetWebsite,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // const
-            Image(image: AssetImage('assets/images/go-download-website.png')),
-            Image(image: AssetImage('assets/images/go-3-folders.png')),
+          ),
+          // ],
+          // Container(
 
-            Image(image: AssetImage("_kAsset2")),
-            // _kAsset2,
-            // height: 100.0,
-            // width: 200.0,
-            // ),
-            // ),
-
-            // Container(
-            //   padding: EdgeInsets.all(15.0),
-            //   width: 300.0,
-            //   height: 60.0,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.rectangle,
-            //     color: Colors.yellow.shade500,
-            //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            //   ),
-            // child:
-            Text(
-              // ethInstallGolangHeading,
-              ethInstallGolandHeading,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 24.0,
-              ),
-            ),
-            // ),
-            // //container-intl-linkify
-
-            // child:
-            //  Linkify(
-            //   onOpen: (link) async {
-            //     if (await canLaunch(link.url)) {
-            //       await launch(link.url);
-            //     } else {
-            //       throw 'Could not launch $link';
-            //     }
-            //   },
-
+          // Container(
+          // child:
+          //       Image.asset(
+          //   _kAsset3,
+          //   height: 100.0,
+          //   width: 200.0,
+          // ),
+          // onPressed: EthSyncUrl.launchURLGolangOrgDL,
+          // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          // ),
+          // Container(
+          // child:
+          // Image.asset(
+          //   _kAsset2,
+          //   height: 200.0,
+          //   width: 300.0,
+          // ),
+          // onPressed: EthSyncUrl.launchURLGolangOrgDL,
+          // // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          Text(
+            // text:
+            ethInstallGolangInstallInstructions,
             // humanize: true,
-            Text(
-              ethInstallGolandGoGetWebsite,
-              // ethInstallGolangGoGetWebsite,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+            // text: EthSyncLocalizations.of(context)
+            //     .ethInstallGolangInstallInstructions,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ],
-            // Container(
-
-            // Container(
-            // child:
-            //       Image.asset(
-            //   _kAsset3,
-            //   height: 100.0,
-            //   width: 200.0,
-            // ),
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-            // ),
-            // Container(
-            // child:
-            // Image.asset(
-            //   _kAsset2,
-            //   height: 200.0,
-            //   width: 300.0,
-            // ),
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-            // // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            Text(
-              // text:
-              ethInstallGolangInstallInstructions,
-              // humanize: true,
-              // text: EthSyncLocalizations.of(context)
-              //     .ethInstallGolangInstallInstructions,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethCheckGoHelp,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethCheckGoHelp,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // Button(
+          //   child: Image.asset(
+          //     _kAssets12,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets12,
+          //                 title: 'go help 1',
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets13,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   // onPressed: () async {
+          //   Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //         builder: (context) => EthSyncExtendedImage(
+          //               image: _kAssets13,
+          //               title: "\'go help\' 2",
+          //             )),
+          //   );
+          // },
+          // ),
+          // Container(
+          Text(
+            ethCheckGoEnv,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // Button(
-            //   child: Image.asset(
-            //     _kAssets12,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets12,
-            //                 title: 'go help 1',
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets13,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthSyncExtendedImage(
-            //               image: _kAssets13,
-            //               title: "\'go help\' 2",
-            //             )),
-            //   );
-            // },
-            // ),
-            // Container(
-            Text(
-              ethCheckGoEnv,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAsset4,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   // onPressed: () {},
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAsset4,
+          //                 title: "\'go env\'",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethCheckGoPath3Folders,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAsset4,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   // onPressed: () {},
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAsset4,
-            //                 title: "\'go env\'",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethCheckGoPath3Folders,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAsset5,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAsset5,
+          //                 title: "GOPATH: bin, pkg, src",
+          //               )),
+          //     );
+          //   },
+          // ),
+          //heading Golang Test Installation -----------------------------------------------
+          // Container(
+          //   padding: const EdgeInsets.all(15.0),
+          //   width: 60.0,
+          //   height: 60.0,
+          //   decoration: BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow.shade500,
+          //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
+          //   ),
+          //   child: const
+          Text(
+            ethGolangTestHeading,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 24.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAsset5,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAsset5,
-            //                 title: "GOPATH: bin, pkg, src",
-            //               )),
-            //     );
-            //   },
-            // ),
-            //heading Golang Test Installation -----------------------------------------------
-            // Container(
-            //   padding: const EdgeInsets.all(15.0),
-            //   width: 60.0,
-            //   height: 60.0,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.rectangle,
-            //     color: Colors.yellow.shade500,
-            //     borderRadius: BorderRadius.all(Radius.circular(50.0)),
-            //   ),
-            //   child: const
-            Text(
-              ethGolangTestHeading,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 24.0,
-              ),
+          ),
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethGoTestYourInstallation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethGoTestYourInstallation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethGoHello,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.blue,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethGoHello,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.blue,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAsset6,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAsset6,
+          //                 title: "go\/src\/hello.go",
+          //               )),
+          //     );
+          //   },
+          // ),
+          //container-intl-linkify
+          // Container(
+          //   child: const
+          Text(
+            ethGoBuild,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAsset6,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAsset6,
-            //                 title: "go\/src\/hello.go",
-            //               )),
-            //     );
-            //   },
-            // ),
-            //container-intl-linkify
-            // Container(
-            //   child: const
-            Text(
-              ethGoBuild,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAsset7,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAsset7,
+          //                 title: "webpage: go build, go install",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets14,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets14,
+          //                 title: "go build local install",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGoInstall,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets15,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets15,
+          //                 title: "go install systemwide",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // //heading Geth  --------------------------------------------
+          // Container(
+          //   padding: const EdgeInsets.all(15.0),
+          //   width: 60.0,
+          //   height: 60.0,
+          //   decoration: BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow.shade500,
+          //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
+          //   ),
+          //   child: const Text(
+          //     ethInstallGethHeading,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 24.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGethWebsite,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGethWebsite3Implementations,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Image.asset(
+          //     _kAsset8,
+          //     height: 200.0,
+          //     width: 300.0,
+          //   ),
+          //   // onPressed: EthSyncUrl.launchURLGethWeb,
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGethWebsiteInstall,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Image.asset(
+          //     _kAsset9,
+          //     height: 120.0,
+          //     width: 300.0,
+          //   ),
+          //   // onPressed: EthSyncUrl.launchURLGethWebDL,
+          //   // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGethWebsiteInstallHelp,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Image.asset(
+          //     _kAssets10,
+          //     height: 200.0,
+          //     width: 300.0,
+          //   ),
+          //   // onPressed: EthSyncUrl.launchURLGethWebInstall,
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethGethWebsiteManyImplementations,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGithubGoEthereumList,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets16,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets16,
+          //                 title: "\\src\\github.com\\ethereum\\go-ethereum",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethGethVersion,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethWhichGethList,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets17,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets17,
+          //                 title: "\'which geth\' list",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethGethHelp,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets18,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets18,
+          //                 title: "\'geth help\' 1",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets19,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets19,
+          //                 title: "\'geth help\' 2",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets20,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets20,
+          //                 title: "\'geth help\' 3",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets21,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets21,
+          //                 title: "\'geth help\' 4",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets22,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets22,
+          //                 title: "\'geth help\' 5",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets23,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets23,
+          //                 title: "\'geth help\' 6",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // //run geth - synchronise ethereum blockchain heading   -----------------------------------------------------
+          // Container(
+          //   padding: const EdgeInsets.all(15.0),
+          //   width: 60.0,
+          //   height: 90.0,
+          //   decoration: BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow.shade500,
+          //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
+          //   ),
+          //   child: const Text(
+          //     ethGethWebsite,
+          //     // ethGethRunHeading,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 24.0,
+          //     ),
+          //   ),
+          // ),
+          // // Container(
+          // //   child: const Text(
+          // //     ethGethCommandHelp,
+          // //     textAlign: TextAlign.center,
+          // //     style: TextStyle(
+          // //       color: Colors.red,
+          // //       fontStyle: FontStyle.italic,
+          // //       fontSize: 20.0,
+          // //     ),
+          // //   ),
+          // // ),
+          // Container(
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     // humanize: true,
+          //     text: ethGethWebsite3Implementations,
+          //     textAlign: TextAlign.center,
+          //     style: const TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethBlockchainMassDifferentiation,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethGethSyncmodeLightIntroduction,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // Center(
+          // child:
+          ElevatedButton(
+              onPressed: _ethLightChainSync,
+              child: Text('launch ether light chain sync')),
+          // print that external link has been activated & client left.
+          // print('scrollbar3 elevatedButton pressed');
+          // ),
+          // Container(
+          // child:
+          // Text(const
+          // Selectable
+          Text(
+            ethGethSyncmodeLight,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAsset7,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAsset7,
-            //                 title: "webpage: go build, go install",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets14,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets14,
-            //                 title: "go build local install",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGoInstall,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets15,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets15,
-            //                 title: "go install systemwide",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // //heading Geth  --------------------------------------------
-            // Container(
-            //   padding: const EdgeInsets.all(15.0),
-            //   width: 60.0,
-            //   height: 60.0,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.rectangle,
-            //     color: Colors.yellow.shade500,
-            //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
-            //   ),
-            //   child: const Text(
-            //     ethInstallGethHeading,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 24.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGethWebsite,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGethWebsite3Implementations,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Image.asset(
-            //     _kAsset8,
-            //     height: 200.0,
-            //     width: 300.0,
-            //   ),
-            //   // onPressed: EthSyncUrl.launchURLGethWeb,
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGethWebsiteInstall,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Image.asset(
-            //     _kAsset9,
-            //     height: 120.0,
-            //     width: 300.0,
-            //   ),
-            //   // onPressed: EthSyncUrl.launchURLGethWebDL,
-            //   // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGethWebsiteInstallHelp,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Image.asset(
-            //     _kAssets10,
-            //     height: 200.0,
-            //     width: 300.0,
-            //   ),
-            //   // onPressed: EthSyncUrl.launchURLGethWebInstall,
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethGethWebsiteManyImplementations,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGithubGoEthereumList,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets16,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets16,
-            //                 title: "\\src\\github.com\\ethereum\\go-ethereum",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethGethVersion,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethWhichGethList,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets17,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets17,
-            //                 title: "\'which geth\' list",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethGethHelp,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets18,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets18,
-            //                 title: "\'geth help\' 1",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets19,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets19,
-            //                 title: "\'geth help\' 2",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets20,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets20,
-            //                 title: "\'geth help\' 3",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets21,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets21,
-            //                 title: "\'geth help\' 4",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets22,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets22,
-            //                 title: "\'geth help\' 5",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets23,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets23,
-            //                 title: "\'geth help\' 6",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // //run geth - synchronise ethereum blockchain heading   -----------------------------------------------------
-            // Container(
-            //   padding: const EdgeInsets.all(15.0),
-            //   width: 60.0,
-            //   height: 90.0,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.rectangle,
-            //     color: Colors.yellow.shade500,
-            //     borderRadius: const BorderRadius.all(Radius.circular(50.0)),
-            //   ),
-            //   child: const Text(
-            //     ethGethWebsite,
-            //     // ethGethRunHeading,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 24.0,
-            //     ),
-            //   ),
-            // ),
-            // // Container(
-            // //   child: const Text(
-            // //     ethGethCommandHelp,
-            // //     textAlign: TextAlign.center,
-            // //     style: TextStyle(
-            // //       color: Colors.red,
-            // //       fontStyle: FontStyle.italic,
-            // //       fontSize: 20.0,
-            // //     ),
-            // //   ),
-            // // ),
-            // Container(
-            //   child: Linkify(
-            //     onOpen: (link) async {
-            //       if (await canLaunch(link.url)) {
-            //         await launch(link.url);
-            //       } else {
-            //         throw 'Could not launch $link';
-            //       }
-            //     },
-            //     // humanize: true,
-            //     text: ethGethWebsite3Implementations,
-            //     textAlign: TextAlign.center,
-            //     style: const TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethBlockchainMassDifferentiation,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethGethSyncmodeLightIntroduction,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // Center(
-            // child:
-            ElevatedButton(
-                onPressed: _ethLightChainSync,
-                child: const Text('launch ether light chain sync')),
-            // print that external link has been activated & client left.
-            // print('scrollbar3 elevatedButton pressed');
-            // ),
-            // Container(
-            // child:
-            // Text(const
-            // Selectable
-            Text(
-              ethGethSyncmodeLight,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets24,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets24,
+          //                 title: "geth --syncmode light --cache=2048",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const Text(
+          //     ethGethBlockchainSyncing,
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       color: Colors.red,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets25,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets25,
+          //                 title: "geth bloackchain p2p syncing",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethGethSyncingCompletedDisconnected,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets24,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets24,
-            //                 title: "geth --syncmode light --cache=2048",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const Text(
-            //     ethGethBlockchainSyncing,
-            //     textAlign: TextAlign.center,
-            //     style: TextStyle(
-            //       color: Colors.red,
-            //       fontStyle: FontStyle.italic,
-            //       fontSize: 20.0,
-            //     ),
-            //   ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets25,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets25,
-            //                 title: "geth bloackchain p2p syncing",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethGethSyncingCompletedDisconnected,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets26,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets26,
+          //                 title: "ethereum syncing completed, disconnected",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   child: const
+          Text(
+            ethGethBlockchainLocation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets26,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets26,
-            //                 title: "ethereum syncing completed, disconnected",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   child: const
-            Text(
-              ethGethBlockchainLocation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
-            ),
-            // ),
-            // TextButton(
-            //   child: Image.asset(
-            //     _kAssets27,
-            //     // height: 200.0,
-            //     // width: 300.0,
-            //   ),
-            //   onPressed: () async {
-            //     Navigator.push(
-            //       context,
-            //       MaterialPageRoute(
-            //           builder: (context) => EthSyncExtendedImage(
-            //                 image: _kAssets27,
-            //                 title: "blockchain location and size",
-            //               )),
-            //     );
-            //   },
-            // ),
-            // Container(
-            //   width: 150.0,
-            //   height: 200.0,
-            //   decoration: BoxDecoration(
-            //     shape: BoxShape.circle,
-            //     image: DecorationImage(
-            //       image: AssetImage(_kAssets27),
-            //     ),
-            //   ),
-            // ),
-          ],
-        ),
+          ),
+          // ),
+          // TextButton(
+          //   child: Image.asset(
+          //     _kAssets27,
+          //     // height: 200.0,
+          //     // width: 300.0,
+          //   ),
+          //   onPressed: () async {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //           builder: (context) => EthSyncExtendedImage(
+          //                 image: _kAssets27,
+          //                 title: "blockchain location and size",
+          //               )),
+          //     );
+          //   },
+          // ),
+          // Container(
+          //   width: 150.0,
+          //   height: 200.0,
+          //   decoration: BoxDecoration(
+          //     shape: BoxShape.circle,
+          //     image: DecorationImage(
+          //       image: AssetImage(_kAssets27),
+          //     ),
+          //   ),
+          // ),
+        ],
       ),
+      // ),
     );
   }
 }

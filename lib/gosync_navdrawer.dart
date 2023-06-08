@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import './gosync_text.dart';
-import './gosync_urllinks.dart';
 
 // import './ethsync_walletdrawer.dart';
 // import './ethsync_barcodescanner.dart';
