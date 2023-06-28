@@ -79,7 +79,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.yellow.shade500,
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
             child: const SelectableText(
               // ethInstallGolangHeading,
@@ -266,7 +266,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.yellow.shade500,
-              borderRadius: BorderRadius.all(Radius.circular(50.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
             child: const SelectableText(
               ethGolangTestHeading,
@@ -795,7 +795,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           const Center(
             child: ElevatedButton(
                 onPressed: _ethLightChainSync,
-                child: const Text('launch ether light chain sync')),
+                child: Text('launch ether light chain sync')),
             // print that external link has been activated & client left.
             // print('scrollbar3 elevatedButton pressed');
           ),
