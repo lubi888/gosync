@@ -56,7 +56,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('scrollbar1 loaded');
+    print('scrollbar1 loaded install Golang');
+    // log('scrollbar1 loaded' as S);
 
     // void _ethLightChainSync() async {
     //   if (!await launchUrl(_launchLightChainSync)) {
@@ -68,9 +69,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
     //   if (!await launchUrl(_launchLightChainSync)) {
     //     throw "could not launch $_ethLightChainSync";
     //   }
-
+    ScrollController scrollBarController = ScrollController();
     return Scrollbar(
+      controller: scrollBarController,
       child: ListView(
+        controller: scrollBarController,
         children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15.0),
@@ -81,7 +84,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               color: Colors.yellow.shade500,
               borderRadius: const BorderRadius.all(Radius.circular(50.0)),
             ),
-            child: const SelectableText(
+            child: const Text(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
@@ -113,12 +116,20 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          //new btn for go.dev main & dl page.
+          Container(
+            child: const Center(
+              child: ElevatedButton(
+                  onPressed: _launchGolangDL,
+                  child: Text('go.dev download site')),
+            ),
+          ),
           // Container(
           Container(
             child: Image.asset(
               _kAsset3,
-              height: 100.0,
-              width: 200.0,
+              height: 200.0,
+              width: 300.0,
             ),
             // onPressed: EthSyncUrl.launchURLGolangOrgDL,
             // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
@@ -921,17 +932,46 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          //new btn for go.dev main & dl page.
+          Container(
+            child: const Center(
+              child: ElevatedButton(
+                  onPressed: _launchGolangMainWebsite,
+                  child: Text('go.dev main website')),
+            ),
+          ),
+          // Container(
         ],
       ),
     );
   }
 }
 
+final Uri _uriGolangDL = Uri.https("go.dev", "dl");
+final Uri _uriGolangMain = Uri.https("go.dev");
+final Uri _launchLightChainSync =
+    Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
+
+Future<void> _launchGolangDL() async {
+  print("customer left app to go.dev/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_uriGolangDL)) {
+    throw "could not launch $_launchGolangDL";
+  }
+}
+
+Future<void> _launchGolangMainWebsite() async {
+  print("customer left app to go.dev at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_uriGolangMain)) {
+    throw "could not luanch $_uriGolangMain";
+  }
+}
+
 Future<void> _ethLightChainSync() async {
+  print("customer left app to eth.dev at");
+  print(TimeOfDay.now());
   if (!await launchUrl(_launchLightChainSync)) {
     throw "could not launch $_ethLightChainSync";
   }
 }
-
-final Uri _launchLightChainSync =
-    Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
