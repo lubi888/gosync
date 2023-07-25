@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20230630 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20230724 pixel 4a Win mobi app";
 const String home = "home";
 const String code = "code golang";
 const String online = "online community";
@@ -175,7 +175,8 @@ const String ethGoTestYourInstallation =
 const String ethGoHello = ('package main\n\n'
         'import "fmt"\n\n'
         'func main() {\n'
-        'fmt.Printf("hello again golang on windows|linux|mac.\\n")\n'
+        'fmt.Printfunc("hell golang\\n")\n'
+        'fmt.Println("hello again golang on windows|linux|mac.")'
         '\n}'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
     // 'fmt.Printf(\"isn\'t this exciting?!\")'

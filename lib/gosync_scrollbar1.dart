@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 // import 'package:async/async.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
+// import 'package:permission_handler/permission_handler.dart';
 import './gosync_text.dart';
 // import './ethsync_urllinks.dart';
 // import './ethsync_extendedimage.dart';
@@ -318,7 +319,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // width: 300.0,
             ),
             onPressed: () async {
-              //   Navigator.push(
+              //   Navigator.push(fs
               //     context,
               //     MaterialPageRoute(
               //         builder: (context) => EthSyncExtendedImage(
