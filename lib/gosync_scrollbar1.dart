@@ -923,24 +923,24 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            width: 150.0,
-            height: 200.0,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage(_kAssets27),
-              ),
-            ),
-          ),
+          // Container(
+          //   width: 150.0,
+          //   height: 200.0,
+          //   decoration: const BoxDecoration(
+          //     shape: BoxShape.circle,
+          //     image: DecorationImage(
+          //       image: AssetImage(_kAssets27),
+          //     ),
+          //   ),
+          // ),
           //new btn for go.dev main & dl page.
-          Container(
-            child: const Center(
-              child: ElevatedButton(
-                  onPressed: _launchGolangMainWebsite,
-                  child: Text('go.dev main website')),
-            ),
-          ),
+          // Container(
+          //   child: const Center(
+          //     child: ElevatedButton(
+          //         onPressed: _launchGolangMainWebsite,
+          //         child: Text('go.dev main website')),
+          //   ),
+          // ),
           // Container(
         ],
       ),
