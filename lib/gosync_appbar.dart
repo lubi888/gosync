@@ -45,7 +45,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: Icon(Icons.laptop, color: Colors.greenAccent),
             child: Align(
               alignment: Alignment.center,
-              child: Text(online),
+              child: Text(danger),
               // presence
             )),
         // Tab(
