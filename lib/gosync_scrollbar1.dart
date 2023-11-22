@@ -8,7 +8,7 @@ import './gosync_text.dart';
 // import './ethsync_extendedimage.dart';
 
 class GoSyncScrollbar1 extends StatelessWidget {
-  const GoSyncScrollbar1({Key? key}) : super(key: key);
+  const GoSyncScrollbar1({super.key});
 
   // const Scrollbar0({ Key? key }) : super(key: key);
   //   Locale myLocale = Localizations.localeOf(context);
@@ -88,9 +88,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
             child: const Text(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.left,
               style: TextStyle(
-                color: Colors.red,
+                color: Colors.yellow,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
               ),
@@ -111,7 +111,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // ethInstallGolangGoGetWebsite,
               textAlign: TextAlign.center,
               style: const TextStyle(
-                color: Colors.red,
+                color: Colors.blue,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,
               ),
@@ -157,9 +157,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // humanize: true,
               // text: EthSyncLocalizations.of(context)
               //     .ethInstallGolangInstallInstructions,
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.left,
               style: const TextStyle(
-                color: Colors.red,
+                color: Colors.yellowAccent,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,
               ),
@@ -168,9 +168,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
           Container(
             child: const SelectableText(
               ethCheckGoHelp,
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.right,
               style: TextStyle(
-                color: Colors.red,
+                color: Colors.green,
                 fontStyle: FontStyle.italic,
                 fontSize: 20.0,
               ),

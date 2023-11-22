@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20231115 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20231122 pixel 4a Win mobi app";
 const String home = "home";
 const String code = "code golang";
 const String online = "online community";
@@ -21,14 +21,14 @@ const String ethInstallGolangHeading = 'Install Go';
 const String ethInstallGolangInstallInstructions =
     ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'
         'For windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system.\n'
-        '\'C:\\Go\' is preferable when wanting to program.\n'
+        '\n\'C:\\Go\' is preferable when wanting to program.\n'
         'Otherwise Go can run from Program Files.\n'
-        'For linux the easiest way is to download the \'.tar.gz\' compressed file and then to uncompress it in the \'/usr/local/go\' folder.\n'
-        'The golang website recommends this command:\n'
+        '\nFor linux the easiest way is to download the \'.tar.gz\' compressed file and then to uncompress it in the \'/usr/local/go\' folder.\n'
+        'The golang website recommends this command:\n\n'
         '\'tar -C /usr/local -xzf go\$VERSION.\$OS-\$ARCH.tar.gz\' \nfor linux, macOS and freeBSD.\n'
         'With linux the last operation is to pass the location of this go folder into the .profile or .bashrc file in the /home folder.\n\n'
         'The golang website recommends the following command from a shell:\n'
-        'export PATH=\$PATH:/usr/local/go/bin\n');
+        '\nexport PATH=\$PATH:/usr/local/go/bin\n');
 const String ethGolangTestHeading = 'Testing Go Installation';
 const String ethInstallGethHeading = 'Install Geth - GoEthereum';
 const String ethInstallContract =

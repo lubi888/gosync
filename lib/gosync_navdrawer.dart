@@ -16,7 +16,7 @@ import './gosync_scrollbar2.dart';
 String _kAsset0 = 'assets/images/devcon1.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
-  const GoSyncNavDrawer({Key? key}) : super(key: key);
+  const GoSyncNavDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {
