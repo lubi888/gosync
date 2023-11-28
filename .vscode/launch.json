@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter for web",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "args": [
+                  "-d",
+                  "chrome"
+                ]     
+        },
+        {
+            "name": "gosync",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "gosync (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "gosync (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+            // {
+        //     "name": "Launch Chrome",
+        //     "request": "launch",
+        //     "type": "chrome",
+        //     "url": "http://localhost:8080",
+        //     "webRoot": "C:\Users\adam\Documents\GitHub\gosync\web\index.html"
+        //     // "webRoot": "${workspaceFolder}"
+        // },
+    ]
+}

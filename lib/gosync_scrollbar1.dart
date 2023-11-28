@@ -88,9 +88,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
             child: const Text(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
-              textAlign: TextAlign.left,
+              textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.yellow,
+                color: Colors.green,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
               ),
