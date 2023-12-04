@@ -5,7 +5,7 @@ import './gosync_text.dart';
 // //   // Here we take the value from the GoSyncHome object that was created by
 // //   // the App.build method, and use it to set our appbar title.
 // //   title: Text(widget.title)
-const double kToolbarHeight = 125.0;
+const double kToolbarHeight = 155.0;
 
 class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
   const GoSyncAppBar({super.key});
@@ -25,7 +25,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       // backgroundColor: Colors.amber,
       // foregroundColor: Colors.red,
-      elevation: 30.0,
+      // elevation/: 30.0,
       title: const SelectableText(goSyncTitle),
       bottom: const TabBar(tabs: <Widget>[
         Tab(
@@ -36,9 +36,10 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
             )),
         Tab(
             icon: Icon(Icons.code, color: Colors.orangeAccent),
+            height: 90.0,
             child: Align(
               alignment: Alignment.center,
-              child: Text(code),
+              child: Text(gocode),
               // install golang and geth
             )),
         Tab(

@@ -20,6 +20,7 @@ class GoSyncHome extends StatelessWidget {
       GoSyncScrollbar0(),
       GoSyncScrollbar1(),
       GoSyncScrollbar2()
+      // gosyncscrollbar2(),
     ]);
   }
 }
