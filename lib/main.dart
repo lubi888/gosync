@@ -5,6 +5,8 @@ import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
+import './gosync_sliverappbar.dart';
+// import './gosync_collapsingappbar.dart';
 
 void main() {
   runApp(const GoSync());
@@ -47,6 +49,8 @@ class GoSync extends StatelessWidget {
         length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),
+          // appBar: GoSyncSliverAppBar(),
+          // appBar: CollapsingAppbarPage(),
           drawer: GoSyncNavDrawer(),
           // endDrawer: GoSyncOpenDrawer(),
           body: GoSyncHome(

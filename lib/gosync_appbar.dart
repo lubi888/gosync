@@ -26,7 +26,9 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
       // backgroundColor: Colors.amber,
       // foregroundColor: Colors.red,
       // elevation/: 30.0,
-      title: const SelectableText(goSyncTitle),
+      title: const Text(
+        goSyncTitle,
+      ),
       bottom: const TabBar(tabs: <Widget>[
         Tab(
             icon: Icon(Icons.home, color: Colors.redAccent),

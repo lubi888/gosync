@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20231206 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20231211 pixel 4a Win mobi app";
 const String home = "home";
 const String gocode = "install golang";
 const String online = "online community";

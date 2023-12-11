@@ -79,92 +79,130 @@ class GoSyncScrollbar1 extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
-            height: 60.0,
+            height: 70.0,
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
-              color: Colors.yellow.shade500,
-              borderRadius: const BorderRadius.all(Radius.circular(50.0)),
+              color: Colors.red.shade500,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
               // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.green,
+                color: Colors.white,
+                backgroundColor: Colors.amber,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
               ),
             ),
           ),
-          // //container-intl-linkify
+          // const Padding(padding: EdgeInsets.all(8.0)),
+          // padding: const EdgeInsets.all(15.0),
           Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethInstallGolandGoGetWebsite,
-              // ethInstallGolangGoGetWebsite,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.blue,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+            height: 200.0,
+            width: 300.0,
+            Image: (Image.asset(
+              _kAsset3),
+              // height: 200.0,
+              // width: 300.0,
+              // scale: 2.0,
             ),
           ),
-          //new btn for go.dev main & dl page.
-          Container(
-            child: const Center(
-              child: ElevatedButton(
-                  onPressed: _launchGolangDL,
-                  child: Text('go.dev download site')),
+          Image.asset(
+            _kAsset3,
+            height: 200.0,
+            width: 300.0,
+            // scale: 2.0,
+          ),
+          const Text(
+            ethInstallGolandGoGetWebsite,
+            // locale: Locale(_languageCode),
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.yellow,
+              // backgroundColor: Colors.amber,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
             ),
+          ),
+          // Padding(padding: padding)
+          // padding: const EdgeInsets.all(15.0),
+          Image.asset(
+            _kAsset2,
+            height: 200.0,
+            width: 300.0,
+            // fit:
           ),
           // Container(
+          // padding:
+          //   child: Linkify(
+          //     onOpen: (link) async {
+          //       if (await canLaunch(link.url)) {
+          //         await launch(link.url);
+          //       } else {
+          //         throw 'Could not launch $link';
+          //       }
+          //     },
+          //     text: ethInstallGolangInstallInstructions,
+          //     // humanize: true,
+          //     // text: EthSyncLocalizations.of(context)
+          //     //     .ethInstallGolangInstallInstructions,
+          //     textAlign: TextAlign.left,
+          //     style: const TextStyle(
+          //       color: Colors.yellowAccent,
+          //       fontStyle: FontStyle.italic,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          //text container predefined size.
           Container(
-            child: Image.asset(
-              _kAsset3,
-              height: 200.0,
-              width: 300.0,
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 650.0,
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.red.shade500,
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
             ),
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-          ),
-          Container(
-            child: Image.asset(
-              _kAsset2,
-              height: 200.0,
-              width: 300.0,
-            ),
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-            // // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
-          ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              text: ethInstallGolangInstallInstructions,
-              // humanize: true,
-              // text: EthSyncLocalizations.of(context)
-              //     .ethInstallGolangInstallInstructions,
+            child: const Text(
+              // ethInstallGolangHeading,
+              // ethInstallGolandHeading,
+              ethInstallGolangInstallInstructions,
+              // locale: Locale(_languageCode),
               textAlign: TextAlign.left,
-              style: const TextStyle(
-                color: Colors.yellowAccent,
-                fontStyle: FontStyle.italic,
+              style: TextStyle(
+                color: Colors.yellow,
+                // backgroundColor: Colors.amber,
+                fontStyle: FontStyle.normal,
                 fontSize: 20.0,
               ),
             ),
           ),
+
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 250.0,
+            decoration: const BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.yellow,
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              ethCheckGoHelp,
+              // locale: Locale(_languageCode),
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.green,
+                // backgroundColor: Colors.amber,
+                fontStyle: FontStyle.normal,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+
           Container(
             child: const SelectableText(
               ethCheckGoHelp,
