@@ -5,7 +5,6 @@ import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
-import './gosync_sliverappbar.dart';
 // import './gosync_collapsingappbar.dart';
 
 void main() {

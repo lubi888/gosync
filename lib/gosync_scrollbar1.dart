@@ -99,22 +99,28 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // const Padding(padding: EdgeInsets.all(8.0)),
           // padding: const EdgeInsets.all(15.0),
-          Container(
-            height: 200.0,
-            width: 300.0,
-            Image: (Image.asset(
-              _kAsset3),
-              // height: 200.0,
-              // width: 300.0,
-              // scale: 2.0,
-            ),
-          ),
+          // Container(
+          //   height: 200.0,
+          //   width: 300.0,
           Image.asset(
             _kAsset3,
             height: 200.0,
             width: 300.0,
             // scale: 2.0,
           ),
+          // ),
+          // Row(
+          //   children: [
+          //     const Padding(padding: EdgeInsets.all(8.0)),
+          Image.asset(
+            _kAsset3,
+            height: 200.0,
+            width: 300.0,
+            alignment: Alignment.center,
+            // scale: 2.0,
+          ),
+          //   ],
+          // ),
           const Text(
             ethInstallGolandGoGetWebsite,
             // locale: Locale(_languageCode),
@@ -164,7 +170,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.red.shade500,
-              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
               // ethInstallGolangHeading,
@@ -203,15 +209,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
 
-          Container(
-            child: const SelectableText(
-              ethCheckGoHelp,
-              textAlign: TextAlign.right,
-              style: TextStyle(
-                color: Colors.green,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethCheckGoHelp,
+            textAlign: TextAlign.right,
+            style: TextStyle(
+              color: Colors.green,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -250,15 +254,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   );
             // },
           ),
-          Container(
-            child: const Text(
-              ethCheckGoEnv,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const Text(
+            ethCheckGoEnv,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -280,15 +282,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
             //   );
             // },
           ),
-          Container(
-            child: const SelectableText(
-              ethCheckGoPath3Folders,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethCheckGoPath3Folders,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -328,26 +328,22 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethGoTestYourInstallation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGoTestYourInstallation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethGoHello,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.blue,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGoHello,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.blue,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -368,15 +364,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
             },
           ),
           //container-intl-linkify
-          Container(
-            child: const SelectableText(
-              ethGoBuild,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGoBuild,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -413,23 +407,21 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGoInstall,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGoInstall,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -469,135 +461,113 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsite,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsite,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsite3Implementations,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsite3Implementations,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Image.asset(
-              _kAsset8,
-              height: 200.0,
-              width: 300.0,
-            ),
-            // onPressed: EthSyncUrl.launchURLGethWeb,
+          Image.asset(
+            _kAsset8,
+            height: 200.0,
+            width: 300.0,
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsiteInstall,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsiteInstall,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Image.asset(
-              _kAsset9,
-              height: 120.0,
-              width: 300.0,
-            ),
-            // onPressed: EthSyncUrl.launchURLGethWebDL,
-            // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
+          Image.asset(
+            _kAsset9,
+            height: 120.0,
+            width: 300.0,
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsiteInstallHelp,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsiteInstallHelp,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Image.asset(
-              _kAssets10,
-              height: 200.0,
-              width: 300.0,
-            ),
-            // onPressed: EthSyncUrl.launchURLGethWebInstall,
+          Image.asset(
+            _kAssets10,
+            height: 200.0,
+            width: 300.0,
           ),
-          Container(
-            child: const SelectableText(
-              ethGethWebsiteManyImplementations,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethWebsiteManyImplementations,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGithubGoEthereumList,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGithubGoEthereumList,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -617,26 +587,22 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethVersion,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethVersion,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethWhichGethList,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethWhichGethList,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -656,15 +622,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethHelp,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethHelp,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -801,45 +765,39 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //     ),
           //   ),
           // ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsite3Implementations,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunchUrl(link.url as Uri)) {
+                await launchUrl(link.url as Uri);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsite3Implementations,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethBlockchainMassDifferentiation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethBlockchainMassDifferentiation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethGethSyncmodeLightIntroduction,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethSyncmodeLightIntroduction,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           const Center(
@@ -849,15 +807,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
             // print that external link has been activated & client left.
             // print('scrollbar3 elevatedButton pressed');
           ),
-          Container(
-            child: const SelectableText(
-              ethGethSyncmodeLight,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethSyncmodeLight,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -877,15 +833,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethBlockchainSyncing,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethBlockchainSyncing,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -905,15 +859,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethSyncingCompletedDisconnected,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethSyncingCompletedDisconnected,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -933,15 +885,13 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethBlockchainLocation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethBlockchainLocation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(

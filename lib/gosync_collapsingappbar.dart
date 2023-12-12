@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class CollapsingAppbarPage extends StatelessWidget
     implements PreferredSizeWidget {
-  CollapsingAppbarPage({Key? key}) : super(key: key);
+  const CollapsingAppbarPage({super.key});
 
   @override
   Widget build(BuildContext context) {
