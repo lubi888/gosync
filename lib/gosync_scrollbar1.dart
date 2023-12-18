@@ -58,24 +58,14 @@ class GoSyncScrollbar1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     print('scrollbar1 loaded install Golang');
-    // log('scrollbar1 loaded' as S);
 
-    // void _ethLightChainSync() async {
-    //   if (!await launchUrl(_launchLightChainSync)) {
-    //     throw "could not launch $_ethLightChainSync";
-    //   }
-    // }
-
-    // Future<void> _ethLightChainSync() async {
-    //   if (!await launchUrl(_launchLightChainSync)) {
-    //     throw "could not launch $_ethLightChainSync";
-    //   }
     ScrollController scrollBarController = ScrollController();
     return Scrollbar(
       controller: scrollBarController,
       child: ListView(
         controller: scrollBarController,
         children: <Widget>[
+          //header bar
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
@@ -86,7 +76,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              // ethInstallGolangHeading,
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
@@ -97,72 +86,73 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          // const Padding(padding: EdgeInsets.all(8.0)),
-          // padding: const EdgeInsets.all(15.0),
-          // Container(
-          //   height: 200.0,
-          //   width: 300.0,
+          const Padding(padding: EdgeInsets.all(8.0)),
+
           Image.asset(
             _kAsset3,
             height: 200.0,
             width: 300.0,
-            // scale: 2.0,
           ),
-          // ),
-          // Row(
-          //   children: [
-          //     const Padding(padding: EdgeInsets.all(8.0)),
+          const Padding(padding: EdgeInsets.all(8.0)),
           Image.asset(
             _kAsset3,
             height: 200.0,
             width: 300.0,
-            alignment: Alignment.center,
-            // scale: 2.0,
+            alignment: Alignment.centerRight,
           ),
-          //   ],
-          // ),
+          // txt to download page
           const Text(
             ethInstallGolandGoGetWebsite,
-            // locale: Locale(_languageCode),
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.yellow,
               // backgroundColor: Colors.amber,
               fontStyle: FontStyle.normal,
-              fontSize: 20.0,
+              fontSize: 25.0,
             ),
           ),
-          // Padding(padding: padding)
-          // padding: const EdgeInsets.all(15.0),
+          //assed image 2
           Image.asset(
             _kAsset2,
             height: 200.0,
             width: 300.0,
             // fit:
           ),
-          // Container(
-          // padding:
-          //   child: Linkify(
-          //     onOpen: (link) async {
-          //       if (await canLaunch(link.url)) {
-          //         await launch(link.url);
-          //       } else {
-          //         throw 'Could not launch $link';
-          //       }
-          //     },
-          //     text: ethInstallGolangInstallInstructions,
-          //     // humanize: true,
-          //     // text: EthSyncLocalizations.of(context)
-          //     //     .ethInstallGolangInstallInstructions,
-          //     textAlign: TextAlign.left,
-          //     style: const TextStyle(
-          //       color: Colors.yellowAccent,
-          //       fontStyle: FontStyle.italic,
-          //       fontSize: 20.0,
-          //     ),
-          //   ),
-          // ),
-          //text container predefined size.
+          // convert this to ledgeable code with << >>
+          const Text(
+            ethCheckGoEnv,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.green,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
+            ),
+          ),
+          //Box Decoration
+          Container(
+            padding: const EdgeInsets.all(8.0),
+            width: 200.0,
+            height: 80.0,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage(_kAsset2)),
+              shape: BoxShape.rectangle,
+              color: Colors.red.shade500,
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            ),
+            child: const Text(
+              ethCheckGoEnv,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.green,
+                backgroundColor: Colors.black,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(8.0)),
+
+          //txt container 1
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
@@ -173,24 +163,21 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              // ethInstallGolangHeading,
-              // ethInstallGolandHeading,
               ethInstallGolangInstallInstructions,
-              // locale: Locale(_languageCode),
               textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.yellow,
-                // backgroundColor: Colors.amber,
                 fontStyle: FontStyle.normal,
                 fontSize: 20.0,
               ),
             ),
           ),
-
+          const Padding(padding: EdgeInsets.all(8.0)),
+          //coloured, padded container
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
-            height: 250.0,
+            // width: 300.0,
+            // height: 250.0,
             decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.yellow,
@@ -198,11 +185,30 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             child: const Text(
               ethCheckGoHelp,
-              // locale: Locale(_languageCode),
               textAlign: TextAlign.right,
               style: TextStyle(
                 color: Colors.green,
-                // backgroundColor: Colors.amber,
+                fontStyle: FontStyle.normal,
+                fontSize: 20.0,
+              ),
+            ),
+          ),
+          // const Padding(padding: EdgeInsets.all(8.0)),
+          //contiane with no size. automatic overflow?
+          Container(
+            // padding: const EdgeInsets.all(15.0),
+            // width: 300.0,
+            // height: 250.0,
+            decoration: const BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.yellow,
+              borderRadius: BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              ethCheckGoHelp,
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.green,
                 fontStyle: FontStyle.normal,
                 fontSize: 20.0,
               ),
@@ -210,6 +216,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
 
           const SelectableText(
+            // Padding(padding: EdgeInsets.all(8.0)) as String,
             ethCheckGoHelp,
             textAlign: TextAlign.right,
             style: TextStyle(
@@ -218,24 +225,42 @@ class GoSyncScrollbar1 extends StatelessWidget {
               fontSize: 20.0,
             ),
           ),
-          TextButton(
-            onPressed: () {},
-            child: Image.asset(
-              _kAssets12,
-              // height: 200.0,
-              // width: 300.0,
+          // const Padding(padding: EdgeInsets.all(8.0)),
+
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              ethCheckGoHelp,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.yellow,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthSyncExtendedImage(
-            //               image: _kAssets12,
-            //               title: 'go help 1',
-            //             )),
-            //   );
-            // },
           ),
+
+          //end text here.
+
+          Column(
+            children: [
+              // const Padding(padding: EdgeInsets.all(30.0)),
+              Image.asset(
+                _kAssets12,
+                // height: 200.0,
+                // width: 300.0,
+              ),
+            ],
+          ),
+
+          Image.asset(
+            _kAssets12,
+            height: 800.0,
+            width: 600.0,
+            // height: max(0.0, 0.0),
+          ),
+
           TextButton(
             onPressed: () {},
             child: Image.asset(
@@ -243,22 +268,23 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthSyncExtendedImage(
-            //               image: _kAssets13,
-            //               title: "\'go help\' 2",
-            //             )),
-            //   );
-            // },
           ),
+          //txt command 'tytpe i the following code'
+          // convert this to selectable, coloured code.
           const Text(
             ethCheckGoEnv,
             textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
+            ),
+          ),
+          const Text(
+            ethCheckGoEnv,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.green,
               fontStyle: FontStyle.italic,
               fontSize: 20.0,
             ),
@@ -270,17 +296,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // height: 200.0,
               // width: 300.0,
             ),
-            // onPressed: () {},
-            // onPressed: () async {
-            //   Navigator.push(
-            //     context,
-            //     MaterialPageRoute(
-            //         builder: (context) => EthSyncExtendedImage(
-            //               image: _kAsset4,
-            //               title: "\'go env\'",
-            //             )),
-            //   );
-            // },
           ),
           const SelectableText(
             ethCheckGoPath3Folders,
