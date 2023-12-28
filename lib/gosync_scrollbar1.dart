@@ -79,26 +79,29 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ethInstallGolandHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
-                color: Colors.white,
+                // color: Colors.blue[900],
+                color: Colors.blue,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
                 backgroundColor: Colors.amber,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ),
           const Padding(padding: EdgeInsets.all(8.0)),
 
+          // Image.asset(
+          //   _kAsset3,
+          //   height: 200.0,
+          //   width: 300.0,
+          // ),
+          // const Padding(padding: EdgeInsets.all(8.0)),
           Image.asset(
             _kAsset3,
             height: 200.0,
             width: 300.0,
-          ),
-          const Padding(padding: EdgeInsets.all(8.0)),
-          Image.asset(
-            _kAsset3,
-            height: 200.0,
-            width: 300.0,
-            alignment: Alignment.centerRight,
+            alignment: Alignment.center,
           ),
           // txt to download page
           const Text(
@@ -185,7 +188,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             child: const Text(
               ethCheckGoHelp,
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.green,
                 fontStyle: FontStyle.normal,
@@ -196,7 +199,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           // const Padding(padding: EdgeInsets.all(8.0)),
           //contiane with no size. automatic overflow?
           Container(
-            // padding: const EdgeInsets.all(15.0),
+            padding: const EdgeInsets.all(8.0),
             // width: 300.0,
             // height: 250.0,
             decoration: const BoxDecoration(
@@ -206,7 +209,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             child: const Text(
               ethCheckGoHelp,
-              textAlign: TextAlign.right,
+              textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.green,
                 fontStyle: FontStyle.normal,

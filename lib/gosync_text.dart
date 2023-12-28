@@ -1,11 +1,11 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20231218 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20231228 pixel 4a Win mobi app";
 const String home = "home";
-const String gocode = "install golang";
+const String gocode = "golang install";
 const String online = "online community";
 const String learn = "learn";
-const String danger = "dangr";
+const String danger = "danger";
 
 const String ethSyncPrimaryGoals =
     ('1, The primary goal of this mobile app is to educate the reader about golang installation.\n\n'

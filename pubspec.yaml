@@ -1,5 +1,5 @@
 name: gosync
-description: A new Flutter project to help install golang on all platforms & link to online 
+description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.19.0-395.0.dev <3.0.0'
+  sdk: '>=3.2.3 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,28 +30,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  # flutter_localizations: # Add this line
-    # sdk: flutter         # Add this line
+
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  xterm: ^3.5.0
   flutter_linkify: ^6.0.0
-  url_launcher: ^6.1.11
-  # permission_handler: ^10.4.1
-  # extended_image: ^7.0.2/li
-  # intl: ^0.17.0
+  url_launcher: ^6.2.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  
+
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^3.0.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -67,64 +64,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
-    # - images/a_dot_ham.jpeg
-    # - allets/images/
+  #   - images/a_dot_ham.jpeg
+
   assets:
     - assets/images/
-    # - assets/images/go-download-website.png
-    # - assets/images/go-3-folders.png
-    # - assets/images/_kAsset2.png
-    # - assets/images/devcon1.png
-    # - assets/images/devcon1.png
-
-
-    # - assets/images/ethBullet.png
-    # - assets/images/etcBullet.png
-    # - assets/images/duIcon.png
-    # - assets/images/wallpaper-homestead.jpg
-    # - assets/images/ethSync.jpg
-    # - assets/images/logo.png
-    # - assets/images/ethGreenHelp.png
-    # - assets/images/logoHyg.png
-    # - assets/images/logoCli.png
-    # - assets/images/gethTerm.png
-    # - assets/images/devcon1.png
-    # - assets/images/etceth-asia.jpg
-    # - assets/images/bleachBitSwap.png
-    # - assets/images/geth1win.png
-    # - assets/images/geth2win.png
-    # - assets/images/kraken-eth-eur.png
-    # - assets/images/ethStackExchange.png
-    # - assets/images/ethereum_Web_Xi.png
-    # - assets/images/ethereum_youtube.png
-    # - assets/images/loading.gif
-    # - assets/images/go-download-website.png
-    # - assets/images/footer-gopher.jpg
-    # - assets/images/go-env.png
-    # - assets/images/go-3-folders.png
-    # - assets/images/go-hello.png
-    # - assets/images/go-build-install.png
-    # - assets/images/geth-web.png
-    # - assets/images/gethdl-os.png
-    # - assets/images/geth-install-help.png
-    # - assets/images/geth-command-help.png
-    # - assets/images/go-help-1.png
-    # - assets/images/go-help-2.png
-    # - assets/images/go-build-run-local.png
-    # - assets/images/go-install-systemwide.png
-    # - assets/images/github-go-ethereum-list.png
-    # - assets/images/which-geth-list.png
-    # - assets/images/geth-help-1.png
-    # - assets/images/geth-help-2.png
-    # - assets/images/geth-help-3.png
-    # - assets/images/geth-help-4.png
-    # - assets/images/geth-help-5.png
-    # - assets/images/geth-help-6.png
-    # - assets/images/geth-syncmode-begin.png
-    # - assets/images/geth-blockchain-p2p.png
-    # - assets/images/ethsync-complete-closed.png
-    # - assets/images/blockchain-size.png
-
+    # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
