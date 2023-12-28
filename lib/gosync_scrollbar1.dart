@@ -157,24 +157,41 @@ class GoSyncScrollbar1 extends StatelessWidget {
 
           //txt container 1
           Container(
-            padding: const EdgeInsets.all(15.0),
-            width: 300.0,
-            height: 650.0,
-            decoration: BoxDecoration(
-              shape: BoxShape.rectangle,
-              color: Colors.red.shade500,
-              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
-            ),
-            child: const Text(
-              ethInstallGolangInstallInstructions,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.yellow,
-                fontStyle: FontStyle.normal,
-                fontSize: 20.0,
+              padding: const EdgeInsets.all(15.0),
+              width: 300.0,
+              height: 650.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.rectangle,
+                color: Colors.red.shade500,
+                borderRadius: const BorderRadius.all(Radius.circular(25.0)),
               ),
-            ),
-          ),
+              child: Linkify(
+                onOpen: (link) async {
+                  if (!await launchUrl(Uri.parse(link.url))) {
+                    throw Exception('Could not launch ${link.url}');
+                  }
+                },
+                text: ethInstallGolangInstallInstructions,
+                textAlign: TextAlign.left,
+                linkStyle: const TextStyle(color: Colors.green),
+                style: const TextStyle(
+                  color: Colors.yellow,
+                  fontStyle: FontStyle.normal,
+                  fontSize: 20.0,
+                ),
+              )
+
+              // const Text(
+              //   ethInstallGolangInstallInstructions,
+              //   textAlign: TextAlign.left,
+              //   style: TextStyle(
+              //     color: Colors.yellow,
+              //     fontStyle: FontStyle.normal,
+              //     fontSize: 20.0,
+              //   ),
+              // ),
+
+              ),
           const Padding(padding: EdgeInsets.all(8.0)),
           //coloured, padded container
           Container(
