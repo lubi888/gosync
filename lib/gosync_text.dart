@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20231228 pixel 4a Win mobi app";
+const String goSyncTitle = "goSync.go 20240103 mobi win";
 const String home = "home";
 const String gocode = "golang install";
 const String online = "online community";
@@ -13,6 +13,9 @@ const String ethSyncPrimaryGoals =
         '3, The tertiary goal is find golang resources online.');
 
 const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
+
+const String gosyncEmailAdress =
+    "comments, questions, bugs contact tortek2023@gmail.com";
 
 const String ethEhSyncHeading = 'Ethereum Synchronisation';
 const String ethInstallGolandHeading = 'Install Golang';

@@ -98,26 +98,24 @@ class GoSyncScrollbar2 extends StatelessWidget {
             ),
           ),
           // //container-intl-linkify
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethInstallGolandGoGetWebsite,
-              // ethInstallGolangGoGetWebsite,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.blue,
-                fontStyle: FontStyle.italic,
-                fontSize: 40.0,
-              ),
+          // Container(
+          Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            // humanize: true,
+            text: ethInstallGolandGoGetWebsite,
+            // ethInstallGolangGoGetWebsite,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.blue,
+              fontStyle: FontStyle.italic,
+              fontSize: 40.0,
             ),
           ),
+          // ),
           //new elvated btn for go dl page.
           // Container(
           //   child: const Center(
