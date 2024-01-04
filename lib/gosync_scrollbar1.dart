@@ -181,15 +181,15 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //greenscreen with image
           Container(
             padding: const EdgeInsets.all(8.0),
-            width: 50.0,
-            height: 260.0,
-            decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(_kAsset2)),
+            // remove height aut config
+            // width: 50.0,
+            // height: 260.0,
+            decoration: const BoxDecoration(
+              // image: DecorationImage(image: AssetImage(_kAsset2)),
               shape: BoxShape.rectangle,
-              // color: Colors.green.shade900,
+              // color: Colors.green.shade600,
               color: Colors.black,
-              // border: Border(top: BorderSide.),
-              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+              borderRadius: BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const SelectableText(
               ethGoHello,
