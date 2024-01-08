@@ -1,8 +1,8 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240104 mobi win";
+const String goSyncTitle = "goSync.go 20240108   mobi ";
 const String home = "home";
-const String gocode = "golang install";
+const String gocode = "golang installation";
 const String online = "online community";
 const String learn = "learn";
 const String danger = "danger";
@@ -175,10 +175,10 @@ const String ethGoTestYourInstallation =
         '\nIn the \'src\' directory we will create another folder name \'hello\' and inside this new directory create and new file called \'hello.go\'.\n'
         '\nInside this new file write the following code:');
 
-const String ethGoHello = ('package main\n\n'
+const String goHelloCode = ('package main\n\n'
         'import "fmt"\n\n'
         'func main() {\n'
-        '\t\t\t\tfmt.Printfunc("hell golang")\n'
+        '\t\t\t\tfmt.Printf("hell golang\\n")\n'
         '\t\t\t\tfmt.Println("hello golang on windows|apple|linux.")\n'
         '}'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'

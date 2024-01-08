@@ -57,7 +57,8 @@ class GoSyncScrollbar2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('scrollbar2 loaded install Golang');
+    debugPrint('scrollbar2 loaded');
+    // print('scrollbar2 loaded install Golang');
     // log('scrollbar1 loaded' as S);
 
     // void _ethLightChainSync() async {
@@ -289,26 +290,22 @@ class GoSyncScrollbar2 extends StatelessWidget {
               ),
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethGoTestYourInstallation,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGoTestYourInstallation,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethGoHello,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.blue,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            goHelloCode,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.blue,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -329,15 +326,13 @@ class GoSyncScrollbar2 extends StatelessWidget {
             },
           ),
           //container-intl-linkify
-          Container(
-            child: const SelectableText(
-              ethGoBuild,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGoBuild,
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -504,61 +499,52 @@ class GoSyncScrollbar2 extends StatelessWidget {
             // onPressed: EthSyncUrl.launchURLGethWebDL,
             // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGethWebsiteInstallHelp,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunch(link.url)) {
+                await launch(link.url);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGethWebsiteInstallHelp,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Image.asset(
-              _kAssets10,
-              height: 200.0,
-              width: 300.0,
-            ),
-            // onPressed: EthSyncUrl.launchURLGethWebInstall,
+          Image.asset(
+            _kAssets10,
+            height: 200.0,
+            width: 300.0,
           ),
-          Container(
-            child: const SelectableText(
-              ethGethWebsiteManyImplementations,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethWebsiteManyImplementations,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: Linkify(
-              onOpen: (link) async {
-                if (await canLaunch(link.url)) {
-                  await launch(link.url);
-                } else {
-                  throw 'Could not launch $link';
-                }
-              },
-              // humanize: true,
-              text: ethGithubGoEthereumList,
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          Linkify(
+            onOpen: (link) async {
+              if (await canLaunch(link.url)) {
+                await launch(link.url);
+              } else {
+                throw 'Could not launch $link';
+              }
+            },
+            // humanize: true,
+            text: ethGithubGoEthereumList,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(
@@ -578,26 +564,22 @@ class GoSyncScrollbar2 extends StatelessWidget {
               // );
             },
           ),
-          Container(
-            child: const SelectableText(
-              ethGethVersion,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethGethVersion,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
-          Container(
-            child: const SelectableText(
-              ethWhichGethList,
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                color: Colors.red,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          const SelectableText(
+            ethWhichGethList,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
             ),
           ),
           TextButton(

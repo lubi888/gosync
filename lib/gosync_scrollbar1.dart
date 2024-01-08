@@ -2,22 +2,12 @@ import 'package:flutter/material.dart';
 // import 'package:async/async.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
-// import 'package:permission_handler/permission_handler.dart';
 import './gosync_text.dart';
-// import './ethsync_urllinks.dart';
-// import './ethsync_extendedimage.dart';
+import './gosync_urllinks.dart';
 
 class GoSyncScrollbar1 extends StatelessWidget {
   const GoSyncScrollbar1({super.key});
-
-  // const Scrollbar0({ Key? key }) : super(key: key);
-  //   Locale myLocale = Localizations.localeOf(context);
   // print(myLocale.toString() + ' on Scrollbar2');
-
-  // final String _kAsset2 = 'assets/images/images/go-download-website.png';
-  // final String _kAsset3 = 'assets/images/footer-gopher.jpg';
-  // final String _kAsset4 = 'assets/images/images/go-env.png';
-
   final String _kAsset2 = 'assets/images/go-download-website.png';
   final String _kAsset3 = 'assets/images/footer-gopher.jpg';
   final String _kAsset4 = 'assets/images/go-env.png';
@@ -44,6 +34,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
   final String _kAssets25 = 'assets/images/geth-blockchain-p2p.png';
   final String _kAssets26 = 'assets/images/ethsync-complete-closed.png';
   final String _kAssets27 = 'assets/images/blockchain-size.png';
+  final String _kAsset32 = 'assets/images/_kAsset32.png';
 
   // final String url = 'https://media.giphy.com/media/1MH245qhEF5bG/giphy.gif';
 
@@ -57,7 +48,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('scrollbar1 loaded install Golang');
+    debugPrint('scrollbar1 loaded install Golang');
 
     ScrollController scrollBarController = ScrollController();
     return Scrollbar(
@@ -65,12 +56,17 @@ class GoSyncScrollbar1 extends StatelessWidget {
       child: ListView(
         controller: scrollBarController,
         children: <Widget>[
-          //header bar
+          //header bar 'install goland'
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
-            height: 70.0,
+            height: 80.0,
             decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.yellow,
+              ),
               shape: BoxShape.rectangle,
               color: Colors.red.shade500,
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
@@ -89,20 +85,85 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-
+          // flutter beads border banner
+          Container(
+            padding: const EdgeInsets.all(16.0),
+            decoration: BoxDecoration(
+              // boxShadow: BoxShadow.lerpList(1, b, t),
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.green,
+              ),
+              color: Colors.amber,
+              // borderRadius:
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            ),
+            child: const Text(
+              "FlutterBeads",
+              textAlign: TextAlign.center,
+              style: TextStyle(fontSize: 34.0, color: Colors.red),
+              // selectionColor: Colors.green,
+            ),
+          ),
+          // generic padding
+          const Padding(padding: EdgeInsets.all(8.0)),
           // Image.asset(
           //   _kAsset3,
           //   height: 200.0,
           //   width: 300.0,
           // ),
           // const Padding(padding: EdgeInsets.all(8.0)),
+
+          //gopher image greeting. make clickable.
+          // naturally 320 x 202
           Image.asset(
             _kAsset3,
-            height: 200.0,
-            width: 300.0,
+            semanticLabel: 'gopher mascot',
+            // fit: BoxFit.cover,
+            height: 202.0,
+            width: 320.0,
             alignment: Alignment.center,
           ),
+          //
+          SizedBox(
+            width: 300,
+            height: 200,
+            // Inkwell
+            child: InkWell(
+              radius: 50,
+              // display a snackbar on tap
+              onTap: () {
+                debugPrint('gopher image inkwell tapped');
+                //launch golang.org || go.dev
+                _launchGolangDLUrl();
+                // ScaffoldMessenger.of(context).clearSnackBars();
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('goodbye!'),
+                    duration: Duration(milliseconds: 1500),
+                  ),
+                );
+                //   (link) async {
+                // if (!await launchUrl(Uri.parse(link.url))) {
+                //   throw Exception('Could not launch ${link.url}');
+                // }
+                //   };},),)
+                // _launchGolangDLUrl
+              },
+              // implement the image with Ink.image
+              child: Ink.image(
+                fit: BoxFit.cover,
+                image: AssetImage(_kAsset3),
+                // _kAsset3,
+                // image: const NetworkImage(
+                // 'https://www.kindacode.com/wp-content/uploads/2022/07/bottle.jpeg'),
+              ),
+            ),
+          ),
+
           // txt to golang.org/dl download page
           Linkify(
             onOpen: (link) async {
@@ -135,13 +196,27 @@ class GoSyncScrollbar1 extends StatelessWidget {
               fontSize: 25.0,
             ),
           ),
-          //assed image 2
+          //assed image gopher
           Image.asset(
             _kAsset2,
             height: 200.0,
             width: 300.0,
             // fit:
           ),
+          // 2nd image dark colour.
+          Image.asset(
+            _kAsset32,
+            height: 300.0,
+            width: 450.0,
+            // fit:
+          ),
+          Image.asset(
+            _kAsset32,
+            // height: 200.0,
+            // width: 300.0,
+            // fit:
+          ),
+
           // convert this to ledgeable code with << >>
           const SelectableText(
             ethCheckGoEnv,
@@ -156,14 +231,14 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //Box Decoration
           //Example Code Widget Container
           Container(
-            padding: const EdgeInsets.all(8.0),
-            width: 80.0,
+            // padding: const EdgeInsets.all(8.0),
+            // width: 80.0,
             height: 80.0,
             decoration: BoxDecoration(
               // image: DecorationImage(image: AssetImage(_kAsset2)),
               shape: BoxShape.rectangle,
               color: Colors.red.shade500,
-              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+              // borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const Text(
               ethCheckGoEnv,
@@ -173,30 +248,37 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 color: Colors.green,
                 backgroundColor: Colors.black,
                 fontStyle: FontStyle.italic,
-                fontSize: 20.0,
+                fontSize: 24.0,
               ),
             ),
           ),
           //example code widget code only
-          //greenscreen with image
+          //greenscreen border
           Container(
             padding: const EdgeInsets.all(8.0),
             // remove height aut config
             // width: 50.0,
             // height: 260.0,
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               // image: DecorationImage(image: AssetImage(_kAsset2)),
+              border: Border.all(
+                width: 10.0,
+                color: Colors.green,
+              ),
               shape: BoxShape.rectangle,
               // color: Colors.green.shade600,
               color: Colors.black,
-              borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const SelectableText(
-              ethGoHello,
+              goHelloCode,
               textAlign: TextAlign.left,
-              // showCursor: true,
-              // cursorColor: Colors.red,
-              // cursorHeight: 2.0,
+              showCursor: true,
+              autofocus: true,
+              cursorColor: Colors.green,
+              // selectionControls: ,
+              // onTap: () =>,
+              // on tap either open https://play.golang.com or copy to clipboard
               style: TextStyle(
                 color: Colors.green,
                 backgroundColor: Colors.black,
@@ -212,14 +294,18 @@ class GoSyncScrollbar1 extends StatelessWidget {
             width: 50.0,
             height: 200.0,
             decoration: const BoxDecoration(
+              // border: Border.all(
+              //   width: 10.0,
+              //   color: Colors.green,
+              // ),
               // image: DecorationImage(image: AssetImage(_kAsset2)),
               shape: BoxShape.rectangle,
               // color: Colors.green,
               color: Colors.black,
-              borderRadius: BorderRadius.all(Radius.circular(8.0)),
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const SelectableText(
-              ethGoHello,
+              goHelloCode,
               textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.yellow,
@@ -436,7 +522,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
           const SelectableText(
-            ethGoHello,
+            goHelloCode,
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.blue,
@@ -1062,3 +1148,21 @@ Future<void> _ethLightChainSync() async {
     throw "could not launch $_ethLightChainSync";
   }
 }
+
+// final Uri _url = Uri.parse('https://flutter.dev');
+// new links 2024.01
+final Uri _urlGolangDL = Uri.parse('https://go.dev/dl');
+// final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
+Future<void> _launchGolangDLUrl() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGolangDL)) {
+    throw Exception('Could not launch $_urlGolangDL');
+  }
+}
+
+// Future<void> _launchGolangDLUrl() async {
+//   if (!await launchUrl(_url)) {
+//     throw Exception('Could not launch $_url');
+//   }
+// }
