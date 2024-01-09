@@ -1,6 +1,6 @@
-// import 'package:flutter/material.dart';
-// import './gosync_text.dart';
+import 'package:flutter/material.dart';
 import 'dart:async';
+// import './gosync_text.dart';
 // import 'dart:html';
 
 // import 'package:flutter/material.dart';
@@ -19,6 +19,53 @@ final Uri _url = Uri.parse('https://flutter.dev');
 // Future<void> _launchUrl() async {
 //   if (!await launchUrl(_url)) {
 //     throw "could not luanch $_url";
+//   }
+// }
+
+final Uri _uriGolangDL = Uri.https("go.dev", "dl");
+final Uri _uriGolangMain = Uri.https("go.dev");
+final Uri _launchLightChainSync =
+    Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
+
+Future<void> _launchGolangDL() async {
+  print("customer left app to go.dev/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_uriGolangDL)) {
+    throw "could not launch $_launchGolangDL";
+  }
+}
+
+Future<void> _launchGolangMainWebsite() async {
+  debugPrint("customer left app to go.dev at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_uriGolangMain)) {
+    throw "could not luanch $_uriGolangMain";
+  }
+}
+
+Future<void> _ethLightChainSync() async {
+  print("customer left app to eth.dev at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_launchLightChainSync)) {
+    throw "could not launch $_ethLightChainSync";
+  }
+}
+
+// final Uri _url = Uri.parse('https://flutter.dev');
+// new links 2024.01
+final Uri _urlGolangDL = Uri.parse('https://go.dev/dl');
+// final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
+Future<void> _launchGolangDLUrl() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGolangDL)) {
+    throw Exception('Could not launch $_urlGolangDL');
+  }
+}
+
+// Future<void> _launchGolangDLUrl() async {
+//   if (!await launchUrl(_url)) {
+//     throw Exception('Could not launch $_url');
 //   }
 // }
 

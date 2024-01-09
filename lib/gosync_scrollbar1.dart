@@ -1,9 +1,13 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 // import 'package:async/async.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './gosync_text.dart';
-import './gosync_urllinks.dart';
+// import './gosync_urllinks.dart';
+// import 'dart:html';
 
 class GoSyncScrollbar1 extends StatelessWidget {
   const GoSyncScrollbar1({super.key});
@@ -72,7 +76,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              ethInstallGolandHeading,
+              // ethInstallGolandHeading,
+              "FlutterBeads Golang Install on Windows Linux Apple",
+
               textAlign: TextAlign.center,
               style: TextStyle(
                 // color: Colors.blue[900],
@@ -102,9 +108,12 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const Text(
-              "FlutterBeads",
+              "FlutterBeads Golang Install on Windows Linux Apple",
               textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 34.0, color: Colors.red),
+              style: TextStyle(
+                  fontSize: 34.0,
+                  color: Colors.red,
+                  fontWeight: FontWeight.bold),
               // selectionColor: Colors.green,
             ),
           ),
@@ -146,12 +155,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
                     duration: Duration(milliseconds: 1500),
                   ),
                 );
-                //   (link) async {
-                // if (!await launchUrl(Uri.parse(link.url))) {
-                //   throw Exception('Could not launch ${link.url}');
-                // }
-                //   };},),)
-                // _launchGolangDLUrl
               },
               // implement the image with Ink.image
               child: Ink.image(
@@ -210,12 +213,12 @@ class GoSyncScrollbar1 extends StatelessWidget {
             width: 450.0,
             // fit:
           ),
-          Image.asset(
-            _kAsset32,
-            // height: 200.0,
-            // width: 300.0,
-            // fit:
-          ),
+          // Image.asset(
+          //   _kAsset32,
+          //   // height: 200.0,
+          //   // width: 300.0,
+          //   // fit:
+          // ),
 
           // convert this to ledgeable code with << >>
           const SelectableText(
@@ -252,10 +255,10 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          //example code widget code only
-          //greenscreen border
+          //main example code widget selectable code only. greenscreen border
           Container(
             padding: const EdgeInsets.all(8.0),
+            clipBehavior: Clip.hardEdge,
             // remove height aut config
             // width: 50.0,
             // height: 260.0,
@@ -276,9 +279,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
               showCursor: true,
               autofocus: true,
               cursorColor: Colors.green,
-              // selectionControls: ,
-              // onTap: () =>,
-              // on tap either open https://play.golang.com or copy to clipboard
+              // cursorWidth: 3.0,
+              // cursorHeight: 3.0,
+              // cursorRadius: Radius.circular(8.0),
+              enableInteractiveSelection: true,
+              // maxLines: 2,
               style: TextStyle(
                 color: Colors.green,
                 backgroundColor: Colors.black,
@@ -288,12 +293,92 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
           const Padding(padding: EdgeInsets.all(8.0)),
+          // Column(
+          //   children: [
+          //     // FloatingActionButton.extended(onPressed: onPressed, label: label),
+          //     FloatingActionButton(
+          //       onPressed: () {},
+          //       child: const Icon(Icons.copy),
+          //     ),
+          Container(
+            padding: const EdgeInsets.all(8.0),
+            decoration: BoxDecoration(
+              // image: DecorationImage(image: AssetImage(_kAsset2)),
+              border: Border.all(
+                width: 10.0,
+                color: Colors.green,
+              ),
+              shape: BoxShape.rectangle,
+              // color: Colors.green.shade600,
+              color: Colors.black,
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            ),
+            child: Column(
+              children: [
+                // FloatingActionButton
+                const SelectableText(
+                  goHelloCode,
+                  textAlign: TextAlign.left,
+                  showCursor: true,
+                  autofocus: true,
+                  cursorColor: Colors.green,
+                  // cursorWidth: 3.0,
+                  // cursorHeight: 3.0,
+                  // cursorRadius: Radius.circular(8.0),
+                  enableInteractiveSelection: true,
+                  // maxLines: 2,
+                  style: TextStyle(
+                    color: Colors.green,
+                    backgroundColor: Colors.black,
+                    fontStyle: FontStyle.italic,
+                    fontSize: 20.0,
+                  ),
+                ),
+                FloatingActionButton(
+                  // onPressed: () {debugPrint('that is a print');},
+                  onPressed: () {
+                    Clipboard.setData(const ClipboardData(text: goHelloCode));
+                  },
+                  child: const Icon(Icons.copy),
+                ),
+              ],
+            ),
+            // ),
+            // ],
+          ),
+
+          const Padding(padding: EdgeInsets.all(8.0)),
+          // column with  copy paste.
+          Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                GestureDetector(
+                  child: const SelectableText('copy'),
+                  onLongPress: () {
+                    Clipboard.setData(const ClipboardData(text: 'copys'));
+                    //   key?.current.State.showSnackBar(
+                    //  const SnackBar(content: Text("Copied to Clipboard"),));
+                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                      content: Text('goodbye!'),
+                      duration: Duration(milliseconds: 1500),
+                    ));
+                  },
+                ),
+                const TextField(
+                    decoration: InputDecoration(hintText: "Paste Here")),
+              ]),
+
+          // );
+
           //  2nd container code widget
           Container(
+            // FloatingActionButton(onPressed: onPressed)
+            // child: FloatingActionButton.large(onPressed: ) //onPressed)
             padding: const EdgeInsets.all(8.0),
             width: 50.0,
             height: 200.0,
             decoration: const BoxDecoration(
+              // new FloatingActionButton(onPressed: onPressed)
               // border: Border.all(
               //   width: 10.0,
               //   color: Colors.green,
@@ -302,10 +387,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
               shape: BoxShape.rectangle,
               // color: Colors.green,
               color: Colors.black,
-              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+              borderRadius: BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const SelectableText(
               goHelloCode,
+              maxLines: 3,
               textAlign: TextAlign.left,
               style: TextStyle(
                 color: Colors.yellow,
