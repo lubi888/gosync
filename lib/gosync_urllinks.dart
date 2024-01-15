@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
+// import './gosync_scrollbar1.dart';
 // import './gosync_text.dart';
 // import 'dart:html';
 
@@ -10,7 +11,7 @@ import 'dart:async';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_web_browser/flutter_web_browser.dart';
 
-final Uri _url = Uri.parse('https://flutter.dev');
+// final Uri _url = Uri.parse('https://flutter.dev');
 // final Uri _urlEthereumOrgLightChain =
 //     Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
 
@@ -22,18 +23,32 @@ final Uri _url = Uri.parse('https://flutter.dev');
 //   }
 // }
 
-final Uri _uriGolangDL = Uri.https("go.dev", "dl");
+// final Uri _url = Uri.parse('https://flutter.dev');
+// new links 2024.01
+final Uri _urlGolangDL = Uri.parse('https://go.dev/dl');
+// final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
+
+void _launchGolangDLUrl() {}
+Future<void> _launchGolangDLUrl() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGolangDL)) {
+    throw Exception('Could not launch $_urlGolangDL');
+  }
+}
+
+// final Uri _uriGolangDL = Uri.https("go.dev", "dl");
 final Uri _uriGolangMain = Uri.https("go.dev");
 final Uri _launchLightChainSync =
     Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
 
-Future<void> _launchGolangDL() async {
-  print("customer left app to go.dev/dl at");
-  print(TimeOfDay.now());
-  if (!await launchUrl(_uriGolangDL)) {
-    throw "could not launch $_launchGolangDL";
-  }
-}
+// Future<void> _launchGolangDLUrl() async {
+//   print("customer left app to go.dev/dl at");
+//   print(TimeOfDay.now());
+//   if (!await launchUrl(_uriGolangDL)) {
+//     throw "could not launch $_launchGolangDL";
+//   }
+// }
 
 Future<void> _launchGolangMainWebsite() async {
   debugPrint("customer left app to go.dev at");

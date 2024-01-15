@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 // import 'package:async/async.dart';
@@ -258,8 +256,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //main example code widget selectable code only. greenscreen border
           Container(
             padding: const EdgeInsets.all(8.0),
-            clipBehavior: Clip.hardEdge,
-            // remove height aut config
             // width: 50.0,
             // height: 260.0,
             decoration: BoxDecoration(
@@ -293,13 +289,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
           const Padding(padding: EdgeInsets.all(8.0)),
-          // Column(
-          //   children: [
-          //     // FloatingActionButton.extended(onPressed: onPressed, label: label),
-          //     FloatingActionButton(
-          //       onPressed: () {},
-          //       child: const Icon(Icons.copy),
-          //     ),
           Container(
             padding: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(
@@ -314,11 +303,63 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: Column(
+              // mainAxisAlignment: MainAxisAlignment.start,
+              // mainAxisSize: MainAxisSize.max,
               children: [
                 // FloatingActionButton
+                // MainAxisAlignment MainAxisAlignment.max,
+
                 const SelectableText(
                   goHelloCode,
                   textAlign: TextAlign.left,
+                  showCursor: true,
+                  autofocus: true,
+                  cursorColor: Colors.green,
+                  // cursorWidth: 3.0,
+                  // cursorHeight: 3.0,
+                  // cursorRadius: Radius.circular(8.0),
+                  enableInteractiveSelection: true,
+                  // maxLines: 2,
+                  style: TextStyle(
+                    color: Colors.green,
+                    backgroundColor: Colors.black,
+                    fontStyle: FontStyle.italic,
+                    fontSize: 20.0,
+                  ),
+                ),
+                FloatingActionButton(
+                  // onPressed: () {debugPrint('that is a print');},
+                  onPressed: () {
+                    Clipboard.setData(const ClipboardData(text: goHelloCode));
+                  },
+                  child: const Icon(Icons.copy),
+                ),
+              ],
+            ),
+          ),
+          // 3rd container eg green box
+          Container(
+            padding: const EdgeInsets.all(8.0),
+            decoration: BoxDecoration(
+              // image: DecorationImage(image: AssetImage(_kAsset2)),
+              border: Border.all(
+                width: 10.0,
+                color: Colors.green,
+              ),
+              shape: BoxShape.rectangle,
+              // color: Colors.green.shade600,
+              color: Colors.black,
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            ),
+            child: Column(
+              // mainAxisAlignment: ,
+              mainAxisAlignment: MainAxisAlignment.start,
+              // mainAxisSize: MainAxisSize.max,
+              children: [
+                const SelectableText(
+                  goHelloCode,
+                  textAlign: TextAlign.left,
+                  // selectionWidthStyle: ui.BoxWidthStyle,
                   showCursor: true,
                   autofocus: true,
                   cursorColor: Colors.green,
@@ -368,22 +409,12 @@ class GoSyncScrollbar1 extends StatelessWidget {
                     decoration: InputDecoration(hintText: "Paste Here")),
               ]),
 
-          // );
-
           //  2nd container code widget
           Container(
-            // FloatingActionButton(onPressed: onPressed)
-            // child: FloatingActionButton.large(onPressed: ) //onPressed)
             padding: const EdgeInsets.all(8.0),
             width: 50.0,
             height: 200.0,
             decoration: const BoxDecoration(
-              // new FloatingActionButton(onPressed: onPressed)
-              // border: Border.all(
-              //   width: 10.0,
-              //   color: Colors.green,
-              // ),
-              // image: DecorationImage(image: AssetImage(_kAsset2)),
               shape: BoxShape.rectangle,
               // color: Colors.green,
               color: Colors.black,
@@ -1206,6 +1237,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
   }
 }
 
+// void _launchGolangDLUrl() {
+// }
+
 final Uri _uriGolangDL = Uri.https("go.dev", "dl");
 final Uri _uriGolangMain = Uri.https("go.dev");
 final Uri _launchLightChainSync =
@@ -1238,7 +1272,7 @@ Future<void> _ethLightChainSync() async {
 // final Uri _url = Uri.parse('https://flutter.dev');
 // new links 2024.01
 final Uri _urlGolangDL = Uri.parse('https://go.dev/dl');
-// final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
+// // final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
 Future<void> _launchGolangDLUrl() async {
   debugPrint("customer left app to golang.org/dl at");
   print(TimeOfDay.now());
