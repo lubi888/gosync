@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240115 mobi ";
+const String goSyncTitle = "goSync.go 20240119 mobi ";
 const String home = "home";
 const String gocode = "golang installation";
 const String online = "online community";
