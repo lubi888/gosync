@@ -51,14 +51,38 @@ class GoSyncScrollbar1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('scrollbar1 loaded install Golang');
+    // const snackBar = SnackBar(
+    //   backgroundColor: Colors.green,
+    //   duration: Duration(seconds: 3),
+    //   content: Text('Yay! A SnackBar! Code copied to clipboard!'),
+    // );                FloatingActionButtonLocation.centerTop,
+    // FloatingActionButtonLocation.endTop;
 
     ScrollController scrollBarController = ScrollController();
+    // var tooltipCopy = "Copy code to clipboard";
+    const snackBarGoCodeCopy = SnackBar(
+      backgroundColor: Colors.green,
+      duration: Duration(seconds: 3),
+      content: Text(
+        'Yay! Go code copied to clipboard!',
+        textAlign: TextAlign.center,
+        style: TextStyle(fontSize: 22.0),
+      ),
+    );
+
+    const snackBarGoodbye = SnackBar(
+      backgroundColor: Colors.green,
+      content: Text('Thanks for visiting goSync. Goodbye!',
+          textAlign: TextAlign.center, style: TextStyle(fontSize: 22.0)),
+      duration: Duration(seconds: 3),
+    );
+
     return Scrollbar(
       controller: scrollBarController,
       child: ListView(
         controller: scrollBarController,
         children: <Widget>[
-          //header bar 'install goland'
+          //header bar 'install golang'
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
@@ -83,6 +107,134 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 color: Colors.blue,
                 // backgroundColor: Color.fromARGB(255, 207, 160, 17),
                 backgroundColor: Colors.amber,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // standard padding
+          const Padding(padding: EdgeInsets.all(8.0)),
+          //header bar 'install golang'
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 80.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.yellow,
+              ),
+              shape: BoxShape.rectangle,
+              color: Colors.red.shade500,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              // ethInstallGolandHeading,
+              "Golang Install on Windows Apple Linux",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                // color: Colors.blue[900],
+                color: Colors.yellow,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+                backgroundColor: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // standard padding
+          const Padding(padding: EdgeInsets.all(8.0)),
+          //header bar 'install golang'
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 80.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.yellow,
+              ),
+              shape: BoxShape.rectangle,
+              color: Colors.red.shade500,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              // ethInstallGolandHeading,
+              "Golang Install on Windows Apple Linux",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                // color: Colors.blue[900],
+                color: Colors.yellow,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+                backgroundColor: Colors.black,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // standard padding
+          const Padding(padding: EdgeInsets.all(8.0)),
+          //header bar 'install golang'
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 80.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.green,
+              ),
+              shape: BoxShape.rectangle,
+              color: Colors.amber,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              // ethInstallGolandHeading,
+              "Golang Install on Windows Apple Linux",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                // color: Colors.blue[900],
+                color: Colors.yellow,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+                backgroundColor: Colors.red,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+          // standard padding
+          const Padding(padding: EdgeInsets.all(8.0)),
+
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            width: 300.0,
+            height: 80.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.green,
+              ),
+              shape: BoxShape.rectangle,
+              color: Colors.amber,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              // ethInstallGolandHeading,
+              "Golang Install on Windows Apple Linux",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                // color: Colors.blue[900],
+                color: Colors.red,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+                backgroundColor: Colors.yellow,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -144,15 +296,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // display a snackbar on tap
               onTap: () {
                 debugPrint('gopher image inkwell tapped');
+                // ScaffoldMessenger.of(context).clearSnackBars();
+                ScaffoldMessenger.of(context)
+                    .showSnackBar(snackBarGoodbye); // const SnackBar(
                 //launch golang.org || go.dev
                 _launchGolangDLUrl();
-                // ScaffoldMessenger.of(context).clearSnackBars();
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('goodbye!'),
-                    duration: Duration(milliseconds: 1500),
-                  ),
-                );
               },
               // implement the image with Ink.image
               child: Ink.image(
@@ -289,6 +437,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
           const Padding(padding: EdgeInsets.all(8.0)),
+          // 2nd greenterm with copy fab.
           Container(
             padding: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(
@@ -303,12 +452,12 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               // mainAxisAlignment: MainAxisAlignment.start,
               // mainAxisSize: MainAxisSize.max,
               children: [
                 // FloatingActionButton
                 // MainAxisAlignment MainAxisAlignment.max,
-
                 const SelectableText(
                   goHelloCode,
                   textAlign: TextAlign.left,
@@ -328,17 +477,33 @@ class GoSyncScrollbar1 extends StatelessWidget {
                   ),
                 ),
                 FloatingActionButton(
-                  // onPressed: () {debugPrint('that is a print');},
+                  // floatingActionButtonLocation: FloatingActionButtonLocation.startTop,
+                  // shape: ,
+                  // elevation: 2.0,
+                  backgroundColor: Colors.black,
+                  foregroundColor: Colors.green,
+                  splashColor: Colors.green,
+                  tooltip: tooltipCopy,
+                  hoverColor: Colors.lightGreen,
                   onPressed: () {
                     Clipboard.setData(const ClipboardData(text: goHelloCode));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(snackBarGoCodeCopy);
                   },
-                  child: const Icon(Icons.copy),
+                  child: const Icon(
+                    Icons.copy,
+                    // semanticLabel: "copy code",
+                  ),
                 ),
               ],
             ),
           ),
+
+          const Padding(padding: EdgeInsets.all(8.0)),
           // 3rd container eg green box
           Container(
+            // FloatingActionButtonLocation.endTop;
+
             padding: const EdgeInsets.all(8.0),
             decoration: BoxDecoration(
               // image: DecorationImage(image: AssetImage(_kAsset2)),
@@ -363,11 +528,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
                   showCursor: true,
                   autofocus: true,
                   cursorColor: Colors.green,
-                  // cursorWidth: 3.0,
-                  // cursorHeight: 3.0,
-                  // cursorRadius: Radius.circular(8.0),
                   enableInteractiveSelection: true,
-                  // maxLines: 2,
                   style: TextStyle(
                     color: Colors.green,
                     backgroundColor: Colors.black,
@@ -375,17 +536,77 @@ class GoSyncScrollbar1 extends StatelessWidget {
                     fontSize: 20.0,
                   ),
                 ),
+                // FloatingActionButtonLocation.centerTop,
+                // FloatingActionButtonLocation.endTop(
+                // static const
+                // FloatingActionButtonLocation endTop = _EndTopFabLocation();
+
                 FloatingActionButton(
                   // onPressed: () {debugPrint('that is a print');},
                   onPressed: () {
                     Clipboard.setData(const ClipboardData(text: goHelloCode));
+                    ScaffoldMessenger.of(context)
+                        .showSnackBar(snackBarGoCodeCopy);
+                    // _launchPlayGolangUrl();
+                    _launchPlayGolangHelloCode();
                   },
-                  child: const Icon(Icons.copy),
+                  child: const Icon(Icons.wifi),
                 ),
               ],
             ),
             // ),
             // ],
+          ),
+
+          const Padding(padding: EdgeInsets.all(8.0)),
+          // 4th container eg white box terminal Windows
+          //windows Power Shell design widjet
+          Container(
+            padding: const EdgeInsets.all(8.0),
+            // width: 50.0,
+            // height: 260.0,
+            decoration: BoxDecoration(
+              // image: DecorationImage(image: AssetImage(_kAsset2)),
+              border: Border.all(
+                width: 10.0,
+                color: Colors.white,
+              ),
+              shape: BoxShape.rectangle,
+              // color: Colors.green.shade600,
+              color: Colors.black,
+              borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+            ),
+            child: Linkify(
+              onOpen: (link) async {
+                if (!await launchUrl(Uri.parse(link.url))) {
+                  throw Exception('Could not launch ${link.url}');
+                }
+              },
+              text: goPowerShell,
+              textAlign: TextAlign.left,
+              style: const TextStyle(
+                color: Colors.white,
+                backgroundColor: Colors.black,
+                fontStyle: FontStyle.normal,
+                fontSize: 20.0,
+                // fontFamily: Fami),
+              ),
+            ),
+          ),
+          Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text: goPowerShell,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.white,
+              // backgroundColor: Colors.amber,
+              fontStyle: FontStyle.normal,
+              fontSize: 25.0,
+            ),
           ),
 
           const Padding(padding: EdgeInsets.all(8.0)),
@@ -1212,25 +1433,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
               // );
             },
           ),
-          // Container(
-          //   width: 150.0,
-          //   height: 200.0,
-          //   decoration: const BoxDecoration(
-          //     shape: BoxShape.circle,
-          //     image: DecorationImage(
-          //       image: AssetImage(_kAssets27),
-          //     ),
-          //   ),
-          // ),
-          //new btn for go.dev main & dl page.
-          // Container(
-          //   child: const Center(
-          //     child: ElevatedButton(
-          //         onPressed: _launchGolangMainWebsite,
-          //         child: Text('go.dev main website')),
-          //   ),
-          // ),
-          // Container(
         ],
       ),
     );
@@ -1278,6 +1480,26 @@ Future<void> _launchGolangDLUrl() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGolangDL)) {
     throw Exception('Could not launch $_urlGolangDL');
+  }
+}
+
+// final Uri _urlPlayGolang = Uri.parse('https://play.golang.com/');
+final Uri _urlPlayGolangHelloCode =
+    Uri.parse('https://play.golang.com/p/ynTWOuNY1Dz');
+// // final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
+// Future<void> _launchPlayGolangUrl() async {
+//   debugPrint("customer left app to golang.org/dl at");
+//   print(TimeOfDay.now());
+//   if (!await launchUrl(_urlPlayGolang)) {
+//     throw Exception('Could not launch $_urlPlayGolang');
+//   }
+// }
+
+Future<void> _launchPlayGolangHelloCode() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlPlayGolangHelloCode)) {
+    throw Exception('Could not launch $_urlPlayGolangHelloCode');
   }
 }
 

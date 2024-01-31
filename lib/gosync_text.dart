@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240119 mobi ";
+const String goSyncTitle = "goSync.go 20240131 mobi ";
 const String home = "home";
 const String gocode = "golang installation";
 const String online = "online community";
@@ -37,6 +37,8 @@ const String ethInstallGethHeading = 'Install Geth - GoEthereum';
 const String ethInstallContract =
     "dapp readmin\\ndifi decentri phi  \\nhow to end and ethereum smart contract etc";
 
+// const String tooltipCopy = "copy this to clipboard";
+var tooltipCopy = "Copy code to clipboard";
 // const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String ethEtherscanIOPrice = "https://etherscan.io/chart/etherprice";
 
@@ -184,6 +186,14 @@ const String goHelloCode = ('package main\n\n'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
     // 'fmt.Printf(\"isn\'t this exciting?!\")'
     // '\n}'
+    );
+
+const String goPowerShell = ('Windows PowerShell\n\n'
+        'Copyright (C) Microsoft Corporation. All rights reserved.\n\n'
+        'Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\n\n'
+        'PS C:\\Users\\gosync>go env\n\n'
+        'PS C:\\Users\\gosync>'
+    //
     );
 
 const String ethGoBuild =
