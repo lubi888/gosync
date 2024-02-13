@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240131 mobi ";
+const String goSyncTitle = "goSync.go 20240213 mobi ";
 const String home = "home";
 const String gocode = "golang installation";
 const String online = "online community";
@@ -17,6 +17,7 @@ const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String gosyncEmailAdress =
     "comments, questions, bugs contact tortek2023@gmail.com";
 
+const String goSyncHeading = 'Golang Install on Windows, Apple, Linux ';
 const String ethEhSyncHeading = 'Ethereum Synchronisation';
 const String ethInstallGolandHeading = 'Install Golang';
 const String ethInstallGolangHeading = 'Install Go';
@@ -180,8 +181,8 @@ const String ethGoTestYourInstallation =
 const String goHelloCode = ('package main\n\n'
         'import "fmt"\n\n'
         'func main() {\n'
-        '\t\t\t\tfmt.Printf("hell golang\\n")\n'
-        '\t\t\t\tfmt.Println("hello golang on windows|apple|linux.")\n'
+        '\t\t\t\tfmt.Printf("hello golang\\n")\n'
+        '\t\t\t\tfmt.Println("hello golang on windows, apple, linux.")\n'
         '}'
     // 'fmt.Printf(\"hello again golang on windows|linux|mac.\\n\")\n'
     // 'fmt.Printf(\"isn\'t this exciting?!\")'

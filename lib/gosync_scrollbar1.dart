@@ -51,15 +51,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('scrollbar1 loaded install Golang');
-    // const snackBar = SnackBar(
-    //   backgroundColor: Colors.green,
-    //   duration: Duration(seconds: 3),
-    //   content: Text('Yay! A SnackBar! Code copied to clipboard!'),
-    // );                FloatingActionButtonLocation.centerTop,
-    // FloatingActionButtonLocation.endTop;
 
     ScrollController scrollBarController = ScrollController();
-    // var tooltipCopy = "Copy code to clipboard";
     const snackBarGoCodeCopy = SnackBar(
       backgroundColor: Colors.green,
       duration: Duration(seconds: 3),
@@ -82,30 +75,28 @@ class GoSyncScrollbar1 extends StatelessWidget {
       child: ListView(
         controller: scrollBarController,
         children: <Widget>[
-          //header bar 'install golang'
+          //1st header bar 'install golang'
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
+            // width: 300.0,
             height: 80.0,
             decoration: BoxDecoration(
               border: Border.all(
-                // style: BorderStyle.none  ,
                 width: 10.0,
                 color: Colors.yellow,
               ),
               shape: BoxShape.rectangle,
-              color: Colors.red.shade500,
+              color: Colors.red,
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              // ethInstallGolandHeading,
-              "FlutterBeads Golang Install on Windows Linux Apple",
-
+              goSyncHeading,
               textAlign: TextAlign.center,
+              overflow: TextOverflow.fade,
               style: TextStyle(
-                // color: Colors.blue[900],
+                overflow: TextOverflow.clip,
+                textBaseline: TextBaseline.alphabetic,
                 color: Colors.blue,
-                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
                 backgroundColor: Colors.amber,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
@@ -115,11 +106,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          //header bar 'install golang'
+          //2nd header bar 'install golang'
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
-            height: 80.0,
+            height: 84.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -131,8 +122,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              // ethInstallGolandHeading,
-              "Golang Install on Windows Apple Linux",
+              goSyncHeading,
               textAlign: TextAlign.center,
               style: TextStyle(
                 // color: Colors.blue[900],
@@ -147,11 +137,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          //header bar 'install golang'
+          //3rd header bar 'install golang'. black background
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
-            height: 80.0,
+            height: 84.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -159,7 +149,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 color: Colors.yellow,
               ),
               shape: BoxShape.rectangle,
-              color: Colors.red.shade500,
+              // color: Colors.red.shade500,
+              color: Colors.black,
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
@@ -1485,7 +1476,7 @@ Future<void> _launchGolangDLUrl() async {
 
 // final Uri _urlPlayGolang = Uri.parse('https://play.golang.com/');
 final Uri _urlPlayGolangHelloCode =
-    Uri.parse('https://play.golang.com/p/ynTWOuNY1Dz');
+    Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
 // // final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
 // Future<void> _launchPlayGolangUrl() async {
 //   debugPrint("customer left app to golang.org/dl at");
