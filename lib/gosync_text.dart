@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240213 mobi ";
+const String goSyncTitle = "goSync.go 20240214 mobi ";
 const String home = "home";
 const String gocode = "golang installation";
 const String online = "online community";
@@ -40,6 +40,8 @@ const String ethInstallContract =
 
 // const String tooltipCopy = "copy this to clipboard";
 var tooltipCopy = "Copy code to clipboard";
+var tooltipCopyAndWeb =
+    "Copy code to clipboard and open code in the Go Playground.";
 // const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String ethEtherscanIOPrice = "https://etherscan.io/chart/etherprice";
 

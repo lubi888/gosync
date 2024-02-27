@@ -123,6 +123,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             child: const Text(
               goSyncHeading,
+              overflow: TextOverflow.fade,
               textAlign: TextAlign.center,
               style: TextStyle(
                 // color: Colors.blue[900],
@@ -141,7 +142,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
-            height: 84.0,
+            // height: 84.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -155,8 +156,10 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
             child: const Text(
               // ethInstallGolandHeading,
-              "Golang Install on Windows Apple Linux",
+              // "Golang Install on Windows Apple Linux",
+              goSyncHeading,
               textAlign: TextAlign.center,
+              overflow: TextOverflow.visible,
               style: TextStyle(
                 // color: Colors.blue[900],
                 color: Colors.yellow,
@@ -170,7 +173,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          //header bar 'install golang'
+          // 4th header bar 'install golang'
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
@@ -186,14 +189,14 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              // ethInstallGolandHeading,
-              "Golang Install on Windows Apple Linux",
+              ethInstallGolandHeading,
+              // "Golang Install on Windows Apple Linux",
               textAlign: TextAlign.center,
               style: TextStyle(
                 // color: Colors.blue[900],
-                color: Colors.yellow,
+                color: Colors.green,
                 // backgroundColor: Color.fromARGB(255, 207, 160, 17),
-                backgroundColor: Colors.red,
+                // backgroundColor: Colors.red,
                 fontStyle: FontStyle.italic,
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
@@ -202,7 +205,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-
+          //5th container
           Container(
             padding: const EdgeInsets.all(15.0),
             width: 300.0,
@@ -234,7 +237,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          // flutter beads border banner
+          //6th continaer  flutter beads border banner
           Container(
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
@@ -249,7 +252,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: const BorderRadius.all(Radius.circular(8.0)),
             ),
             child: const Text(
-              "FlutterBeads Golang Install on Windows Linux Apple",
+              "FlutterBeads Golang Install on Windows, Linux, Apple",
               textAlign: TextAlign.center,
               style: TextStyle(
                   fontSize: 34.0,
@@ -534,6 +537,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
 
                 FloatingActionButton(
                   // onPressed: () {debugPrint('that is a print');},
+                  backgroundColor: Colors.black,
+                  foregroundColor: Colors.green,
+                  splashColor: Colors.green,
+                  tooltip: tooltipCopyAndWeb,
+                  hoverColor: Colors.lightGreen,
                   onPressed: () {
                     Clipboard.setData(const ClipboardData(text: goHelloCode));
                     ScaffoldMessenger.of(context)
@@ -541,7 +549,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
                     // _launchPlayGolangUrl();
                     _launchPlayGolangHelloCode();
                   },
-                  child: const Icon(Icons.wifi),
+                  child: const Icon(Icons.web),
                 ),
               ],
             ),
