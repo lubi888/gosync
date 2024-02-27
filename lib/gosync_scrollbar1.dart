@@ -4,12 +4,10 @@ import 'package:flutter/services.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import './gosync_text.dart';
-// import './gosync_urllinks.dart';
-// import 'dart:html';
 
 class GoSyncScrollbar1 extends StatelessWidget {
   const GoSyncScrollbar1({super.key});
-  // print(myLocale.toString() + ' on Scrollbar2');
+  // print(myLocale.toString() + ' on Scrollbar1');
   final String _kAsset2 = 'assets/images/go-download-website.png';
   final String _kAsset3 = 'assets/images/footer-gopher.jpg';
   final String _kAsset4 = 'assets/images/go-env.png';
