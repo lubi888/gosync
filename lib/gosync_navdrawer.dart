@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:url_launcher/url_launcher.dart';
+// import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import './gosync_urllinks.dart';
 // import './ethsync_walletdrawer.dart';
 // import './ethsync_barcodescanner.dart';
 // import './ethsync_extendedimage.dart';
@@ -7,7 +10,7 @@ import 'package:flutter/material.dart';
 // import './ethsync_scrollbar1.dart';
 
 // import './gosync_scrollbar0.dart';
-// import './gosync_scrollbar1.dart';
+import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
 
 // import './ethsync_scrollbar3.dart';
@@ -17,9 +20,9 @@ String _kAsset0 = 'assets/images/devcon1.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
   const GoSyncNavDrawer({super.key});
-
   @override
   Widget build(BuildContext context) {
+    // Scaffold.of(context).openDrawer();
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
@@ -37,7 +40,8 @@ class GoSyncNavDrawer extends StatelessWidget {
                   fontStyle: FontStyle.italic, color: Colors.yellowAccent),
             ),
           ),
-          // DrawerTheme(data: Colors.blue, child: child)
+          // DrawerTheme(data: Colors.blue, child: child),
+          // List Tile 1
           ListTile(
               leading: const Icon(
                 Icons.account_balance,
@@ -58,6 +62,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => const GoSyncScrollbar2()));
+                // Navigator.pop(context);
               }),
           ListTile(
               leading: const Icon(
@@ -83,27 +88,65 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // context, MaterialPageRoute(builder: (context) => Pesto()));
                 // context, MaterialPageRoute(builder: (context) => Pesto()));
               }),
+          //  ListTile 3 visit Go Play
           ListTile(
               leading: const Icon(
                 Icons.account_balance,
                 color: Colors.redAccent,
               ),
-              title: const Text(
+              title: Text(
                 // 'add eth|etc address - acccount',
-                'visit go playground',
-                style: TextStyle(color: Colors.purpleAccent),
+                // 'visit go playground',
+                // visitGoPlayground,
+                AppLocalizations.of(context)!.visitGoPlayground,
+                style: const TextStyle(color: Colors.purpleAccent),
               ),
               subtitle: const Text(
-                'https://play.golang.com/',
+                // 'https://play.golang.com/',
+                'play.golang.com',
+                // https://go.dev/play/
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.redAccent),
               ),
               trailing: const Icon(Icons.add_alert, color: Colors.purpleAccent),
               onTap: () {
-                //   Navigator.push(
-                //       context,
-                //       MaterialPageRoute(
-                //           builder: (context) => const GoSyncScrollbar2()));
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                _launchPlayGolangHelloCode();
+              }),
+          // list tile 4     go play version 2
+          ListTile(
+              leading: const Icon(
+                Icons.account_balance,
+                color: Colors.teal,
+              ),
+              title: Text(
+                // 'add eth|etc address - acccount',
+                // 'visit go playground',
+                // visitGoPlayground,
+                AppLocalizations.of(context)!.visitGoDevPlay,
+                style: const TextStyle(color: Colors.teal),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'go.dev/play',
+                // https://go.dev/play/
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.white),
+              ),
+              trailing: const Icon(Icons.add_alert, color: Colors.teal),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                _launchPlayGolang();
               }),
           ListTile(
               // leading:
@@ -129,16 +172,17 @@ class GoSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => const GoSyncScrollbar2()));
+                        builder: (context) => const GoSyncScrollbar1()));
                 // MaterialPageRoute(builder: (context) => FirebaseBaby()));
               }),
+          // list tile 4 visit devvest photo album
           ListTile(
               leading: const Icon(
                 Icons.photo_album,
                 color: Colors.orangeAccent,
               ),
               title: const Text(
-                'photos grid list view',
+                'devfest photos view',
                 style: TextStyle(color: Colors.orangeAccent),
               ),
               subtitle: const Text(
@@ -378,3 +422,31 @@ class GoSyncNavDrawer extends StatelessWidget {
     );
   }
 }
+
+final Uri _urlPlayGolangHelloCode =
+    Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
+
+Future<void> _launchPlayGolangHelloCode() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlPlayGolangHelloCode)) {
+    throw Exception('Could not launch $_urlPlayGolangHelloCode');
+  }
+}
+
+final Uri _urlPlayGolang = Uri.parse('https://go.dev/play/');
+
+Future<void> _launchPlayGolang() async {
+  debugPrint("customer left app to golang.org/dl at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlPlayGolang)) {
+    throw Exception('Could not launch $_urlPlayGolang');
+  }
+}
+
+const snackBarGoodbye = SnackBar(
+  backgroundColor: Colors.green,
+  content: Text('Thanks for visiting goSync. Goodbye!',
+      textAlign: TextAlign.center, style: TextStyle(fontSize: 22.0)),
+  duration: Duration(seconds: 3),
+);

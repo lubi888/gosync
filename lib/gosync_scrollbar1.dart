@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 // import 'package:async/async.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:intl/intl.dart';
 import './gosync_text.dart';
 
 class GoSyncScrollbar1 extends StatelessWidget {
@@ -77,7 +80,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(15.0),
             // width: 300.0,
-            height: 80.0,
+            // height: 80.0,
             decoration: BoxDecoration(
               border: Border.all(
                 width: 10.0,
@@ -107,8 +110,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //2nd header bar 'install golang'
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
-            height: 84.0,
+            // width: 300.0,
+            // height: 84.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -139,7 +142,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           //3rd header bar 'install golang'. black background
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
+            // width: 300.0,
             // height: 84.0,
             decoration: BoxDecoration(
               border: Border.all(
@@ -169,13 +172,48 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
-          // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          // 4th header bar 'install golang'
+          //4rd header bar 'install golang'. terminal green with black background
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
-            height: 80.0,
+            // width: 300.0,
+            // height: 84.0,
+            decoration: BoxDecoration(
+              border: Border.all(
+                // style: BorderStyle.none  ,
+                width: 10.0,
+                color: Colors.green,
+              ),
+              shape: BoxShape.rectangle,
+              // color: Colors.red.shade500,
+              color: Colors.black,
+              borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+            ),
+            child: const Text(
+              // ethInstallGolandHeading,
+              // "Golang Install on Windows Apple Linux",
+              goSyncHeading,
+              textAlign: TextAlign.center,
+              overflow: TextOverflow.visible,
+              style: TextStyle(
+                // color: Colors.blue[900],
+                color: Colors.green,
+                // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+                backgroundColor: Colors.black,
+                fontStyle: FontStyle.italic,
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+
+          // standard padding
+          const Padding(padding: EdgeInsets.all(8.0)),
+          // 5th header bar 'install golang'
+          Container(
+            padding: const EdgeInsets.all(15.0),
+            // width: 300.0,
+            // height: 80.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -186,11 +224,12 @@ class GoSyncScrollbar1 extends StatelessWidget {
               color: Colors.amber,
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
-            child: const Text(
-              ethInstallGolandHeading,
+            child:  Text(
+              // ethInstallGolandHeading,
+              AppLocalizations.of(context)!.helloWorld,
               // "Golang Install on Windows Apple Linux",
               textAlign: TextAlign.center,
-              style: TextStyle(
+              style: const TextStyle(
                 // color: Colors.blue[900],
                 color: Colors.green,
                 // backgroundColor: Color.fromARGB(255, 207, 160, 17),
@@ -203,11 +242,11 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          //5th container
+          //6th container
           Container(
             padding: const EdgeInsets.all(15.0),
-            width: 300.0,
-            height: 80.0,
+            // width: 300.0,
+            // height: 80.0,
             decoration: BoxDecoration(
               border: Border.all(
                 // style: BorderStyle.none  ,
@@ -235,7 +274,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           // standard padding
           const Padding(padding: EdgeInsets.all(8.0)),
-          //6th continaer  flutter beads border banner
+          //7th continaer  flutter beads border banner
           Container(
             padding: const EdgeInsets.all(16.0),
             decoration: BoxDecoration(
@@ -1445,7 +1484,7 @@ final Uri _launchLightChainSync =
     Uri.parse('https://ethereum.org/en/developers/docs/nodes-and-clients/');
 
 Future<void> _launchGolangDL() async {
-  print("customer left app to go.dev/dl at");
+  debugPrint("customer left app to go.dev/dl at");
   print(TimeOfDay.now());
   if (!await launchUrl(_uriGolangDL)) {
     throw "could not launch $_launchGolangDL";
@@ -1453,7 +1492,7 @@ Future<void> _launchGolangDL() async {
 }
 
 Future<void> _launchGolangMainWebsite() async {
-  print("customer left app to go.dev at");
+  debugPrint("customer left app to go.dev at");
   print(TimeOfDay.now());
   if (!await launchUrl(_uriGolangMain)) {
     throw "could not luanch $_uriGolangMain";

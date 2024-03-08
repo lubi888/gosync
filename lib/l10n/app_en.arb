@@ -1,0 +1,34 @@
+{
+  "title": "goSync.go 0308",
+  "@title": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  "helloWorld": "hello flutter eng",
+  "@helloWorld": {
+    "description": "hello in each language"
+  },
+  "home": "home",
+  "@home": {
+    "description": "hello in each language"
+  },
+  "golangInstall": "go install",
+  "@golangInstall": {
+    "description": "golang install in respective languages"
+  },
+  "goSyncHeading": "Goland Install on Windows, Apple, Linux in English",
+  "@goSyncHeading": {
+    "description": "headliners"
+  },
+  "danger": "dangr",
+    "@danger": {
+      "description": "danger"
+  },
+  "visitGoPlayground": "visit Go playground",
+    "@visitGoPlayground": {
+      "description": "url link to the Go playground"
+  },
+  "visitGoDevPlay": "visit Go playground 2",
+  "@visitGoDevPlay": {
+    "description": "url link to the Go playground"
+  }
+}

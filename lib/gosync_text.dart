@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
-const String goSyncTitle = "goSync.go 20240228 mobi ";
+const String goSyncTitle = "goSync.go";
 const String home = "home";
 const String gocode = "golang installation";
 const String online = "online community";
@@ -21,7 +21,8 @@ const String goSyncHeading = 'Golang Install on Windows, Apple, Linux ';
 const String ethEhSyncHeading = 'Ethereum Synchronisation';
 const String ethInstallGolandHeading = 'Install Golang';
 const String ethInstallGolangHeading = 'Install Go';
-
+const String visitGoPlayground = "visit Go playground";
+const String visitGoDevPlay = "visit Go playground2";
 const String ethInstallGolangInstallInstructions =
     ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'
         'For windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system.\n'

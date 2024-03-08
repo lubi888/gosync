@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import './gosync_text.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/intl.dart';
 
 // //   // appBar: AppBar(
 // //   // Here we take the value from the GoSyncHome object that was created by
@@ -16,8 +18,10 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    () => Scaffold.of(context).openDrawer();
+    // Scaffold.of(context).openDrawer();
     // return const Placeholder();
-    print("ethsync appbar loaded");
+    debugPrint("ethsync appbar loaded");
     print(TimeOfDay.now());
 
     return AppBar(
@@ -26,30 +30,44 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
       // backgroundColor: Colors.amber,
       // foregroundColor: Colors.red,
       // elevation/: 30.0,
-      title: const Text(
-        goSyncTitle,
+      title: Text(
+        // goSyncTitle,
+        AppLocalizations.of(context)!.title,
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          // color: Colors.blue[900],
+          color: Colors.green,
+          // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+          backgroundColor: Colors.yellow,
+          fontStyle: FontStyle.italic,
+          fontSize: 24.0,
+          fontWeight: FontWeight.bold,
+        ),
       ),
-      bottom: const TabBar(tabs: <Widget>[
+      bottom: TabBar(tabs: <Widget>[
         Tab(
-            icon: Icon(Icons.home, color: Colors.redAccent),
+            icon: const Icon(Icons.home, color: Colors.redAccent),
             child: Align(
               alignment: Alignment.center,
-              child: Text(home),
+              child: Text(
+                  // home
+                  AppLocalizations.of(context)!.home),
             )),
         Tab(
-            icon: Icon(Icons.code, color: Colors.orangeAccent),
+            icon: const Icon(Icons.code, color: Colors.orangeAccent),
             height: 90.0,
             child: Align(
               alignment: Alignment.center,
-              child: Text(gocode),
+              child: Text(
+                  // gocode
+                  AppLocalizations.of(context)!.golangInstall),
               // install golang and geth
             )),
         Tab(
-            icon: Icon(Icons.laptop, color: Colors.greenAccent),
+            icon: const Icon(Icons.laptop, color: Colors.greenAccent),
             child: Align(
               alignment: Alignment.center,
-              child: Text(danger),
-              // presence
+              child: Text(AppLocalizations.of(context)!.danger),
             )),
         // Tab(
         //     child: Align(

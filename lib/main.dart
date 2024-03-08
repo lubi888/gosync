@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:intl/intl.dart';
 import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
-// import './gosync_collapsingappbar.dart';
 
 void main() {
   runApp(const GoSync());
@@ -44,21 +44,38 @@ class GoSync extends StatelessWidget {
         // textSelectionTheme: Colors.purple,
         // Colors.orange,
       ),
+      localizationsDelegates: const [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en'), // English
+        Locale('fr'), // Francais
+        Locale('de'), // Deutsch
+        // Locale('ga'), // Gaeilge
+      ],
       home: const DefaultTabController(
         length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),
           // appBar: GoSyncSliverAppBar(),
           // appBar: CollapsingAppbarPage(),
+          // drawer: GoSyncNavDrawer(),
           drawer: GoSyncNavDrawer(),
+          //  => Scaffold.of(context).openDrawer(),
+          // onDrawerChanged: ,
           // endDrawer: GoSyncOpenDrawer(),
+          // Scaffold.of(context).openDrawer();
           body: GoSyncHome(
             title: goSyncTitle,
           ),
+          //add bottom navigation from top app || side nav drawer.
+          // bottomNavigationBar: GoSyncBottomNavBar(),
+          // drawerDragStartBehavior:
         ),
       ),
-
-      // home: const GoSyncHome(title: 'goSync 221121 pixel 4a'),
     );
   }
 }

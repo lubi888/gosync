@@ -1,5 +1,20 @@
 // import 'package:flutter/material.dart';
 // import 'dart:async';
+// import 'package:url_launcher/url_launcher.dart';
+//
+// final Uri _urlPlayGolangHelloCode =
+// Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
+//
+// Future<void> _launchPlayGolangHelloCode() async {
+//   debugPrint("customer left app to golang.org/dl at");
+//   print(TimeOfDay.now());
+//   if (!await launchUrl(_urlPlayGolangHelloCode)) {
+//     throw Exception('Could not launch $_urlPlayGolangHelloCode');
+//   }
+// }
+
+
+
 // // import './gosync_scrollbar1.dart';
 // // import './gosync_text.dart';
 // // import 'dart:html';
