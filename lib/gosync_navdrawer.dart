@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gosync/gosync_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -16,7 +17,8 @@ import './gosync_scrollbar2.dart';
 // import './ethsync_scrollbar3.dart';
 // import './ethsync_scrollbar4.dart';
 
-String _kAsset0 = 'assets/images/devcon1.png';
+// String _kAsset0 = 'assets/images/devcon1.png';
+String _kAsset1 = 'assets/images/golang_developers.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
   const GoSyncNavDrawer({super.key});
@@ -31,13 +33,15 @@ class GoSyncNavDrawer extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.green,
               image: DecorationImage(
-                image: AssetImage(_kAsset0),
+                image: AssetImage(_kAsset1),
               ),
             ),
             child: const Text(
-              'wallet || drawer widget',
+              drawerHeader,
               style: TextStyle(
-                  fontStyle: FontStyle.italic, color: Colors.yellowAccent),
+                fontStyle: FontStyle.italic,
+                color: Colors.yellowAccent,
+              ),
             ),
           ),
           // DrawerTheme(data: Colors.blue, child: child),

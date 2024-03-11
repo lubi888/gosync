@@ -224,7 +224,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               color: Colors.amber,
               borderRadius: const BorderRadius.all(Radius.circular(25.0)),
             ),
-            child:  Text(
+            child: Text(
               // ethInstallGolandHeading,
               AppLocalizations.of(context)!.helloWorld,
               // "Golang Install on Windows Apple Linux",
@@ -531,7 +531,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
 
           const Padding(padding: EdgeInsets.all(8.0)),
-          // 3rd container eg green box
+          // 3rd container eg green box   copy & open go playland.
           Container(
             // FloatingActionButtonLocation.endTop;
 
@@ -629,6 +629,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          //txt without box
           Linkify(
             onOpen: (link) async {
               if (!await launchUrl(Uri.parse(link.url))) {
@@ -645,76 +646,40 @@ class GoSyncScrollbar1 extends StatelessWidget {
             ),
           ),
 
-          const Padding(padding: EdgeInsets.all(8.0)),
-          // column with  copy paste.
-          Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                GestureDetector(
-                  child: const SelectableText('copy'),
-                  onLongPress: () {
-                    Clipboard.setData(const ClipboardData(text: 'copys'));
-                    //   key?.current.State.showSnackBar(
-                    //  const SnackBar(content: Text("Copied to Clipboard"),));
-                    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-                      content: Text('goodbye!'),
-                      duration: Duration(milliseconds: 1500),
-                    ));
-                  },
-                ),
-                const TextField(
-                    decoration: InputDecoration(hintText: "Paste Here")),
-              ]),
-
-          //  2nd container code widget
-          Container(
-            padding: const EdgeInsets.all(8.0),
-            width: 50.0,
-            height: 200.0,
-            decoration: const BoxDecoration(
-              shape: BoxShape.rectangle,
-              // color: Colors.green,
-              color: Colors.black,
-              borderRadius: BorderRadius.all(Radius.circular(8.0)),
-            ),
-            child: const SelectableText(
-              goHelloCode,
-              maxLines: 3,
-              textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.yellow,
-                backgroundColor: Colors.black,
-                fontStyle: FontStyle.italic,
-                fontSize: 20.0,
-              ),
+          // txt Go Designers
+          //  txt Go programming paradigm
+          Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text: goDesigners,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.white,
+              // backgroundColor: Colors.amber,
+              fontStyle: FontStyle.normal,
+              fontSize: 25.0,
             ),
           ),
-
-          //txt container 1
-          Container(
-              padding: const EdgeInsets.all(15.0),
-              width: 300.0,
-              height: 650.0,
-              decoration: BoxDecoration(
-                shape: BoxShape.rectangle,
-                color: Colors.red.shade500,
-                borderRadius: const BorderRadius.all(Radius.circular(25.0)),
-              ),
-              child: Linkify(
-                onOpen: (link) async {
-                  if (!await launchUrl(Uri.parse(link.url))) {
-                    throw Exception('Could not launch ${link.url}');
-                  }
-                },
-                text: ethInstallGolangInstallInstructions,
-                textAlign: TextAlign.left,
-                linkStyle: const TextStyle(color: Colors.green),
-                style: const TextStyle(
-                  color: Colors.yellow,
-                  fontStyle: FontStyle.normal,
-                  fontSize: 20.0,
-                ),
-              )),
+          // 2nd txt area
+          Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text: goDesigners,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Colors.yellow,
+              // backgroundColor: Colors.amber,
+              fontStyle: FontStyle.normal,
+              fontSize: 25.0,
+            ),
+          ),
+          // try go designers in padding box
           const Padding(padding: EdgeInsets.all(8.0)),
           //coloured, padded container
           Container(
@@ -727,8 +692,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              ethCheckGoHelp,
-              textAlign: TextAlign.left,
+              goDesigners,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.green,
                 fontStyle: FontStyle.normal,
@@ -736,10 +701,64 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+
           // const Padding(padding: EdgeInsets.all(8.0)),
-          //contiane with no size. automatic overflow?
+          //coloured, padded container
+          // Container(
+          //   padding: const EdgeInsets.all(15.0),
+          //   // width: 300.0,
+          //   // height: 250.0,
+          //   decoration: const BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow,
+          //     borderRadius: BorderRadius.all(Radius.circular(25.0)),
+          //   ),
+          //   child: const Text(
+          //     ethCheckGoHelp,
+          //     textAlign: TextAlign.left,
+          //     style: TextStyle(
+          //       color: Colors.green,
+          //       fontStyle: FontStyle.normal,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+          // const Padding(padding: EdgeInsets.all(8.0)),
+          //contiane with no size.
+          // Container(
+          //   padding: const EdgeInsets.all(8.0),
+          //   // width: 300.0,
+          //   // height: 250.0,
+          //   decoration: const BoxDecoration(
+          //     shape: BoxShape.rectangle,
+          //     color: Colors.yellow,
+          //     borderRadius: BorderRadius.all(Radius.circular(25.0)),
+          //   ),
+          //   child: const Text(
+          //     ethCheckGoHelp,
+          //     textAlign: TextAlign.left,
+          //     style: TextStyle(
+          //       color: Colors.green,
+          //       fontStyle: FontStyle.normal,
+          //       fontSize: 20.0,
+          //     ),
+          //   ),
+          // ),
+
+          const Padding(padding: EdgeInsets.all(8.0)),
+          // GO prog paradigm.
+          const SelectableText(
+            goProgrammingParadigm,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: Colors.green,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(8.0)),
           Container(
-            padding: const EdgeInsets.all(8.0),
+            padding: const EdgeInsets.all(15.0),
             // width: 300.0,
             // height: 250.0,
             decoration: const BoxDecoration(
@@ -748,8 +767,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
               borderRadius: BorderRadius.all(Radius.circular(25.0)),
             ),
             child: const Text(
-              ethCheckGoHelp,
-              textAlign: TextAlign.left,
+              goProgrammingParadigm,
+              textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.green,
                 fontStyle: FontStyle.normal,
@@ -757,6 +776,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
               ),
             ),
           ),
+          const Padding(padding: EdgeInsets.all(8.0)),
 
           const SelectableText(
             // Padding(padding: EdgeInsets.all(8.0)) as String,

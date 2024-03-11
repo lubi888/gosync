@@ -1,5 +1,7 @@
 // import 'package:flutter/material.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
+// master text file for transtations using arb files l10n.
+
 const String goSyncTitle = "goSync.go";
 const String home = "home";
 const String gocode = "golang installation";
@@ -13,7 +15,6 @@ const String ethSyncPrimaryGoals =
         '3, The tertiary goal is find golang resources online.');
 
 const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
-
 const String gosyncEmailAdress =
     "comments, questions, bugs contact tortek2023@gmail.com";
 
@@ -23,6 +24,17 @@ const String ethInstallGolandHeading = 'Install Golang';
 const String ethInstallGolangHeading = 'Install Go';
 const String visitGoPlayground = "visit Go playground";
 const String visitGoDevPlay = "visit Go playground2";
+
+//2024
+const String goDesigners =
+    "Go was designed by the esteemed Robert Griesemer, Rob Pike, Ken Thompson";
+const String goProgrammingParadigm =
+    "Multi-paradigm: concurrent imperative, functional, object-oriented";
+// designed by Robert Griesemer, Rob Pike, Ken Thompson
+// Go programming Paradigm:
+//Multi-paradigm: concurrent imperative, functional object-oriented
+const String drawerHeader = "wallet || drawer widget";
+
 const String ethInstallGolangInstallInstructions =
     ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'
         'For windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system.\n'
