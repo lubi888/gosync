@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 0311",
+  "title": "goSync.go 0319",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -30,6 +30,10 @@
   "visitGoDevPlay": "visit Go playground 2",
   "@visitGoDevPlay": {
     "description": "url link to the Go playground"
+  },
+  "drawerHeader" : "Go founders",
+    "@drawerHeader": {
+      "description": "Go founders, Ken Thompson, Robert Pike, Rosamund"
   }
 }
 

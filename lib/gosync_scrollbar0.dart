@@ -34,14 +34,20 @@ class GoSyncScrollbar0 extends StatelessWidget {
                 fontSize: 40.0,
                 fontStyle: FontStyle.italic),
           ),
-          // ),
-          // Container(
-          // child:
           Text(
             textAlign: TextAlign.center,
             ethSyncPrimaryGoals,
             style: TextStyle(
                 color: Colors.green, backgroundColor: Colors.yellowAccent),
+          ),
+          Text(
+            // 'Install Golang and GoEth Geth bare bones',
+            ethTextFonts,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.blueAccent,
+                fontSize: 40.0,
+                fontStyle: FontStyle.italic),
           ),
           // ),
         ],

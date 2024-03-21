@@ -33,7 +33,8 @@ const String goProgrammingParadigm =
 // designed by Robert Griesemer, Rob Pike, Ken Thompson
 // Go programming Paradigm:
 //Multi-paradigm: concurrent imperative, functional object-oriented
-const String drawerHeader = "wallet || drawer widget";
+// const String drawerHeader = "wallet || drawer widget";
+// const String drawerHeader = "Go founders";
 
 const String ethInstallGolangInstallInstructions =
     ('Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\n\n'

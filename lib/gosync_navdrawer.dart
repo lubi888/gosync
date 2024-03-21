@@ -36,9 +36,12 @@ class GoSyncNavDrawer extends StatelessWidget {
                 image: AssetImage(_kAsset1),
               ),
             ),
-            child: const Text(
-              drawerHeader,
-              style: TextStyle(
+            child: Text(
+              // drawerHeader,
+              AppLocalizations.of(context)!.drawerHeader,
+              // style: const TextStyle(color: Colors.purpleAccent),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
                 fontStyle: FontStyle.italic,
                 color: Colors.yellowAccent,
               ),

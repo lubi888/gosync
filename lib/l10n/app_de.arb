@@ -1,10 +1,11 @@
  {
-    "title": "goSync.go de 0311",
-    "helloWorld": "wie gehts flutter deutsch",
-    "home": "heim",
+    "title": "goSync.go de 0321",
+    "helloWorld": "wie gehts flutter deutschland",
+    "home": "heim zu house",
     "golangInstall": "go installieren",
     "goSyncHeading": "Goland Install on Windows, Apple, Linux zu Deutsch",
     "danger": "achtung gefahr",
     "visitGoPlayground": "besuchen Go playground visitez le Go playground site",
-    "visitGoDevPlay": "besuchen GoDevPlay 2 go.dev/play"
+    "visitGoDevPlay": "besuchen GoDevPlay 2 go.dev/play",
+    "drawerHeader" : "Go grunders founders"
 }
