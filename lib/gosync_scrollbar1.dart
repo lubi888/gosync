@@ -778,37 +778,68 @@ class GoSyncScrollbar1 extends StatelessWidget {
           ),
           const Padding(padding: EdgeInsets.all(8.0)),
 
-          const SelectableText(
+          Text(
             // Padding(padding: EdgeInsets.all(8.0)) as String,
-            ethCheckGoHelp,
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.ethCheckGoHelp,
             textAlign: TextAlign.right,
-            style: TextStyle(
+            style: const TextStyle(
               color: Colors.green,
               fontStyle: FontStyle.italic,
               fontSize: 20.0,
             ),
           ),
-          // const Padding(padding: EdgeInsets.all(8.0)),
 
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: SelectableText(
+          const Padding(padding: EdgeInsets.all(16.0)),
+          SelectableText(
+            // Padding(padding: EdgeInsets.all(8.0)) as String,
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.ethCheckGoHelp,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.yellow,
+              fontStyle: FontStyle.italic,
+              fontSize: 20.0,
+            ),
+          ),
+
+          const Padding(padding: EdgeInsets.all(16.0)),
+          Padding(
+            padding: const EdgeInsets.all(24.0),
+            child: Text(
               // Padding(padding: EdgeInsets.all(8.0)) as String,
-              ethCheckGoHelp,
+              // padding: const EdgeInsets.all(8.0)
+              // ethCheckGoHelp,
+              AppLocalizations.of(context)!.ethCheckGoHelp,
               textAlign: TextAlign.left,
-              style: TextStyle(
-                color: Colors.yellow,
-                fontStyle: FontStyle.italic,
+              style: const TextStyle(
+                // padding: const EdgeInsets.all(8.0)
+                color: Colors.blue,
+                fontStyle: FontStyle.normal,
                 fontSize: 20.0,
               ),
             ),
           ),
 
-          //end text here.
+          const Padding(padding: EdgeInsets.all(16.0)),
+          Text(
+            // Padding(padding: EdgeInsets.all(8.0)) as String,
+            // padding: const EdgeInsets.all(8.0)
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.ethCheckGoHelp,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              // padding: const EdgeInsets.all(8.0)
+              color: Colors.blue,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+            ),
+          ),
+          // 4th
 
           Column(
             children: [
-              // const Padding(padding: EdgeInsets.all(30.0)),
+              // const Padding(padding: Edg eInsets.all(30.0)),
               Image.asset(
                 _kAssets12,
                 // height: 200.0,

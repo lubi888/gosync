@@ -1,5 +1,5 @@
  {
-    "title": "goSync.go de 0321",
+    "title": "goSync.go de 0326",
     "helloWorld": "wie gehts flutter deutschland",
     "home": "heim zu house",
     "golangInstall": "go installieren",
@@ -7,5 +7,6 @@
     "danger": "achtung gefahr",
     "visitGoPlayground": "besuchen Go playground visitez le Go playground site",
     "visitGoDevPlay": "besuchen GoDevPlay 2 go.dev/play",
-    "drawerHeader" : "Go grunders founders"
+    "drawerHeader" : "Go grunders founders",
+    "ethCheckGoHelp": "deutsch schlager Now let us check that our installation of golang is working.\nOpen up a terminal (linux & mac) or a command prompt (windows) and type in the following code:\ngo version\nThis is your go version and it should be 1.12-1.13 as these are the latest versions\nType in the following code:\ngo help\nThis is a list of all available commands."
 }

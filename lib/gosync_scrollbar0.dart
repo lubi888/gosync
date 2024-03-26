@@ -45,9 +45,10 @@ class GoSyncScrollbar0 extends StatelessWidget {
             ethTextFonts,
             textAlign: TextAlign.center,
             style: TextStyle(
-                color: Colors.blueAccent,
-                fontSize: 40.0,
-                fontStyle: FontStyle.italic),
+              color: Colors.blueAccent,
+              fontSize: 40.0,
+              // fontStyle: FontStyle.italic
+            ),
           ),
           // ),
         ],

@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 0319",
+  "title": "goSync.go 0326",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -20,21 +20,23 @@
     "description": "headliners"
   },
   "danger": "dangr",
-    "@danger": {
-      "description": "danger"
+  "@danger": {
+    "description": "danger"
   },
   "visitGoPlayground": "visit Go playground",
-    "@visitGoPlayground": {
-      "description": "url link to the Go playground"
+  "@visitGoPlayground": {
+    "description": "url link to the Go playground"
   },
   "visitGoDevPlay": "visit Go playground 2",
   "@visitGoDevPlay": {
     "description": "url link to the Go playground"
   },
-  "drawerHeader" : "Go founders",
-    "@drawerHeader": {
-      "description": "Go founders, Ken Thompson, Robert Pike, Rosamund"
-  }
+  "drawerHeader": "",
+  "@drawerHeader": {
+    "description": "empty string"
+  },
+  "ethCheckGoHelp": "Now let us check that our installation of golang is working.\nOpen up a terminal (linux & mac) or a command prompt (windows) and type in the following code:\ngo version\nThis is your go version and it should be 1.12-1.13 as these are the latest versions\nType in the following code:\ngo help\nThis is a list of all available commands.",
+  "@ethCheckGoHelp": {
+    "description": "check go environment"
+  }  
 }
-
-

@@ -18,7 +18,7 @@ import './gosync_scrollbar2.dart';
 // import './ethsync_scrollbar4.dart';
 
 // String _kAsset0 = 'assets/images/devcon1.png';
-String _kAsset1 = 'assets/images/golang_developers.png';
+const String _kAsset1 = 'assets/images/golang_developers.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
   const GoSyncNavDrawer({super.key});
@@ -26,11 +26,14 @@ class GoSyncNavDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     // Scaffold.of(context).openDrawer();
     return Drawer(
+      // backgroundColor: Colors.lightGreen,
+      // shape: Border.symmetric(),
       child: ListView(
-        padding: EdgeInsets.zero,
+        // padding: EdgeInsets.zero,
+        // padding: EdgeInsets.,
         children: <Widget>[
           DrawerHeader(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.green,
               image: DecorationImage(
                 image: AssetImage(_kAsset1),
@@ -40,7 +43,7 @@ class GoSyncNavDrawer extends StatelessWidget {
               // drawerHeader,
               AppLocalizations.of(context)!.drawerHeader,
               // style: const TextStyle(color: Colors.purpleAccent),
-              textAlign: TextAlign.center,
+              textAlign: TextAlign.end,
               style: const TextStyle(
                 fontStyle: FontStyle.italic,
                 color: Colors.yellowAccent,
@@ -51,50 +54,59 @@ class GoSyncNavDrawer extends StatelessWidget {
           // List Tile 1
           ListTile(
               leading: const Icon(
-                Icons.account_balance,
+                Icons.access_alarms,
                 color: Colors.redAccent,
               ),
               title: const Text(
-                'add eth|etc address - acccount',
+                'visit go.dev',
+                // 'visit https://go.dev/',
                 style: TextStyle(color: Colors.purpleAccent),
               ),
               subtitle: const Text(
-                'personal firebase storage',
+                'main go website',
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.redAccent),
               ),
               trailing: const Icon(Icons.add_alert, color: Colors.purpleAccent),
               onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const GoSyncScrollbar2()));
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                _launchGoDev();
+                // Navigator.push(
+                //     context,
+                //     MaterialPageRoute(
+                //         builder: (context) => const GoSyncScrollbar2()));
                 // Navigator.pop(context);
               }),
-          ListTile(
-              leading: const Icon(
-                Icons.school,
-                color: Colors.orangeAccent,
-              ),
-              title: const Text('begin learning ethSync',
-                  style: TextStyle(color: Colors.orangeAccent)),
-              subtitle: const Text(
-                'proof of work||stake',
-                style: TextStyle(
-                    fontStyle: FontStyle.italic, color: Colors.blueAccent),
-              ),
-              trailing: const Icon(
-                Icons.school,
-                color: Colors.greenAccent,
-              ),
-              onTap: () {
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => const GoSyncScrollbar2()));
-                // context, MaterialPageRoute(builder: (context) => Pesto()));
-                // context, MaterialPageRoute(builder: (context) => Pesto()));
-              }),
+          // // list tile 2
+          // ListTile(
+          //     leading: const Icon(
+          //       Icons.school,
+          //       color: Colors.orangeAccent,
+          //     ),
+          //     title: const Text('begin learning ethSync',
+          //         style: TextStyle(color: Colors.orangeAccent)),
+          //     subtitle: const Text(
+          //       'proof of work||stake',
+          //       style: TextStyle(
+          //           fontStyle: FontStyle.italic, color: Colors.blueAccent),
+          //     ),
+          //     trailing: const Icon(
+          //       Icons.school,
+          //       color: Colors.greenAccent,
+          //     ),
+          //     onTap: () {
+          //       Navigator.push(
+          //           context,
+          //           MaterialPageRoute(
+          //               builder: (context) => const GoSyncScrollbar2()));
+          //       // context, MaterialPageRoute(builder: (context) => Pesto()));
+          //       // context, MaterialPageRoute(builder: (context) => Pesto()));
+          //     }),
           //  ListTile 3 visit Go Play
           ListTile(
               leading: const Icon(
@@ -153,8 +165,138 @@ class GoSyncNavDrawer extends StatelessWidget {
                 Navigator.of(context).pop();
                 // Navigator.popAndPushNamed(context, "/new_page");
                 // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
                 _launchPlayGolang();
               }),
+          // list tile 4b gopher guides.
+          ListTile(
+              leading: const Icon(
+                Icons.account_balance,
+                color: Colors.teal,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit gopher guides',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.teal),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'gopher guide tutorials',
+                // https://go.dev/play/
+                style:
+                TextStyle(fontStyle: FontStyle.italic, color: Colors.white),
+              ),
+              trailing: const Icon(Icons.add_alert, color: Colors.teal),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
+                _launchGopherGuides();
+              }),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                Icons.tv,
+                color: Colors.red,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit youtube go programming',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to youtube from google',
+                // https://go.dev/play/
+                style:
+                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(Icons.computer, color: Colors.green),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
+                _launchYouTube();
+              //   launch deep linking youtube.
+              }),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                Icons.airplanemode_active_rounded,
+                color: Colors.blue,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit twitter X @golang go programming surface link',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to X Twitter',
+                // https://go.dev/play/
+                style:
+                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(Icons.computer, color: Colors.green),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
+                _launchTwitterGolang();
+                //   launch deep linking youtube.
+              }),
+          // list tile 6 github deep link github
+          ListTile(
+              leading: const Icon(
+                Icons.desktop_windows,
+                color: Colors.green,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit github go with surface link',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.green),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to github go',
+                // https://go.dev/play/
+                style:
+                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(Icons.computer, color: Colors.green),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
+                _launchGithubGo();
+                //   launch deep linking youtube.
+              }),
+
+          //
           ListTile(
               // leading:
               // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
@@ -434,14 +576,14 @@ final Uri _urlPlayGolangHelloCode =
     Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
 
 Future<void> _launchPlayGolangHelloCode() async {
-  debugPrint("customer left app to golang.org/dl at");
+  debugPrint("customer left app to go hello example at");
   print(TimeOfDay.now());
   if (!await launchUrl(_urlPlayGolangHelloCode)) {
     throw Exception('Could not launch $_urlPlayGolangHelloCode');
   }
 }
 
-final Uri _urlPlayGolang = Uri.parse('https://go.dev/play/');
+final Uri _urlPlayGolang = Uri.parse('https://go.dev/play');
 
 Future<void> _launchPlayGolang() async {
   debugPrint("customer left app to golang.org/dl at");
@@ -450,6 +592,63 @@ Future<void> _launchPlayGolang() async {
     throw Exception('Could not launch $_urlPlayGolang');
   }
 }
+
+final Uri _urlGoDev = Uri.parse('https://go.dev');
+
+Future<void> _launchGoDev() async {
+  debugPrint("customer left app to go.dev at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoDev)) {
+    throw Exception('Could not launch $_urlGoDev');
+  }
+}
+
+// gopher guides
+final Uri _urlGopherGuides = Uri.parse('https://www.gopherguides.com');
+
+Future<void> _launchGopherGuides() async {
+  debugPrint("customer left app to gopher guides  at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGopherGuides)) {
+    throw Exception('Could not launch $_urlGopherGuides');
+  }
+}
+
+// launch youtube
+final Uri _urlYoutube = Uri.parse('https://www.youtube.com');
+
+Future<void> _launchYouTube() async {
+  debugPrint("customer left app to you tube at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlYoutube)) {
+    throw Exception('Could not launch $_urlYoutube');
+  }
+}
+
+// launch twitter golang
+final Uri _urlTwitterGo = Uri.parse('https://twitter.com/golang');
+
+Future<void> _launchTwitterGolang() async {
+  debugPrint("customer left app to twitter at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlTwitterGo)) {
+    throw Exception('Could not launch $_urlTwitterGo');
+  }
+}
+
+// https://github.com/golang/go
+// launch twitter golang
+final Uri _urlGithubGo = Uri.parse('https://github.com/golang/go');
+
+Future<void> _launchGithubGo() async {
+  debugPrint("customer left app to github go");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGithubGo)) {
+    throw Exception('Could not launch $_urlGithubGo');
+  }
+}
+
+
 
 const snackBarGoodbye = SnackBar(
   backgroundColor: Colors.green,
