@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gosync/gosync_text.dart';
+// import 'package:gosync/gosync_text.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import './gosync_urllinks.dart';
 // import './ethsync_walletdrawer.dart';
 // import './ethsync_barcodescanner.dart';
@@ -13,11 +14,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import './gosync_scrollbar0.dart';
 import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
-
 // import './ethsync_scrollbar3.dart';
 // import './ethsync_scrollbar4.dart';
 
-// String _kAsset0 = 'assets/images/devcon1.png';
 const String _kAsset1 = 'assets/images/golang_developers.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
@@ -26,8 +25,8 @@ class GoSyncNavDrawer extends StatelessWidget {
   Widget build(BuildContext context) {
     // Scaffold.of(context).openDrawer();
     return Drawer(
-      // backgroundColor: Colors.lightGreen,
-      // shape: Border.symmetric(),
+      // background color for entier drawer. default black
+      // backgroundColor: Colors.white,
       child: ListView(
         // padding: EdgeInsets.zero,
         // padding: EdgeInsets.,
@@ -36,8 +35,7 @@ class GoSyncNavDrawer extends StatelessWidget {
             decoration: const BoxDecoration(
               color: Colors.green,
               image: DecorationImage(
-                image: AssetImage(_kAsset1),
-              ),
+                  image: AssetImage(_kAsset1), fit: BoxFit.fill),
             ),
             child: Text(
               // drawerHeader,
@@ -54,7 +52,8 @@ class GoSyncNavDrawer extends StatelessWidget {
           // List Tile 1
           ListTile(
               leading: const Icon(
-                Icons.access_alarms,
+                // Icons.access_alarms,
+                FontAwesomeIcons.golang,
                 color: Colors.redAccent,
               ),
               title: const Text(
@@ -108,9 +107,11 @@ class GoSyncNavDrawer extends StatelessWidget {
           //       // context, MaterialPageRoute(builder: (context) => Pesto()));
           //     }),
           //  ListTile 3 visit Go Play
+          //  list tile 2
           ListTile(
               leading: const Icon(
-                Icons.account_balance,
+                // Icons.account_balance,
+                FontAwesomeIcons.golang,
                 color: Colors.redAccent,
               ),
               title: Text(
@@ -137,10 +138,11 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
                 _launchPlayGolangHelloCode();
               }),
-          // list tile 4     go play version 2
+          // list tile 3     go play version 2
           ListTile(
               leading: const Icon(
-                Icons.account_balance,
+                // Icons.account_balance,
+                FontAwesomeIcons.golang,
                 color: Colors.teal,
               ),
               title: Text(
@@ -186,7 +188,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 'gopher guide tutorials',
                 // https://go.dev/play/
                 style:
-                TextStyle(fontStyle: FontStyle.italic, color: Colors.white),
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.white),
               ),
               trailing: const Icon(Icons.add_alert, color: Colors.teal),
               onTap: () {
@@ -202,7 +204,8 @@ class GoSyncNavDrawer extends StatelessWidget {
           // list tile 5 deep link youtube
           ListTile(
               leading: const Icon(
-                Icons.tv,
+                // Icons.tv,
+                FontAwesomeIcons.youtube,
                 color: Colors.red,
               ),
               title: const Text(
@@ -216,8 +219,8 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // 'https://play.golang.com/',
                 'deep link to youtube from google',
                 // https://go.dev/play/
-                style:
-                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
               trailing: const Icon(Icons.computer, color: Colors.green),
               onTap: () {
@@ -229,14 +232,16 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
                 // https://www.gopherguides.com/
                 _launchYouTube();
-              //   launch deep linking youtube.
+                //   launch deep linking youtube.
               }),
           // list tile 5 deep link youtube
           ListTile(
-              leading: const Icon(
-                Icons.airplanemode_active_rounded,
-                color: Colors.blue,
-              ),
+              leading:
+                  const Icon(FontAwesomeIcons.twitter, color: Colors.lightBlue
+                      // Icons.alternate_email_rounded,
+                      // Icons.flutter_dash,
+                      // color: Colors.lightBlue,
+                      ),
               title: const Text(
                 // 'add eth|etc address - acccount',
                 'visit twitter X @golang go programming surface link',
@@ -248,10 +253,13 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // 'https://play.golang.com/',
                 'deep link to X Twitter',
                 // https://go.dev/play/
-                style:
-                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
-              trailing: const Icon(Icons.computer, color: Colors.green),
+              trailing: const Icon(
+                Icons.flutter_dash,
+                color: Colors.lightBlue,
+              ),
               onTap: () {
                 // ScaffoldMessenger.of(context)
                 //     .showSnackBar(snackBarGoodbye);
@@ -266,7 +274,8 @@ class GoSyncNavDrawer extends StatelessWidget {
           // list tile 6 github deep link github
           ListTile(
               leading: const Icon(
-                Icons.desktop_windows,
+                // Icons.desktop_windows,
+                FontAwesomeIcons.github,
                 color: Colors.green,
               ),
               title: const Text(
@@ -280,8 +289,41 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // 'https://play.golang.com/',
                 'deep link to github go',
                 // https://go.dev/play/
-                style:
-                TextStyle(fontStyle: FontStyle.italic, color: Colors.yellow),
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(Icons.computer, color: Colors.green),
+              onTap: () {
+                // ScaffoldMessenger.of(context)
+                //     .showSnackBar(snackBarGoodbye);
+                // Navigator.pop(context);
+                Navigator.of(context).pop();
+                // Navigator.popAndPushNamed(context, "/new_page");
+                // Navigator.popAndPushNamed(context, _launchPlayGolangHelloCode() as String);
+                // https://www.gopherguides.com/
+                _launchGithubGo();
+                //   launch deep linking youtube.
+              }),
+
+          ListTile(
+              leading: const Icon(
+                // Icons.desktop_windows,
+                FontAwesomeIcons.slack,
+                color: Colors.green,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit slack go channel surface link',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.red),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'slackers go',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
               trailing: const Icon(Icons.computer, color: Colors.green),
               onTap: () {
@@ -647,8 +689,6 @@ Future<void> _launchGithubGo() async {
     throw Exception('Could not launch $_urlGithubGo');
   }
 }
-
-
 
 const snackBarGoodbye = SnackBar(
   backgroundColor: Colors.green,
