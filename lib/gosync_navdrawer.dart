@@ -14,8 +14,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import './gosync_scrollbar0.dart';
 import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
-// import './ethsync_scrollbar3.dart';
-// import './ethsync_scrollbar4.dart';
 
 const String _kAsset1 = 'assets/images/golang_developers.png';
 
@@ -26,7 +24,6 @@ class GoSyncNavDrawer extends StatelessWidget {
     // Scaffold.of(context).openDrawer();
     return Drawer(
       // background color for entier drawer. default black
-      // backgroundColor: Colors.white,
       child: ListView(
         // padding: EdgeInsets.zero,
         // padding: EdgeInsets.,
@@ -72,32 +69,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.of(context).pop();
                 _launchGoDev();
               }),
-          // ListTile(
-          //     leading: const Icon(
-          //       // Icons.account_balance,
-          //       FontAwesomeIcons.golang,
-          //       color: Colors.redAccent,
-          //     ),
-          //     title: Text(
-          //       // 'add eth|etc address - acccount',
-          //       // 'visit go playground',
-          //       // visitGoPlayground,
-          //       AppLocalizations.of(context)!.visitGoPlayground,
-          //       style: const TextStyle(color: Colors.purpleAccent),
-          //     ),
-          //     subtitle: const Text(
-          //       // 'https://play.golang.com/',
-          //       'play.golang.com',
-          //       // https://go.dev/play/
-          //       style: TextStyle(
-          //           fontStyle: FontStyle.italic, color: Colors.redAccent),
-          //     ),
-          //     trailing: const Icon(Icons.add_alert, color: Colors.purpleAccent),
-          //     onTap: () {
-          //       Navigator.of(context).pop();
-          //       _launchPlayGolangHelloCode();
-          //     }),
-          // list tile 3     go play version 2
           ListTile(
               leading: const Icon(
                 // Icons.account_balance,
@@ -110,11 +81,13 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               subtitle: const Text(
                 // 'https://play.golang.com/',
-                'go.dev/play',
-                style:
-                    TextStyle(fontStyle: FontStyle.italic, color: Colors.white),
+                'go.dev/play and run some samples',
+                style: TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    color: Colors.white),
               ),
-              trailing: const Icon(FontAwesomeIcons.googlePlay, color: Colors.orangeAccent),
+              trailing: const Icon(FontAwesomeIcons.googlePlay,
+                  color: Colors.orangeAccent),
               onTap: () {
                 // Navigator.of(context).pop();
                 _launchPlayGolang();
@@ -123,7 +96,7 @@ class GoSyncNavDrawer extends StatelessWidget {
           // paddings
           const Padding(
             padding: EdgeInsets.all(16.0),
-            child: Text('======= Prewritten Info Guides ========',
+            child: Text('=== Prewritten Info Guides ===',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.purpleAccent)),
           ),
@@ -146,7 +119,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.of(context).pop();
                 _launchGopherGuides();
               }),
-          // paddings
+          // paddings seperator
           const Padding(
             padding: EdgeInsets.all(16.0),
             child: Text('======= Socials ========',
@@ -211,6 +184,68 @@ class GoSyncNavDrawer extends StatelessWidget {
                 _launchTwitterGolang();
                 //   launch deep linking youtube.
               }),
+          // list tile 5 deep link Mastodon
+          ListTile(
+              leading: const Icon(FontAwesomeIcons.mastodon,
+                  color: Colors.lightBlue),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Mastodon @golang hash tag',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.purple),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'general hash tag for go programmers chatting',
+                // https://go.dev/play/
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.red),
+              ),
+              trailing: const Icon(
+                FontAwesomeIcons.mastodon,
+                color: Colors.lightGreen,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchMastodonGo();
+                //   launch deep linking youtube.
+              }),
+
+          // paddings seperator
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Get Go Help ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.orangeAccent)),
+          ),
+          ListTile(
+              leading: const Icon(FontAwesomeIcons.stackOverflow,
+                  color: Colors.orangeAccent),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit and help others on StackOverflow and StackExachange and find the latest questions being asked.',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to stackoverflow and stack exchange.',
+                // https://go.dev/play/
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
+              ),
+              trailing: const Icon(
+                FontAwesomeIcons.stackExchange,
+                color: Colors.grey,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchStackOverflow();
+                //   launch deep linking youtube.
+              }),
+
           // list tile 6 github deep link github
           ListTile(
               leading: const Icon(
@@ -232,7 +267,8 @@ class GoSyncNavDrawer extends StatelessWidget {
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
-              trailing: const Icon(Icons.computer, color: Colors.green),
+              trailing:
+                  const Icon(FontAwesomeIcons.microsoft, color: Colors.green),
               onTap: () {
                 // Navigator.of(context).pop();
                 _launchGithubGo();
@@ -259,37 +295,11 @@ class GoSyncNavDrawer extends StatelessWidget {
                 style:
                     TextStyle(fontStyle: FontStyle.italic, color: Colors.green),
               ),
-              trailing:
-                  const Icon(FontAwesomeIcons.slackHash, color: Colors.blue),
+              trailing: const Icon(FontAwesomeIcons.salesforce,
+                  color: Colors.lightBlue),
               onTap: () {
                 // Navigator.of(context).pop();
                 _launchSlackGo();
-                //   launch deep linking youtube.
-              }),
-          ListTile(
-              leading: const Icon(FontAwesomeIcons.stackOverflow,
-                  color: Colors.orangeAccent),
-              title: const Text(
-                // 'add eth|etc address - acccount',
-                'visit and help others on StackOverflow and StackExachange and find the latest questions being asked.',
-                // visitGoPlayground,
-                // AppLocalizations.of(context)!.visitGoDevPlay,
-                style: TextStyle(color: Colors.blue),
-              ),
-              subtitle: const Text(
-                // 'https://play.golang.com/',
-                'deep link to stackoverflow and stack exchange.',
-                // https://go.dev/play/
-                style:
-                    TextStyle(fontStyle: FontStyle.italic, color: Colors.grey),
-              ),
-              trailing: const Icon(
-                FontAwesomeIcons.stackExchange,
-                color: Colors.grey,
-              ),
-              onTap: () {
-                // Navigator.of(context).pop();
-                _launchStackOverflow();
                 //   launch deep linking youtube.
               }),
           ListTile(
@@ -334,13 +344,40 @@ class GoSyncNavDrawer extends StatelessWidget {
                     TextStyle(fontStyle: FontStyle.italic, color: Colors.green),
               ),
               trailing: const Icon(
-                Icons.chat_bubble_outlined,
+                FontAwesomeIcons.google,
                 color: Colors.purple,
               ),
               onTap: () {
                 // Navigator.of(context).pop();
                 // _launchDiscordGophers();
                 _launchGoForum();
+                //   launch deep linking youtube.
+              }),
+
+          ListTile(
+              leading: const Icon(Icons.group, color: Colors.blue),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Groups for godev and go-nuts gophers',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.red),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'golang group go-nuts',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.purple),
+              ),
+              trailing: const Icon(
+                FontAwesomeIcons.googlePlusG,
+                color: Colors.purple,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchDiscordGophers();
+                _launchGroupGolangDev();
                 //   launch deep linking youtube.
               }),
 
@@ -369,6 +406,13 @@ class GoSyncNavDrawer extends StatelessWidget {
                 _launchGoIRC();
                 //   launch deep linking youtube.
               }),
+          // paddings seperator
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Go Events ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.greenAccent)),
+          ),
           ListTile(
               leading: const Icon(FontAwesomeIcons.googleScholar,
                   color: Colors.blue),
@@ -417,14 +461,13 @@ class GoSyncNavDrawer extends StatelessWidget {
               color: Colors.greenAccent,
             ),
           ),
-          // onTap: () {
-          //   Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //           builder: (context) => const GoSyncScrollbar1()));
-          //   MaterialPageRoute(builder: (context) => FirebaseBaby()));
-          // }),
-          // list tile 4 visit devvest photo album
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Go Photos ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.greenAccent)),
+          ),
+
           ListTile(
               leading: const Icon(
                 Icons.photo_album,
@@ -472,7 +515,99 @@ class GoSyncNavDrawer extends StatelessWidget {
                   // MaterialPageRoute(builder: (context) => GridListDemo()),
                 );
               }),
-
+          // paddings seperator
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== System Platforms ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blueAccent)),
+          ),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.windows,
+                color: Colors.lightBlue,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'windows platform golang',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.lightBlue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'windows go install',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing:
+              const Icon(FontAwesomeIcons.windows, color: Colors.lightGreen),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          // list tile 5 deep link XTwitter
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.apple,
+                color: Colors.grey,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Apple iOS',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.lightBlue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'apple programming',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing:
+              const Icon(FontAwesomeIcons.apple, color: Colors.blueGrey),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.linux,
+                color: Colors.red,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Linux golang install',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.lightBlue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link linux',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing:
+              const Icon(FontAwesomeIcons.linux, color: Colors.blue),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          // paddings seperator
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Join Firebase Chat ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.greenAccent)),
+          ),
           ListTile(
               leading: const Icon(
                 Icons.person_outline,
@@ -495,128 +630,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                         builder: (context) => const GoSyncScrollbar2()));
                 // builder: (context) => TextFormFieldDemo()));
               }),
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.send,
-          //       color: Colors.redAccent,
-          //     ),
-          //     title: const Text(
-          //       'show eth|etc addresss',
-          //       style: TextStyle(color: Colors.purpleAccent),
-          //     ),
-          //     subtitle: const Text(
-          //       'face to face QR codes',
-          //       style: TextStyle(
-          //           fontStyle: FontStyle.italic, color: Colors.redAccent),
-          //     ),
-          //     trailing: const Icon(Icons.send, color: Colors.purpleAccent),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               // link to websites external if necessary
-          //               builder: (context) => const EthSyncBarcodeScan()));
-          //       // MaterialPageRoute(builder: (context) => QRMainScreen()));
-          //     }),
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.add_a_photo,
-          //       color: Colors.orangeAccent,
-          //     ),
-          //     title: const Text(
-          //       'capture eth|etc addresss',
-          //       style: TextStyle(color: Colors.orangeAccent),
-          //     ),
-          //     subtitle: const Text(
-          //       'launch camera and take QR addresses',
-          //       style: TextStyle(
-          //           fontStyle: FontStyle.italic, color: Colors.blueAccent),
-          //     ),
-          //     trailing:
-          //         const Icon(Icons.camera_enhance, color: Colors.yellowAccent),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               builder: (context) => const EthSyncBarcodeScan()));
-          //     }),
-          // ListTile(
-          //     leading: const Icon(Icons.launch, color: Colors.greenAccent),
-          //     title: const Text(
-          //       'Flutter.io website barcode scan',
-          //       style: TextStyle(
-          //           fontStyle: FontStyle.italic, color: Colors.greenAccent),
-          //     ),
-          //     trailing: const Icon(Icons.launch, color: Colors.greenAccent),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               builder: (context) => const EthSyncBarcodeScan()));
-          //     }),
-          // const ListTile(
-          //   leading: Icon(Icons.launch, color: Colors.purpleAccent),
-          //   title: Text(
-          //     'ethSync.xyz',
-          //     style: TextStyle(
-          //         fontStyle: FontStyle.italic, color: Colors.purpleAccent),
-          //   ),
-          //   trailing: Icon(Icons.bookmark, color: Colors.orangeAccent),
-          //   onTap: EthSyncLaunchUrl.launchURLEthSync,
-          // ),
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.android,
-          //       color: Colors.indigoAccent,
-          //     ),
-          //     title: const Text(
-          //       '1st page --------',
-          //       style: TextStyle(color: Colors.yellowAccent),
-          //     ),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               builder: (context) => const GoSyncScrollbar2()));
-          //       // MaterialPageRoute(builder: (context) => FirstScreen()));
-          //     }),
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.laptop_windows,
-          //       color: Colors.pinkAccent,
-          //     ),
-          //     title: const Text(
-          //       '2nd page ----------',
-          //       style: TextStyle(color: Colors.tealAccent),
-          //     ),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               builder: (context) => const GoSyncScrollbar2()));
-          //       // MaterialPageRoute(builder: (context) => SecondScreen()));
-          //     }),
-
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.laptop_windows,
-          //       color: Colors.tealAccent,
-          //     ),
-          //     trailing: const Icon(
-          //       Icons.sync_disabled,
-          //       color: Colors.tealAccent,
-          //     ),
-          //     title: const Text(
-          //       'snackbar page',
-          //       style: TextStyle(color: Colors.tealAccent),
-          //     ),
-          //     onTap: () {
-          //       Navigator.push(
-          //           context,
-          //           MaterialPageRoute(
-          //               builder: (context) => const GoSyncScrollbar2()));
-          //       // MaterialPageRoute(builder: (context) => SnackBarPage()));
-          //     }),
           const Padding(padding: EdgeInsets.all(16.0)),
 
           const Padding(
@@ -654,32 +667,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                   // MaterialPageRoute(builder: (context) => EthSyncShare()),
                 );
               }),
-          // ListTile(
-          //     leading: const Icon(
-          //       Icons.accessibility,
-          //       color: Colors.pinkAccent,
-          //     ),
-          //     trailing: const Icon(
-          //       Icons.share,
-          //       color: Colors.pinkAccent,
-          //     ),
-          //     title: const Text(
-          //       'try page for iamges',
-          //       style: TextStyle(color: Colors.yellowAccent),
-          //     ),
-          //     onTap: () {
-          //       Navigator.push(
-          //         context,
-          //         MaterialPageRoute(
-          //             builder: (context) => ImagePreview(
-          //                 // assetFile: _kAsset0,
-          //                 //  String imageUrsl, heroTag, title;
-          //                 //  imageUrl = "www.yahoo.com",
-          //                 //  heroTag = "heroTag1",
-          //                 //  title = "1st expander",
-          //                 )),
-          //       );
-          //     }),
           ListTile(
               leading: const Icon(
                 Icons.info_outline,
@@ -697,13 +684,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                      builder: (context) => const GoSyncScrollbar2(
-                          // assetFile: _kAsset0,
-                          //  String imageUrsl, heroTag, title;
-                          //  imageUrl = "www.yahoo.com",
-                          //  heroTag = "heroTag1",
-                          //  title = "1st expander",
-                          )),
+                      builder: (context) => const GoSyncScrollbar2()),
                 );
               }),
         ],
@@ -776,9 +757,18 @@ Future<void> _launchTwitterGolang() async {
   }
 }
 
-// https://github.com/golang/go
-// https://github.com/golang/go/issues
-// launch twitter golang
+// launch mastodon golang
+final Uri _urlMastodonGo = Uri.parse('https://mastodon.social/tags/golang');
+
+Future<void> _launchMastodonGo() async {
+  debugPrint("customer left app to twitter at");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlMastodonGo)) {
+    throw Exception('Could not launch $_urlMastodonGo');
+  }
+}
+
+// launch github golang
 final Uri _urlGithubGo = Uri.parse('https://github.com/golang/go/issues');
 
 Future<void> _launchGithubGo() async {
@@ -789,6 +779,7 @@ Future<void> _launchGithubGo() async {
   }
 }
 
+// slack messaging
 final Uri _urlSlackGo = Uri.parse('https://invite.slack.golangbridge.org/');
 
 Future<void> _launchSlackGo() async {
@@ -799,6 +790,7 @@ Future<void> _launchSlackGo() async {
   }
 }
 
+// stack overflow
 final Uri _urlStackOverflow =
     Uri.parse('https://stackoverflow.com/questions/tagged/go?tab=Newest');
 
@@ -840,6 +832,18 @@ Future<void> _launchGoForum() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoForum)) {
     throw Exception('Could not launch $_urlGoForum');
+  }
+}
+
+// https://groups.google.com/g/golang-dev
+final Uri _urlGroupGolangDev =
+    Uri.parse('https://groups.google.com/g/golang-nuts');
+
+Future<void> _launchGroupGolangDev() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGroupGolangDev)) {
+    throw Exception('Could not launch $_urlGroupGolangDev');
   }
 }
 
