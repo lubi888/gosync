@@ -12,7 +12,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 // import './ethsync_scrollbar1.dart';
 
 // import './gosync_scrollbar0.dart';
-import './gosync_scrollbar1.dart';
+// import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
 
 const String _kAsset1 = 'assets/images/golang_developers.png';
@@ -542,8 +542,8 @@ class GoSyncNavDrawer extends StatelessWidget {
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
-              trailing:
-              const Icon(FontAwesomeIcons.windows, color: Colors.lightGreen),
+              trailing: const Icon(FontAwesomeIcons.windows,
+                  color: Colors.lightGreen),
               onTap: () {
                 // Navigator.of(context).pop();
                 // _launchYouTube();
@@ -570,7 +570,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                     fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
               trailing:
-              const Icon(FontAwesomeIcons.apple, color: Colors.blueGrey),
+                  const Icon(FontAwesomeIcons.apple, color: Colors.blueGrey),
               onTap: () {
                 // Navigator.of(context).pop();
                 // _launchYouTube();
@@ -595,8 +595,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.yellow),
               ),
-              trailing:
-              const Icon(FontAwesomeIcons.linux, color: Colors.blue),
+              trailing: const Icon(FontAwesomeIcons.linux, color: Colors.blue),
               onTap: () {
                 // Navigator.of(context).pop();
                 // _launchYouTube();
