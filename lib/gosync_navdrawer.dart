@@ -21,6 +21,8 @@ class GoSyncNavDrawer extends StatelessWidget {
   const GoSyncNavDrawer({super.key});
   @override
   Widget build(BuildContext context) {
+    debugPrint('navdrawer opened at [time]');
+    print(TimeOfDay.now());
     // Scaffold.of(context).openDrawer();
     return Drawer(
       // background color for entier drawer. default black
@@ -28,6 +30,7 @@ class GoSyncNavDrawer extends StatelessWidget {
         // padding: EdgeInsets.zero,
         // padding: EdgeInsets.,
         children: <Widget>[
+          // debugPrint = "navdrawer opened time";
           DrawerHeader(
             decoration: const BoxDecoration(
               color: Colors.green,
@@ -92,11 +95,36 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.of(context).pop();
                 _launchPlayGolang();
               }),
+          ListTile(
+              leading: const Icon(
+                // Icons.account_balance,
+                FontAwesomeIcons.golang,
+                color: Colors.teal,
+              ),
+              title: const Text(
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                'current up to date release notes',
+                style: TextStyle(color: Colors.green),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                // 'latest release notes from [date] release [num]',
+                'https://go.dev/doc/go1.22 Each major Go release is supported until there are two newer major releases. For example, Go 1.5 was supported until the Go 1.7 release, and Go 1.6 was supported until the Go 1.8 release. We fix critical problems, including critical security problems, in supported releases as needed by issuing minor revisions (for example, Go 1.6.1, Go 1.6.2, and so on)',
+                style: TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    color: Colors.white),
+              ),
+              trailing: const Icon(FontAwesomeIcons.googleScholar,
+                  color: Colors.yellow),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchGoRelease();
+              }),
           // list tile 4b gopher guides.
           // paddings
           const Padding(
             padding: EdgeInsets.all(16.0),
-            child: Text('=== Prewritten Info Guides ===',
+            child: Text('====== Prewritten Info Guides ======',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.purpleAccent)),
           ),
@@ -412,6 +440,12 @@ class GoSyncNavDrawer extends StatelessWidget {
             child: Text('==== Go Events ====',
                 textAlign: TextAlign.center,
                 style: TextStyle(color: Colors.greenAccent)),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('=== xxx ===',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.purpleAccent)),
           ),
           ListTile(
               leading: const Icon(FontAwesomeIcons.googleScholar,
@@ -854,6 +888,17 @@ Future<void> _launchGoIRC() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoIRC)) {
     throw Exception('Could not launch $_urlGoIRC');
+  }
+}
+
+// https://go.dev/doc/devel/release
+final Uri _urlGoRelease = Uri.parse('https://go.dev/doc/devel/release');
+
+Future<void> _launchGoRelease() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoRelease)) {
+    throw Exception('Could not launch $_urlGoRelease');
   }
 }
 

@@ -18,7 +18,7 @@ const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String gosyncEmailAdress =
     "comments, questions, bugs contact tortek2023@gmail.com";
 
-const String goSyncHeading = 'Golang Install on Windows, Apple, Linux ';
+const String goSyncHeading = 'Golang Install on Windows, Apple iOS & Linux';
 const String ethEhSyncHeading = 'Ethereum Synchronisation';
 const String ethInstallGolandHeading = 'Install Golang';
 const String ethInstallGolangHeading = 'Install Go';
