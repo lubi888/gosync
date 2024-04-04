@@ -474,26 +474,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                 //   launch deep linking youtube.
               }),
 
-          const ListTile(
+          ListTile(
             // leading:
             // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
-            leading: Icon(
+            leading: const Icon(
               Icons.face,
               color: Colors.yellowAccent,
             ),
-            title: Text(
-              'firebase chat',
+            title: const Text(
+              'find your nearest GDG Google Developers Group',
               style: TextStyle(color: Colors.greenAccent),
             ),
-            subtitle: Text(
-              'experimental firebase hookup',
+            subtitle: const Text(
+              'hookup with your nearest develper group and ask some questions and network for ob opportunities',
               style: TextStyle(
                   fontStyle: FontStyle.italic, color: Colors.yellowAccent),
             ),
-            trailing: Icon(
+            trailing: const Icon(
               Icons.mail,
               color: Colors.greenAccent,
             ),
+            onTap: () {
+              // Navigator.of(context).pop();
+              _launchGoGDG();
+              //   launch deep linking youtube.
+            },
           ),
           const Padding(
             padding: EdgeInsets.all(16.0),
@@ -532,7 +537,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 color: Colors.yellowAccent,
               ),
               title: const Text(
-                'general golang phot colage view',
+                'general go free artwork & photo colage view',
                 style: TextStyle(color: Colors.greenAccent),
               ),
               subtitle: const Text(
@@ -541,6 +546,29 @@ class GoSyncNavDrawer extends StatelessWidget {
                     fontStyle: FontStyle.italic, color: Colors.redAccent),
               ),
               trailing: const Icon(Icons.ac_unit, color: Colors.orangeAccent),
+              onTap: () async {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const GoSyncScrollbar2()),
+                  // MaterialPageRoute(builder: (context) => GridListDemo()),
+                );
+              }),
+          ListTile(
+              leading: const Icon(
+                Icons.photo_album,
+                color: Colors.greenAccent,
+              ),
+              title: const Text(
+                'go install screenshots',
+                style: TextStyle(color: Colors.greenAccent),
+              ),
+              subtitle: const Text(
+                'screenshots of installing go on various platforms and containers.',
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellowAccent),
+              ),
+              trailing: const Icon(Icons.ac_unit, color: Colors.redAccent),
               onTap: () async {
                 Navigator.push(
                   context,
@@ -647,11 +675,11 @@ class GoSyncNavDrawer extends StatelessWidget {
                 color: Colors.yellowAccent,
               ),
               title: const Text(
-                'register: add name, email, ethAddress',
+                'register for firebase chat using gmail, apple, etc',
                 style: TextStyle(color: Colors.yellowAccent),
               ),
               subtitle: const Text(
-                'eth, etc, btc, addresses',
+                'open chat',
                 style: TextStyle(
                     fontStyle: FontStyle.italic, color: Colors.greenAccent),
               ),
@@ -679,6 +707,28 @@ class GoSyncNavDrawer extends StatelessWidget {
                   style: TextStyle(color: Colors.greenAccent)),
             ),
           ),
+          ListTile(
+              leading: const Icon(
+                Icons.accessibility,
+                color: Colors.orange,
+              ),
+              title: const Text(
+                'bug report & make suggestions',
+                style: TextStyle(color: Colors.yellow),
+              ),
+              trailing: const Icon(
+                Icons.share,
+                color: Colors.yellowAccent,
+              ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const GoSyncScrollbar2()),
+                  // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                );
+              }),
+
           ListTile(
               leading: const Icon(
                 Icons.accessibility,
@@ -899,6 +949,17 @@ Future<void> _launchGoRelease() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoRelease)) {
     throw Exception('Could not launch $_urlGoRelease');
+  }
+}
+
+// GDG google developers group
+final Uri _urlGoGDG = Uri.parse('https://developers.google.com/community/gdg/');
+
+Future<void> _launchGoGDG() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoGDG)) {
+    throw Exception('Could not launch $_urlGoGDG');
   }
 }
 
