@@ -25,6 +25,7 @@ class GoSyncNavDrawer extends StatelessWidget {
     print(TimeOfDay.now());
     // Scaffold.of(context).openDrawer();
     return Drawer(
+      width: 400.0,
       // background color for entier drawer. default black
       child: ListView(
         // padding: EdgeInsets.zero,
@@ -49,6 +50,97 @@ class GoSyncNavDrawer extends StatelessWidget {
             ),
           ),
           // DrawerTheme(data: Colors.blue, child: child),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+                '==== Installation Levels: Beginning Advanced Expert ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.redAccent)),
+          ),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.windows,
+                color: Colors.lightBlue,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'windows basic go install using gorretct directory structure && setting environment variables.golang',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.yellow),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'windows go install',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(FontAwesomeIcons.windows,
+                  color: Colors.lightGreen),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          // list tile 5 deep link XTwitter
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.apple,
+                color: Colors.grey,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'container Install & collaborative goup coding',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.lightBlue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'docker & kubernetes container go production & github hookup ',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing:
+                  const Icon(FontAwesomeIcons.apple, color: Colors.blueGrey),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          // list tile 5 deep link youtube
+          ListTile(
+              leading: const Icon(
+                // Icons.tv,
+                FontAwesomeIcons.linux,
+                color: Colors.red,
+              ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'go pro. production professional environment',
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.lightBlue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'professional go production environment',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(FontAwesomeIcons.linux, color: Colors.blue),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchYouTube();
+              }),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Official Website ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.redAccent)),
+          ),
           // List Tile 1
           ListTile(
               leading: const Icon(
