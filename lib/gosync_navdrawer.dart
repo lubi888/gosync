@@ -34,9 +34,9 @@ class GoSyncNavDrawer extends StatelessWidget {
           // debugPrint = "navdrawer opened time";
           DrawerHeader(
             decoration: const BoxDecoration(
-              color: Colors.green,
+              color: Colors.black,
               image: DecorationImage(
-                  image: AssetImage(_kAsset1), fit: BoxFit.fill),
+                  image: AssetImage(_kAsset1), fit: BoxFit.contain),
             ),
             child: Text(
               // drawerHeader,
@@ -72,11 +72,12 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               subtitle: const Text(
                 // 'https://play.golang.com/',
-                'windows go install',
+                'windows go install windows basic go install using gorretct directory structure && setting environment variables.golang',
                 // https://go.dev/play/
-                style: TextStyle(
-                    fontStyle: FontStyle.italic, color: Colors.yellow),
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.green),
               ),
+              // isThreeLine: true,
               trailing: const Icon(FontAwesomeIcons.windows,
                   color: Colors.lightGreen),
               onTap: () {
@@ -871,7 +872,18 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // builder: (context) => TextFormFieldDemo()));
               }),
           const Padding(padding: EdgeInsets.all(16.0)),
-
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Advertising Go Studios & Professionals ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.greenAccent)),
+          ),
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text('==== Advertising Go Studios & Professionals ====',
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.greenAccent)),
+          ),
           const Padding(
             padding: EdgeInsets.all(16.0),
             child: Text('======= Application ========',
