@@ -25,57 +25,170 @@ class GoSyncNavDrawer extends StatelessWidget {
     print(TimeOfDay.now());
     // Scaffold.of(context).openDrawer();
     return Drawer(
-//       width: 400.0,
-      child: SafeArea(
-          child: Column(
-        children: [
-          ExpansionTile(
-            title: Text("Parent Category 1"),
-            leading: Icon(Icons.person), //add icon
-            childrenPadding: EdgeInsets.only(left: 60), //children padding
-            children: [
-              ListTile(
-                title: Text("Child Category 1"),
-                onTap: () {
-                  //action on press
-                },
+        width: 400.0,
+        // child: SafeArea(
+        child: ListView(
+          // child: Column(
+          children: [
+            DrawerHeader(
+              decoration: const BoxDecoration(
+                color: Colors.black,
+                image: DecorationImage(
+                    image: AssetImage(_kAsset1), fit: BoxFit.contain),
               ),
-
-              ListTile(
-                title: Text("Child Category 2"),
-                onTap: () {
-                  //action on press
-                },
+              child: Text(
+                // drawerHeader,
+                AppLocalizations.of(context)!.drawerHeader,
+                // style: const TextStyle(color: Colors.purpleAccent),
+                textAlign: TextAlign.start,
+                style: const TextStyle(
+                  fontStyle: FontStyle.italic,
+                  color: Colors.yellowAccent,
+                ),
               ),
-
-              //more child menu
-            ],
-          ),
-          ExpansionTile(
-            title: Text("Parent Category 2"),
-            leading: Icon(Icons.person), //add icon
-            childrenPadding: EdgeInsets.only(left: 60), //children padding
-            children: [
-              ListTile(
-                title: Text("Child Category 1"),
-                onTap: () {
-                  //action on press
-                },
+            ),
+            ExpansionTile(
+              title: const Text(
+                "=== Installation Levels: Beginning Advanced Expert ====",
+                style: TextStyle(color: Colors.yellow),
               ),
-
-              ListTile(
-                title: Text("Child Category 2"),
-                onTap: () {
-                  //action on press
-                },
+              // leading: Icon(Icons.person), //add icon
+              leading: const Icon(
+                FontAwesomeIcons.google,
+                color: Colors.red,
               ),
+              childrenPadding:
+                  const EdgeInsets.only(left: 60), //children padding
+              children: [
+                // Divider(color: Colors.grey.shade400, indent: 72.0, height: 1.0),
 
-              //more child menu
-            ],
-          )
-        ],
-      )),
-    );
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.windows,
+                      color: Colors.lightBlue,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'windows basic go install using gorretct directory structure && setting environment variables.golang',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.yellow),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'windows go install windows basic go install using gorretct directory structure && setting environment variables.golang',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.green),
+                    ),
+                    // isThreeLine: true,
+                    trailing: const Icon(FontAwesomeIcons.windows,
+                        color: Colors.lightGreen),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                    }),
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.apple,
+                      color: Colors.grey,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'container Install & collaborative goup coding',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'docker & kubernetes container go production & github hookup ',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.yellow),
+                    ),
+                    trailing: const Icon(FontAwesomeIcons.apple,
+                        color: Colors.blueGrey),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                    }),
+                // list tile 5 deep link youtube
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.linux,
+                      color: Colors.red,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'go pro. production professional environment',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'professional go production environment',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.yellow),
+                    ),
+                    trailing:
+                        const Icon(FontAwesomeIcons.linux, color: Colors.blue),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                    }),
+                const Padding(
+                  padding: EdgeInsets.all(16.0),
+                  child: Text('==== Official Website ====',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.redAccent)),
+                ),
+
+                ListTile(
+                  title: Text("Child Category 1"),
+                  onTap: () {
+                    //action on press
+                  },
+                ),
+
+                ListTile(
+                  title: Text("Child Category 2"),
+                  onTap: () {
+                    //action on press
+                  },
+                ),
+
+                //more child menu
+              ],
+            ),
+            ExpansionTile(
+              title: Text("Parent Category 2"),
+              leading: Icon(Icons.person), //add icon
+              childrenPadding: EdgeInsets.only(left: 60), //children padding
+              children: [
+                ListTile(
+                  title: Text("Child Category 1"),
+                  onTap: () {
+                    //action on press
+                  },
+                ),
+
+                ListTile(
+                  title: Text("Child Category 2"),
+                  onTap: () {
+                    //action on press
+                  },
+                ),
+
+                //more child menu
+              ],
+            )
+          ],
+        )
+        // ),
+        );
   }
 }
 
