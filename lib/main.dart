@@ -3,7 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:intl/intl.dart';
 import './gosync_appbar.dart';
-import './gosync_navdrawer.dart';
+import './gosync_navdrawer1.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
 

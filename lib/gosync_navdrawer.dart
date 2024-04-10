@@ -58,6 +58,9 @@ class GoSyncNavDrawer extends StatelessWidget {
                 style: TextStyle(color: Colors.redAccent)),
           ),
           // list tile 5 deep link youtube
+          // try new divider
+          Divider(color: Colors.grey.shade400, indent: 72.0, height: 1.0),
+
           ListTile(
               leading: const Icon(
                 // Icons.tv,
