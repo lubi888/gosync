@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 240409",
+  "title": "goSync.go 240411",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -31,7 +31,7 @@
   "@visitGoDevPlay": {
     "description": "url link to the Go playground"
   },
-  "drawerHeader": "",
+  "drawerHeader": "go designers",
   "@drawerHeader": {
     "description": "empty string"
   },

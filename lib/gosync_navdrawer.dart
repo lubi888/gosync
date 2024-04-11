@@ -216,6 +216,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                 // Navigator.of(context).pop();
                 _launchGoRelease();
               }),
+          ListTile(
+              leading: const Icon(
+                // Icons.account_balance,
+                FontAwesomeIcons.golang,
+                color: Colors.teal,
+              ),
+              title: const Text(
+                "search for some packages",
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.purple),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'pkg.go.dev',
+                style: TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    color: Colors.yellow),
+              ),
+              trailing: const Icon(FontAwesomeIcons.googleScholar,
+                  color: Colors.orangeAccent),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchPkgGoDev();
+              }),
+
           // list tile 4b gopher guides.
           // paddings
           const Padding(
@@ -335,7 +360,99 @@ class GoSyncNavDrawer extends StatelessWidget {
                 _launchMastodonGo();
                 //   launch deep linking youtube.
               }),
+          ListTile(
+              leading:
+                  const Icon(FontAwesomeIcons.redditAlien, color: Colors.orange
+                      // Icons.alternate_email_rounded,
+                      // Icons.flutter_dash,
+                      // color: Colors.lightBlue,
+                      ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Reddit community',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to reddit/golang',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(
+                FontAwesomeIcons.reddit,
+                color: Colors.deepOrange,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                // _launchSlackGo();
+                _launchRedditGolang();
+                //   launch deep linking youtube.
+              }),
 
+          ListTile(
+              leading:
+                  const Icon(FontAwesomeIcons.wikipediaW, color: Colors.blueGrey
+                      // Icons.alternate_email_rounded,
+                      // Icons.flutter_dash,
+                      // color: Colors.lightBlue,
+                      ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Wikpedia surface web and deep link',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to Wikimedia',
+                // https://go.dev/play/
+                style:
+                    TextStyle(fontStyle: FontStyle.italic, color: Colors.red),
+              ),
+              trailing: const Icon(
+                FontAwesomeIcons.wikipediaW,
+                color: Colors.grey,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchWikpediaGo();
+                //   launch deep linking youtube.
+              }),
+          // paddings seperator
+          ListTile(
+              leading: const Icon(FontAwesomeIcons.medium, color: Colors.yellow
+                  // Icons.alternate_email_rounded,
+                  // Icons.flutter_dash,
+                  // color: Colors.lightBlue,
+                  ),
+              title: const Text(
+                // 'add eth|etc address - acccount',
+                'visit Medium tag Golang',
+                // visitGoPlayground,
+                // AppLocalizations.of(context)!.visitGoDevPlay,
+                style: TextStyle(color: Colors.blue),
+              ),
+              subtitle: const Text(
+                // 'https://play.golang.com/',
+                'deep link to Medium',
+                // https://go.dev/play/
+                style: TextStyle(
+                    fontStyle: FontStyle.italic, color: Colors.yellow),
+              ),
+              trailing: const Icon(
+                // ignore: deprecated_member_use
+                FontAwesomeIcons.mediumM,
+                color: Colors.purple,
+              ),
+              onTap: () {
+                // Navigator.of(context).pop();
+                _launchMediumTagGo();
+                //   launch deep linking youtube.
+              }),
           // paddings seperator
           const Padding(
             padding: EdgeInsets.all(16.0),
@@ -970,6 +1087,13 @@ class GoSyncNavDrawer extends StatelessWidget {
   }
 }
 
+const snackBarGoodbye = SnackBar(
+  backgroundColor: Colors.green,
+  content: Text('Thanks for visiting goSync. Goodbye!',
+      textAlign: TextAlign.center, style: TextStyle(fontSize: 22.0)),
+  duration: Duration(seconds: 3),
+);
+
 final Uri _urlPlayGolangHelloCode =
     Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
 
@@ -1157,9 +1281,46 @@ Future<void> _launchGoGDG() async {
   }
 }
 
-const snackBarGoodbye = SnackBar(
-  backgroundColor: Colors.green,
-  content: Text('Thanks for visiting goSync. Goodbye!',
-      textAlign: TextAlign.center, style: TextStyle(fontSize: 22.0)),
-  duration: Duration(seconds: 3),
-);
+// _launchPkgGoDev
+final Uri _urlPkgGoDev = Uri.parse('https://pkg.go.dev/');
+
+Future<void> _launchPkgGoDev() async {
+  debugPrint("customer left app to pkg.go.dev");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlPkgGoDev)) {
+    throw Exception('Could not launch $_urlPkgGoDev');
+  }
+}
+
+// _launchPkgGoDev
+final Uri _urlRedditGolang = Uri.parse('https://reddit.com/r/golang/');
+
+Future<void> _launchRedditGolang() async {
+  debugPrint("customer left app to pkg.go.dev");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlRedditGolang)) {
+    throw Exception('Could not launch $_urlRedditGolang');
+  }
+}
+
+final Uri _urlWikpediaGo =
+    Uri.parse('https://en.wikipedia.org/wiki/Go_(programming_language)');
+
+Future<void> _launchWikpediaGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlWikpediaGo)) {
+    throw Exception('Could not launch $_urlWikpediaGo');
+  }
+}
+
+// https://medium.com/tag/golang
+final Uri _urlMediumTagGo = Uri.parse('https://medium.com/tag/golang');
+
+Future<void> _launchMediumTagGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlMediumTagGo)) {
+    throw Exception('Could not launch $_urlMediumTagGo');
+  }
+}
