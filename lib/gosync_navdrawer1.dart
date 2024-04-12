@@ -307,31 +307,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                         color: Colors.teal,
                       ),
                       title: const Text(
-                        // AppLocalizations.of(context)!.visitGoDevPlay,
-                        'current up to date release notes',
-                        style: TextStyle(color: Colors.green),
-                      ),
-                      subtitle: const Text(
-                        // 'https://play.golang.com/',
-                        // 'latest release notes from [date] release [num]',
-                        'https://go.dev/doc/go1.22 Each major Go release is supported until there are two newer major releases. For example, Go 1.5 was supported until the Go 1.7 release, and Go 1.6 was supported until the Go 1.8 release. We fix critical problems, including critical security problems, in supported releases as needed by issuing minor revisions (for example, Go 1.6.1, Go 1.6.2, and so on)',
-                        style: TextStyle(
-                            // fontStyle: FontStyle.italic,
-                            color: Colors.white),
-                      ),
-                      trailing: const Icon(FontAwesomeIcons.googleScholar,
-                          color: Colors.yellow),
-                      onTap: () {
-                        // Navigator.of(context).pop();
-                        _launchGoRelease();
-                      }),
-                  ListTile(
-                      leading: const Icon(
-                        // Icons.account_balance,
-                        FontAwesomeIcons.golang,
-                        color: Colors.teal,
-                      ),
-                      title: const Text(
                         "search for some packages",
                         // AppLocalizations.of(context)!.visitGoDevPlay,
                         style: TextStyle(color: Colors.purple),
@@ -348,6 +323,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         _launchPkgGoDev();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.account_balance,
+                        FontAwesomeIcons.golang,
+                        color: Colors.teal,
+                      ),
+                      title: const Text(
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        'current up to date release notes',
+                        style: TextStyle(color: Colors.green),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        // 'latest release notes from [date] release [num]',
+                        'go is updated twice yearly with minor bug fixes about 1 month after a major release',
+                        style: TextStyle(
+                            // fontStyle: FontStyle.italic,
+                            color: Colors.yellow),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.googleScholar,
+                          color: Colors.yellow),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchGoRelease();
                       }),
                 ],
               ),
@@ -511,6 +511,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                         // _launchSlackGo();
                         _launchRedditGolang();
                         //   launch deep linking youtube.
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.instagram,
+                        color: Colors.purple,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Instagram @golang programming',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.orange),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'deep link to instagram',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.red),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.instagramSquare,
+                          color: Colors.orange),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchYouTube();
                       }),
 
                   ListTile(
@@ -868,6 +893,88 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text(
+                  "==== hire go programmers ====",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.orangeAccent),
+                ),
+                leading: const Icon(
+                  Icons.emoji_people,
+                  color: Colors.red,
+                ), //add icon
+                childrenPadding:
+                    const EdgeInsets.only(left: 20), //children padding
+                children: [
+                  ListTile(
+                    // leading:
+                    // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                    leading: const Icon(
+                      FontAwesomeIcons.linkedin,
+                      color: Colors.lightBlue,
+                    ),
+                    title: const Text(
+                      'visit LinkedIn for go programmers',
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      'look at some programmer profiles',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          color: Colors.greenAccent),
+                    ),
+                    trailing: const Icon(
+                      FontAwesomeIcons.linkedinIn,
+                      color: Colors.redAccent,
+                    ),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      _launchLinkedInGo();
+                      //   launch deep linking youtube.
+                    },
+                  )
+                ],
+              ),
+              ExpansionTile(
+                title: const Text("==== hire go platform cloud servers ====",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(color: Colors.pink)),
+                leading: const Icon(
+                  Icons.emoji_people,
+                  color: Colors.blue,
+                ), //add icon
+                childrenPadding:
+                    const EdgeInsets.only(left: 20), //children padding
+                children: [
+                  ListTile(
+                    // leading:
+                    // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                    leading: const Icon(
+                      FontAwesomeIcons.digitalOcean,
+                      color: Colors.lightBlue,
+                    ),
+                    title: const Text(
+                      'visit Digital Ocean',
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      'look at some platform server setups',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic,
+                          color: Colors.greenAccent),
+                    ),
+                    trailing: const Icon(
+                      FontAwesomeIcons.digitalOcean,
+                      color: Colors.redAccent,
+                    ),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      _launchDigitalOceanGo();
+                      //   launch deep linking youtube.
+                    },
+                  )
+                ],
+              ),
+              ExpansionTile(
+                title: const Text(
                   "==== app info & settings ====",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.yellowAccent),
@@ -1200,5 +1307,29 @@ Future<void> _launchMediumTagGo() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlMediumTagGo)) {
     throw Exception('Could not launch $_urlMediumTagGo');
+  }
+}
+
+// https://medium.com/tag/golang
+final Uri _urlLinkedInGo =
+    Uri.parse('https://www.linkedin.com/jobs/golang-developer-jobs');
+
+Future<void> _launchLinkedInGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlLinkedInGo)) {
+    throw Exception('Could not launch $_urlLinkedInGo');
+  }
+}
+
+// _launchDigitalOceanGo
+// https://medium.com/tag/golang
+final Uri _urlDigitalOceanGo = Uri.parse('https://www.digitalocean.com/');
+
+Future<void> _launchDigitalOceanGo() async {
+  debugPrint("customer left app to github go issues");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlDigitalOceanGo)) {
+    throw Exception('Could not launch $_urlDigitalOceanGo');
   }
 }
