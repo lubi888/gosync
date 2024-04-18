@@ -751,7 +751,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                         _launchGoForum();
                         //   launch deep linking youtube.
                       }),
-
                   ListTile(
                       leading: const Icon(Icons.group, color: Colors.yellow),
                       title: const Text(
@@ -809,7 +808,73 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text(
-                  "go community photos & screenshots",
+                  "go AI",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.red),
+                ),
+                leading: const Icon(
+                  Icons.android,
+                  color: Colors.amber,
+                ), //add icon
+                childrenPadding:
+                    const EdgeInsets.only(left: 30), //children padding
+                children: [
+                  ListTile(
+                      leading: const Icon(FontAwesomeIcons.search,
+                          color: Colors.yellow),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Copilot',
+                        // visitGoPlayground,
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.orange),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'deep Bing and MS link.',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.green),
+                      ),
+                      trailing: const Icon(
+                        FontAwesomeIcons.microsoft,
+                        color: Colors.red,
+                      ),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchGithubCopilot(); //   launch deep linking youtube.
+                      }),
+                  ListTile(
+                      leading: const Icon(Icons.chat, color: Colors.red),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Gemini code assist',
+                        // visitGoPlayground,
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'gemini agents',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.green),
+                      ),
+                      trailing: const Icon(
+                        FontAwesomeIcons.google,
+                        color: Colors.red,
+                      ),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        // _launchDiscordGophers();
+                        _launchGeminiCodeAssist();
+                        //   launch deep linking youtube.
+                      }),
+                ],
+              ),
+              ExpansionTile(
+                title: const Text(
+                  "go photos & screenshots",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.orangeAccent),
                 ),
@@ -930,6 +995,60 @@ class GoSyncNavDrawer extends StatelessWidget {
                     onTap: () {
                       // Navigator.of(context).pop();
                       _launchLinkedInGo();
+                      //   launch deep linking youtube.
+                    },
+                  ),
+                  ListTile(
+                    // leading:
+                    // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                    leading: const Icon(
+                      Icons.person,
+                      color: Colors.red,
+                    ),
+                    title: const Text(
+                      'visit Freelancers for go programmers',
+                      style: TextStyle(color: Colors.orange),
+                    ),
+                    subtitle: const Text(
+                      'hire some programmers',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.teal),
+                    ),
+                    trailing: const Icon(
+                      // FontAwesomeIcons.linkedinIn,
+                      Icons.work,
+                      color: Colors.yellowAccent,
+                    ),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      _launchFreelancer();
+                      //   launch deep linking youtube.
+                    },
+                  ),
+                  ListTile(
+                    // leading:
+                    // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                    leading: const Icon(
+                      Icons.person,
+                      color: Colors.pink,
+                    ),
+                    title: const Text(
+                      'visit Upwork for go programmers',
+                      style: TextStyle(color: Colors.yellow),
+                    ),
+                    subtitle: const Text(
+                      'hire some programmers online',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.orange),
+                    ),
+                    trailing: const Icon(
+                      // FontAwesomeIcons.linkedinIn,
+                      Icons.work_off_sharp,
+                      color: Colors.purple,
+                    ),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      _launchUpworkGolang();
                       //   launch deep linking youtube.
                     },
                   )
@@ -1334,5 +1453,50 @@ Future<void> _launchDigitalOceanGo() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlDigitalOceanGo)) {
     throw Exception('Could not launch $_urlDigitalOceanGo');
+  }
+}
+
+final Uri _urlFreelancer = Uri.parse('https://www.freelancer.com/');
+
+Future<void> _launchFreelancer() async {
+  debugPrint("customer left app to freelancer");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlFreelancer)) {
+    throw Exception('Could not launch $_urlFreelancer');
+  }
+}
+
+// https://www.upwork.com/hire/golang-developers/
+final Uri _urlUpworkGolang =
+    Uri.parse('https://www.upwork.com/hire/golang-developers/');
+
+Future<void> _launchUpworkGolang() async {
+  debugPrint("customer left app to freelancer");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlUpworkGolang)) {
+    throw Exception('Could not launch $_urlUpworkGolang');
+  }
+}
+
+// https://github.com/features/copilot/
+final Uri _urlGithubCopilot = Uri.parse('https://github.com/features/copilot/');
+
+Future<void> _launchGithubCopilot() async {
+  debugPrint("customer left app to freelancer");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGithubCopilot)) {
+    throw Exception('Could not launch $_urlGithubCopilot');
+  }
+}
+
+// https://cloud.google.com/gemini/docs/codeassist/overview
+final Uri _urlGeminiCodeAssist =
+    Uri.parse('https://cloud.google.com/gemini/docs/codeassist/overview');
+
+Future<void> _launchGeminiCodeAssist() async {
+  debugPrint("customer left app to freelancer");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGeminiCodeAssist)) {
+    throw Exception('Could not launch $_urlGeminiCodeAssist');
   }
 }
