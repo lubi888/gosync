@@ -42,9 +42,10 @@ class GoSyncNavDrawer extends StatelessWidget {
                   // style: const TextStyle(color: Colors.purpleAccent),
                   textAlign: TextAlign.center,
                   style: const TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontSize: 20.0,
-                    color: Colors.yellow,
+                    // fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 30.0,
+                    color: Colors.red,
                   ),
                 ),
               ),
@@ -236,6 +237,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                       ),
                       trailing: const Icon(FontAwesomeIcons.linux,
                           color: Colors.blue),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        // _launchYouTube();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.linux,
+                        color: Colors.yellow,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit GNU Not Unix golang install',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.lightBlue),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'deep gnu linux',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.purple),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.linux,
+                          color: Colors.pink),
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
@@ -808,7 +834,7 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text(
-                  "go AI",
+                  "go a.i.",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.red),
                 ),
@@ -819,31 +845,6 @@ class GoSyncNavDrawer extends StatelessWidget {
                 childrenPadding:
                     const EdgeInsets.only(left: 30), //children padding
                 children: [
-                  ListTile(
-                      leading: const Icon(FontAwesomeIcons.search,
-                          color: Colors.yellow),
-                      title: const Text(
-                        // 'add eth|etc address - acccount',
-                        'visit Copilot',
-                        // visitGoPlayground,
-                        // AppLocalizations.of(context)!.visitGoDevPlay,
-                        style: TextStyle(color: Colors.orange),
-                      ),
-                      subtitle: const Text(
-                        // 'https://play.golang.com/',
-                        'deep Bing and MS link.',
-                        // https://go.dev/play/
-                        style: TextStyle(
-                            fontStyle: FontStyle.italic, color: Colors.green),
-                      ),
-                      trailing: const Icon(
-                        FontAwesomeIcons.microsoft,
-                        color: Colors.red,
-                      ),
-                      onTap: () {
-                        // Navigator.of(context).pop();
-                        _launchGithubCopilot(); //   launch deep linking youtube.
-                      }),
                   ListTile(
                       leading: const Icon(Icons.chat, color: Colors.red),
                       title: const Text(
@@ -869,6 +870,31 @@ class GoSyncNavDrawer extends StatelessWidget {
                         // _launchDiscordGophers();
                         _launchGeminiCodeAssist();
                         //   launch deep linking youtube.
+                      }),
+                  ListTile(
+                      leading: const Icon(FontAwesomeIcons.search,
+                          color: Colors.yellow),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Copilot',
+                        // visitGoPlayground,
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.orange),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'deep Bing and MS link.',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.green),
+                      ),
+                      trailing: const Icon(
+                        FontAwesomeIcons.microsoft,
+                        color: Colors.red,
+                      ),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchGithubCopilot(); //   launch deep linking youtube.
                       }),
                 ],
               ),
