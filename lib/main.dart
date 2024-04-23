@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:intl/intl.dart';
@@ -38,12 +39,36 @@ class GoSync extends StatelessWidget {
         // primarySwatch: Colors.green,
         // primaryColorDark: Colors.amber,
         // primaryColorLight: Colors.pinkAccent,
-        brightness: Brightness.dark,
-        primarySwatch: Colors.red,
+        // brightness: Brightness.dark,
+        // primarySwatch: Colors.red,
         // accentColor: Colors.green,
         // accentColorBrightness: Brightness.light,
         // textSelectionTheme: Colors.purple,
         // Colors.orange,
+        useMaterial3: true,
+
+        // Define the default brightness and colors.
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.purple,
+          // ···
+          brightness: Brightness.dark,
+        ),
+
+        // Define the default `TextTheme`. Use this to specify the default
+        // text styling for headlines, titles, bodies of text, and more.
+        textTheme: TextTheme(
+          displayLarge: const TextStyle(
+            fontSize: 72,
+            fontWeight: FontWeight.bold,
+          ),
+          // ···
+          titleLarge: GoogleFonts.oswald(
+            fontSize: 30,
+            fontStyle: FontStyle.italic,
+          ),
+          bodyMedium: GoogleFonts.merriweather(),
+          displaySmall: GoogleFonts.pacifico(),
+        ),
       ),
       localizationsDelegates: const [
         AppLocalizations.delegate,

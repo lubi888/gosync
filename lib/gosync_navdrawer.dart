@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:gosync/gosync_text.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
@@ -45,7 +46,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                     // fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                     fontSize: 30.0,
-                    color: Colors.red,
+                    color: Colors.yellow,
                   ),
                 ),
               ),
@@ -1134,6 +1135,27 @@ class GoSyncNavDrawer extends StatelessWidget {
                 childrenPadding:
                     const EdgeInsets.only(left: 30), //children padding
                 children: [
+                  ListTile(
+                      leading: const Icon(
+                        Icons.color_lens_outlined,
+                        color: Colors.yellow,
+                      ),
+                      title: const Text(
+                        'theme selection',
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      trailing: const Icon(
+                        Icons.colorize,
+                        color: Colors.green,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const GoSyncScrollbar2()),
+                          // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                        );
+                      }),
                   ListTile(
                       leading: const Icon(
                         Icons.accessibility,
