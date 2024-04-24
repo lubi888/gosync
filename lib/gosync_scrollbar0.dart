@@ -41,6 +41,18 @@ class GoSyncScrollbar0 extends StatelessWidget {
                 color: Colors.green, backgroundColor: Colors.yellowAccent),
           ),
           Text(
+            textAlign: TextAlign.center,
+            goSyncGoogleAIParameters,
+            style: TextStyle(
+                color: Colors.blue, backgroundColor: Colors.yellowAccent),
+          ),
+          Text(
+            textAlign: TextAlign.left,
+            goSyncGoogleAIExample,
+            style: TextStyle(
+                color: Colors.blue, backgroundColor: Colors.yellowAccent),
+          ),
+          Text(
             // 'Install Golang and GoEth Geth bare bones',
             ethTextFonts,
             textAlign: TextAlign.center,

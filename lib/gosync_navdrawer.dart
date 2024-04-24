@@ -45,7 +45,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                   style: const TextStyle(
                     // fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
-                    fontSize: 30.0,
+                    fontSize: 20.0,
                     color: Colors.yellow,
                   ),
                 ),
@@ -267,6 +267,48 @@ class GoSyncNavDrawer extends StatelessWidget {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
                       }),
+                ],
+              ),
+              ExpansionTile(
+                title: const Text(
+                  "go commands",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.red),
+                ),
+                leading: const Icon(
+                  FontAwesomeIcons.laptopCode,
+                  color: Colors.blue,
+                ), //add icon
+                childrenPadding:
+                    const EdgeInsets.only(left: 30), //children padding
+                children: [
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.code,
+                        color: Colors.pink,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'go cli common commands',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.teal),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'cli command line interface',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.pink),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.codeCompare,
+                          color: Colors.green),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        // _launchYouTube();
+                      }),
+                  // list tile 5 deep link XTwitter
+                  // list tile 5 deep link youtube
                 ],
               ),
               ExpansionTile(

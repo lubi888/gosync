@@ -12,7 +12,23 @@ const String danger = "danger";
 const String ethSyncPrimaryGoals =
     ('1, The primary goal of this mobile app is to educate the reader about golang installation.\n\n'
         '2, The secondary goal is to learning programming.\n\n'
-        '3, The tertiary goal is find golang resources online.');
+        '3, The tertiary goal is find golang resources online.\n\n');
+
+const String goSyncGoogleAIParameters =
+    ('There are four main areas to consider when writing an effective prompt. You don’t need to use all four but using a few will help!\n\n'
+        '1, Persona\n\n'
+        '2, Task\n\n'
+        '3, Context\n\n'
+        '4, Format\n\n');
+
+const String goSyncGoogleAIExample =
+    ('Here is an example of a prompt using all four areas that could work well in Gmail and Google Docs:\n\n'
+        'You are a Google Cloud program manager. Draft an executive summary email to [persona] based on [details about relevant program docs]. Limit to bullet points.\n\n'
+        'Here are quick tips to get you started with Gemini for Workspace:\n\n'
+        '1. Use natural language. Write as if you are speaking to another person. Express complete thoughts in full sentences.\n\n'
+        '2. Be specific and iterate. Tell Gemini for Workspace what you need it to do [summarize, write, change the tone, create]. Provide as much context as possible.\n\n'
+        '3. Be concise and avoid complexity. State your request in brief — but specific — language. Avoid jargon.\n\n'
+        '4. Make it a conversation. Fine-tune your prompts if the results do not meet your expectations or if you believe there is room for improvem\n\n');
 
 const String ethInstallGolandGoGetWebsite = "https://golang.org/dl";
 const String gosyncEmailAdress =
