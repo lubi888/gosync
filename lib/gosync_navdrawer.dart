@@ -402,7 +402,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       ),
                       title: const Text(
                         // AppLocalizations.of(context)!.visitGoDevPlay,
-                        'current up to date release notes',
+                        'current release notes',
                         style: TextStyle(color: Colors.green),
                       ),
                       subtitle: const Text(
@@ -418,6 +418,55 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         _launchGoRelease();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.account_balance,
+                        FontAwesomeIcons.golang,
+                        color: Colors.blue,
+                      ),
+                      title: const Text(
+                        "search for some packages",
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.purple),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'pkg.go.dev',
+                        style: TextStyle(
+                            // fontStyle: FontStyle.italic,
+                            color: Colors.yellow),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.googleScholar,
+                          color: Colors.redAccent),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchPkgGoDev();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.account_balance,
+                        FontAwesomeIcons.golang,
+                        color: Colors.orangeAccent,
+                      ),
+                      title: const Text(
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        'blog rolling notes',
+                        style: TextStyle(color: Colors.yellow),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        // 'latest release notes from [date] release [num]',
+                        'updated twice monthly',
+                        style: TextStyle(
+                            // fontStyle: FontStyle.italic,
+                            color: Colors.pink),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.google,
+                          color: Colors.blue),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchGoBlog();
                       }),
                 ],
               ),
@@ -943,7 +992,7 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text(
-                  "go photos & screenshots",
+                  "go art logos, photos & screenshots",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.orangeAccent),
                 ),
@@ -1022,6 +1071,32 @@ class GoSyncNavDrawer extends StatelessWidget {
                     onTap: () {
                       // Navigator.of(context).pop();
                       _launchGoGDG();
+                      //   launch deep linking youtube.
+                    },
+                  ),
+                  ListTile(
+                    // leading:
+                    // CircleAvatar(radius: 14, backgroundColor: Colors.yellowAccent),
+                    leading: const Icon(
+                      FontAwesomeIcons.meetup,
+                      color: Colors.red,
+                    ),
+                    title: const Text(
+                      'find your nearest Meetup Google Group',
+                      style: TextStyle(color: Colors.purple),
+                    ),
+                    subtitle: const Text(
+                      'hookup with other professionals',
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.red),
+                    ),
+                    trailing: const Icon(
+                      FontAwesomeIcons.meetup,
+                      color: Colors.greenAccent,
+                    ),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      _launchGoMeetup();
                       //   launch deep linking youtube.
                     },
                   ),
@@ -1588,5 +1663,25 @@ Future<void> _launchGeminiCodeAssist() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGeminiCodeAssist)) {
     throw Exception('Could not launch $_urlGeminiCodeAssist');
+  }
+}
+
+final Uri _urlGoMeetup = Uri.parse('https://www.meetup.com/pro/go/');
+
+Future<void> _launchGoMeetup() async {
+  debugPrint("customer left app to meetup");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoMeetup)) {
+    throw Exception('Could not launch $_urlGoMeetup');
+  }
+}
+
+final Uri _urlGoBlog = Uri.parse('https://go.dev/blog/');
+
+Future<void> _launchGoBlog() async {
+  debugPrint("customer left app to goblog");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoBlog)) {
+    throw Exception('Could not launch $_urlGoBlog');
   }
 }
