@@ -1,66 +1,46 @@
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-// import 'package:gosync/main%20copy.dart';
-import 'package:json_theme/json_theme.dart';
-import 'package:flutter/services.dart'; // for root bundle
-import 'dart:convert'; //
-
 // import 'package:intl/intl.dart';
 import './gosync_appbar.dart';
-// import './gosync_navdrawer.dart';
-import 'gosync_navdrawer.dart';
+import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
 
-// add async to main
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-
-  final themeStr =
-      await rootBundle.loadString('assets/themes/appainter_theme.json');
-  // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
-  // await rootBundle.loadString('assets/themes/appainter_theme_green.json');
-  final themeJson = jsonDecode(themeStr);
-  final theme = ThemeDecoder.decodeThemeData(themeJson)!;
-
-  runApp(GoSync(theme: theme));
+void main() {
+  runApp(const GoSync());
 }
 
 class GoSync extends StatelessWidget {
-  final ThemeData theme;
-  // const GoSync({super.key});
-  const GoSync({super.key, required this.theme});
-
+  const GoSync({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: goSyncTitle,
-      theme: theme,
-      // theme: ThemeData(
-      //   // This is the theme of your application.
-      //   useMaterial3: true,
+      theme: ThemeData(
+        // This is the theme of your application.
+        useMaterial3: true,
 
-      //   colorScheme: ColorScheme.fromSeed(
-      //     seedColor: Colors.purple,
-      //     // ···
-      //     brightness: Brightness.dark,
-      //   ),
-      //   textTheme: TextTheme(
-      //     displayLarge: const TextStyle(
-      //       fontSize: 72,
-      //       fontWeight: FontWeight.bold,
-      //     ),
-      //     // ···
-      //     titleLarge: GoogleFonts.oswald(
-      //       fontSize: 30,
-      //       fontStyle: FontStyle.italic,
-      //     ),
-      //     bodyMedium: GoogleFonts.merriweather(),
-      //     displaySmall: GoogleFonts.pacifico(),
-      //   ),
-      // ),
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.purple,
+          // ···
+          brightness: Brightness.dark,
+        ),
+        textTheme: TextTheme(
+          displayLarge: const TextStyle(
+            fontSize: 72,
+            fontWeight: FontWeight.bold,
+          ),
+          // ···
+          titleLarge: GoogleFonts.oswald(
+            fontSize: 30,
+            fontStyle: FontStyle.italic,
+          ),
+          bodyMedium: GoogleFonts.merriweather(),
+          displaySmall: GoogleFonts.pacifico(),
+        ),
+      ),
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,

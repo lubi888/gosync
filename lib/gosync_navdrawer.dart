@@ -990,18 +990,18 @@ class GoSyncNavDrawer extends StatelessWidget {
                       }),
                 ],
               ),
-              ExpansionTile(
-                title: const Text(
+              const ExpansionTile(
+                title: Text(
                   "go art logos, photos & screenshots",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.orangeAccent),
                 ),
-                leading: const Icon(
+                leading: Icon(
                   Icons.photo_camera_outlined,
                   color: Colors.amber,
                 ), //add icon
                 childrenPadding:
-                    const EdgeInsets.only(left: 30), //children padding
+                    EdgeInsets.only(left: 30), //children padding
                 children: [
                   // ListTiles
                 ],
