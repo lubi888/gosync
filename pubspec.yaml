@@ -41,8 +41,8 @@ dependencies:
     sdk: flutter
   intl: any
   font_awesome_flutter: ^10.7.0
-  google_fonts: ^6.2.1
-  # json_theme: ^6.4.0
+  json_theme: ^6.4.0
+  # google_fonts: ^6.2.1
   # flutter_gen: any
 
 dev_dependencies:
