@@ -16,9 +16,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final themeStr =
-      // await rootBundle.loadString('assets/themes/appainter_theme.json');
-      // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
-      await rootBundle.loadString('assets/themes/appainter_theme_green.json');
+      await rootBundle.loadString('assets/themes/appainter_theme.json');
+  // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
+  // await rootBundle.loadString('assets/themes/appainter_theme_green.json');
   final themeJson = jsonDecode(themeStr);
   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
 
@@ -35,6 +35,7 @@ class GoSync extends StatelessWidget {
     return MaterialApp(
       title: goSyncTitle,
       theme: theme,
+      //Google example
       // theme: ThemeData(
       //   // This is the theme of your application.
       //   useMaterial3: true,
@@ -58,6 +59,11 @@ class GoSync extends StatelessWidget {
       //     displaySmall: GoogleFonts.pacifico(),
       //   ),
       // ),
+
+      // setting theme Material
+      // theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
+      // darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
