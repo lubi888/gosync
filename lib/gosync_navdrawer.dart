@@ -306,6 +306,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        _launchGoCommands();
                       }),
                   // list tile 5 deep link XTwitter
                   // list tile 5 deep link youtube
@@ -1000,8 +1001,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                   Icons.photo_camera_outlined,
                   color: Colors.amber,
                 ), //add icon
-                childrenPadding:
-                    EdgeInsets.only(left: 30), //children padding
+                childrenPadding: EdgeInsets.only(left: 30), //children padding
                 children: [
                   // ListTiles
                 ],
@@ -1683,5 +1683,15 @@ Future<void> _launchGoBlog() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoBlog)) {
     throw Exception('Could not launch $_urlGoBlog');
+  }
+}
+
+final Uri _urlGoCommands = Uri.parse('https://pkg.go.dev/cmd');
+
+Future<void> _launchGoCommands() async {
+  debugPrint("customer left app to go github");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlGoCommands)) {
+    throw Exception('Could not launch $_urlGoCommands');
   }
 }
