@@ -16,9 +16,8 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   final themeStr =
-      await rootBundle.loadString('assets/themes/appainter_theme.json');
-  // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
-  // await rootBundle.loadString('assets/themes/appainter_theme_green.json');
+      // await rootBundle.loadString('assets/themes/appainter_theme.json');
+      await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
   final themeJson = jsonDecode(themeStr);
   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
 
