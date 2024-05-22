@@ -75,9 +75,9 @@ flutter:
   assets:
     - assets/images/
     - assets/themes/
-    - assets/themes/appainter_theme.json
-    - assets/themes/appainter_theme_dark.json
-    - assets/themes/appainter_theme_green.json
+    # - assets/themes/appainter_theme.json
+    # - assets/themes/appainter_theme_dark.json
+    # - assets/themes/appainter_theme_green.json
     # - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
