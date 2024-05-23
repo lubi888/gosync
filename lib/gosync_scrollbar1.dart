@@ -639,7 +639,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             text: goPowerShell,
             textAlign: TextAlign.left,
             style: const TextStyle(
-              color: Colors.white,
+              color: Colors.orange,
               // backgroundColor: Colors.amber,
               fontStyle: FontStyle.normal,
               fontSize: 25.0,
@@ -657,7 +657,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
             text: goDesigners,
             textAlign: TextAlign.left,
             style: const TextStyle(
-              color: Colors.white,
+              color: Colors.green,
               // backgroundColor: Colors.amber,
               fontStyle: FontStyle.normal,
               fontSize: 25.0,
