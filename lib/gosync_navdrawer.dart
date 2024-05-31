@@ -271,6 +271,126 @@ class GoSyncNavDrawer extends StatelessWidget {
               ),
               ExpansionTile(
                 title: const Text(
+                  "go IDEs",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.yellow),
+                ),
+                // leading: Icon(Icons.person), //add icon
+                leading: const Icon(
+                  Icons.integration_instructions_outlined,
+                  // FontAwesomeIcons.googleScholar,
+                  color: Colors.yellow,
+                ),
+                childrenPadding: const EdgeInsets.only(
+                    left: 20), //children padding origianlly 60
+                children: [
+                  // Divider(color: Colors.grey.shade400, indent: 72.0, height: 1.0),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.windows,
+                        color: Colors.lightBlue,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Visual Studio Code.',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.yellow),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'fast, open source and just add golang extension',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.green),
+                      ),
+                      // isThreeLine: true,
+                      trailing: const Icon(FontAwesomeIcons.windows,
+                          color: Colors.lightGreen),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchVisualStudioCode();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.codeFork,
+                        color: Colors.grey,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Jetbrains GoLand',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.lightBlue),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'professional IDE try for free ',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.yellow),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.desktop,
+                          color: Colors.blueGrey),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchJetbrainsGoLand();
+                      }),
+                  // list tile 5 deep link youtube
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.linux,
+                        color: Colors.red,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit VIm Golang',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.lightBlue),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'stalworth vim plugin',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.yellow),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.windows,
+                          color: Colors.blue),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchVimGo();
+                      }),
+                  ListTile(
+                      leading: const Icon(
+                        // Icons.tv,
+                        FontAwesomeIcons.codeBranch,
+                        color: Colors.yellow,
+                      ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit LiteIDE',
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.purple),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'advanced IDE code editor',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.yellow),
+                      ),
+                      trailing: const Icon(FontAwesomeIcons.desktop,
+                          color: Colors.red),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        _launchLiteIDE();
+                      }),
+                ],
+              ),
+              ExpansionTile(
+                title: const Text(
                   "go commands",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.red),
@@ -631,6 +751,37 @@ class GoSyncNavDrawer extends StatelessWidget {
                         // Navigator.of(context).pop();
                         // _launchSlackGo();
                         _launchRedditGolang();
+                        //   launch deep linking youtube.
+                      }),
+                  ListTile(
+                      leading:
+                          const Icon(FontAwesomeIcons.dev, color: Colors.yellow
+                              // Icons.alternate_email_rounded,
+                              // Icons.flutter_dash,
+                              // color: Colors.lightBlue,
+                              ),
+                      title: const Text(
+                        // 'add eth|etc address - acccount',
+                        'visit Dev community',
+                        // visitGoPlayground,
+                        // AppLocalizations.of(context)!.visitGoDevPlay,
+                        style: TextStyle(color: Colors.red),
+                      ),
+                      subtitle: const Text(
+                        // 'https://play.golang.com/',
+                        'deep link to dev.to/golang',
+                        // https://go.dev/play/
+                        style: TextStyle(
+                            fontStyle: FontStyle.italic, color: Colors.green),
+                      ),
+                      trailing: const Icon(
+                        FontAwesomeIcons.dev,
+                        color: Colors.blue,
+                      ),
+                      onTap: () {
+                        // Navigator.of(context).pop();
+                        // _launchSlackGo();
+                        _launchDevGolang();
                         //   launch deep linking youtube.
                       }),
                   ListTile(
@@ -1575,6 +1726,16 @@ Future<void> _launchRedditGolang() async {
   }
 }
 
+final Uri _urlDevGolang = Uri.parse('https://dev.to/t/go');
+
+Future<void> _launchDevGolang() async {
+  debugPrint("customer left app to pkg.go.dev");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlDevGolang)) {
+    throw Exception('Could not launch $_urlDevGolang');
+  }
+}
+
 final Uri _urlWikpediaGo =
     Uri.parse('https://en.wikipedia.org/wiki/Go_(programming_language)');
 
@@ -1693,5 +1854,47 @@ Future<void> _launchGoCommands() async {
   print(TimeOfDay.now());
   if (!await launchUrl(_urlGoCommands)) {
     throw Exception('Could not launch $_urlGoCommands');
+  }
+}
+
+final Uri _urlVisualStudioCode = Uri.parse('https://code.visualstudio.com/');
+
+Future<void> _launchVisualStudioCode() async {
+  debugPrint("customer left app to go visual studio code");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlVisualStudioCode)) {
+    throw Exception('Could not launch $_urlVisualStudioCode');
+  }
+}
+
+// _launchJetbrainsGoLand
+final Uri _urlJetbrainsGoLand = Uri.parse('https://www.jetbrains.com/go/');
+
+Future<void> _launchJetbrainsGoLand() async {
+  debugPrint("customer left app to jetbrains ");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlJetbrainsGoLand)) {
+    throw Exception('Could not launch $_urlJetbrainsGoLand');
+  }
+}
+
+final Uri _urlVimGo = Uri.parse('https://github.com/fatih/vim-go');
+
+Future<void> _launchVimGo() async {
+  debugPrint("customer left app to vim go");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlVimGo)) {
+    throw Exception('Could not launch $_urlVimGo');
+  }
+}
+
+// https://github.com/visualfc/liteide
+final Uri _urlLiteIDE = Uri.parse('https://github.com/visualfc/liteide');
+
+Future<void> _launchLiteIDE() async {
+  debugPrint("customer left app to Lite IDE");
+  print(TimeOfDay.now());
+  if (!await launchUrl(_urlLiteIDE)) {
+    throw Exception('Could not launch $_urlLiteIDE');
   }
 }

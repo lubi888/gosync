@@ -12,10 +12,11 @@ class GoSyncScrollbar0 extends StatelessWidget {
       // child: Container(
       // color: Colors.amber,
       child: ListView(
-        children: const <Widget>[
+        children: <Widget>[
+          // children: const <Widget>[
           // Container(
           // child:
-          Text(
+          const Text(
             'Home \nInstall Golang Page 0',
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -27,41 +28,36 @@ class GoSyncScrollbar0 extends StatelessWidget {
           // Container(
           // child:
           Text(
-            'Install Golang and GoEth Geth bare bones',
+            '\nInstall Golang and GoEth Geth bare bones \n textTheme.headlineLarge\n',
             textAlign: TextAlign.center,
-            style: TextStyle(
-                // color: Colors.blueAccent,
-                fontSize: 40.0,
-                fontStyle: FontStyle.italic),
+            style: Theme.of(context).textTheme.headlineLarge,
+            //   style: TextStyle(
+            //       // color: Colors.blueAccent,
+            //       fontSize: 40.0,
+            //       fontStyle: FontStyle.italic),
           ),
-          Text(
+          const Text(
             textAlign: TextAlign.center,
             ethSyncPrimaryGoals,
-            // style: TextStyle(
-            // color: Colors.green, backgroundColor: Colors.yellowAccent),
+            style: TextStyle(
+                // color: Colors.green, backgroundColor: Colors.yellowAccent),
+                ),
           ),
-          Text(
+          const Text(
             textAlign: TextAlign.center,
             goSyncGoogleAIParameters,
-            // style: TextStyle(
-            // color: Colors.blue, backgroundColor: Colors.yellowAccent),
+            style: TextStyle(
+                // color: Colors.blue, backgroundColor: Colors.yellowAccent),
+                ),
           ),
-          Text(
+          const Text(
             textAlign: TextAlign.left,
             goSyncGoogleAIExample,
-            // style: TextStyle(
-            // color: Colors.blue, backgroundColor: Colors.yellowAccent),
+            style: TextStyle(
+                // color: Colors.blue, backgroundColor: Colors.yellowAccent),
+                ),
           ),
-          Padding(
-            padding: EdgeInsets.all(20.0),
-            child: Text(
-              textAlign: TextAlign.left,
-              goSyncGoogleAIExample,
-              // style: TextStyle(
-              // color: Colors.blue, backgroundColor: Colors.yellowAccent),
-            ),
-          ),
-          Text(
+          const Text(
             // 'Install Golang and GoEth Geth bare bones',
             ethTextFonts,
             textAlign: TextAlign.center,
@@ -74,7 +70,6 @@ class GoSyncScrollbar0 extends StatelessWidget {
           // ),
         ],
       ),
-      // )
     );
   }
 }
