@@ -189,21 +189,21 @@
       "inherit": true
     },
     "headlineLarge": {
-      "color": "#ff121212",
+      "color": "#ffff00",
       "decoration": "none",
       "decorationColor": "#ff121212",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "headlineMedium": {
-      "color": "#ff121212",
+      "color": "#727cfa",
       "decoration": "none",
       "decorationColor": "#ff121212",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "headlineSmall": {
-      "color": "#ff121212",
+      "color": "#ff0000",      
       "decoration": "none",
       "decorationColor": "#ff121212",
       "fontFamily": "Segoe UI",
@@ -363,7 +363,7 @@
       "textBaseline": "alphabetic"
     },
     "headlineMedium": {
-      "color": "#b3ffffff",
+      "color": "#0080ff",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -376,7 +376,7 @@
       "textBaseline": "alphabetic"
     },
     "headlineSmall": {
-      "color": "#ffffffff",
+      "color": "#ff0000",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
