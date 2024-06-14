@@ -42,6 +42,7 @@ dependencies:
   intl: any
   font_awesome_flutter: ^10.7.0
   json_theme: ^6.4.0
+  google_fonts: ^6.2.1
   # google_fonts: ^6.2.1
   # flutter_gen: any
 
@@ -75,6 +76,7 @@ flutter:
   assets:
     - assets/images/
     - assets/themes/
+    - google_fonts/
     # - assets/themes/appainter_theme.json
     # - assets/themes/appainter_theme_dark.json
     # - assets/themes/appainter_theme_green.json
