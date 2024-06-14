@@ -76,7 +76,7 @@ flutter:
   assets:
     - assets/images/
     - assets/themes/
-    - google_fonts/
+    # - google_fonts/
     # - assets/themes/appainter_theme.json
     # - assets/themes/appainter_theme_dark.json
     # - assets/themes/appainter_theme_green.json
