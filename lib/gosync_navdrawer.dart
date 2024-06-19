@@ -5,6 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 // import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:share_plus/share_plus.dart';
 // import './gosync_urllinks.dart';
 // import './ethsync_walletdrawer.dart';
 // import './ethsync_barcodescanner.dart';
@@ -160,24 +161,27 @@ class GoSyncNavDrawer extends StatelessWidget {
                       }),
                   ListTile(
                       leading: const Icon(
-                        Icons.accessibility,
+                        Icons.bug_report,
                         color: Colors.orange,
                       ),
                       title: const Text(
-                        'bug report & make suggestions',
+                        'bug report & make suggestions. email us at go@gomo.com',
                         style: TextStyle(color: Colors.yellow),
                       ),
                       trailing: const Icon(
-                        Icons.share,
+                        Icons.bug_report_outlined,
                         color: Colors.yellowAccent,
                       ),
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const GoSyncScrollbar2()),
-                          // MaterialPageRoute(builder: (context) => EthSyncShare()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const GoSyncScrollbar2()),
+                        //   // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                        // );
+                        Share.share('check out my website https://gosync.com',
+                            subject:
+                                'Look what I found! golang language gosync.com');
                       }),
                   ListTile(
                       leading: const Icon(
@@ -185,20 +189,22 @@ class GoSyncNavDrawer extends StatelessWidget {
                         color: Colors.pinkAccent,
                       ),
                       title: const Text(
-                        'share this app',
+                        'share this app, gosync.com',
                         style: TextStyle(color: Colors.greenAccent),
                       ),
                       trailing: const Icon(
-                        Icons.accessibility,
+                        Icons.ios_share,
                         color: Colors.yellowAccent,
                       ),
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const GoSyncScrollbar2()),
-                          // MaterialPageRoute(builder: (context) => EthSyncShare()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const GoSyncScrollbar2()),
+                        //   // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                        // );
+                        Share.share('check out my website https://gosync.com');
+                        // _launchJetbrainsGoLand();
                       }),
                   ListTile(
                       leading: const Icon(

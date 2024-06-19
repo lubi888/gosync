@@ -62,26 +62,16 @@ class GoSyncScrollbar0 extends StatelessWidget {
               // fontWeight: FontWeight.w700,
               // fontStyle: FontStyle.italic,
             ),
-            //   style: TextStyle(
-            //       // color: Colors.blueAccent,
-            //       fontSize: 40.0,
-            //       fontStyle: FontStyle.italic),
           ),
           // override theme of context
           Text(
             '\n3 override theme &  google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
             textAlign: TextAlign.center,
-            // style: Theme.of(context).textTheme.headlineSmall,
-            // style: Theme.of(context).primaryTextTheme.headlineMedium,
             style: GoogleFonts.allura(textStyle: Theme.of(context).textTheme.headlineMedium,
               fontSize: 48,
               fontWeight: FontWeight.w700,
               fontStyle: FontStyle.italic,
             ),
-            //   style: TextStyle(
-            //       // color: Colors.blueAccent,
-            //       fontSize: 40.0,
-            //       fontStyle: FontStyle.italic),
           ),
           const Text(
             textAlign: TextAlign.center,
