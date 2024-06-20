@@ -16,6 +16,7 @@ import 'package:share_plus/share_plus.dart';
 // import './gosync_scrollbar0.dart';
 // import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
+import './gosync_about.dart';
 
 const String _kAsset1 = 'assets/images/golang_developers.png';
 
@@ -180,8 +181,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                         //   // MaterialPageRoute(builder: (context) => EthSyncShare()),
                         // );
                         Share.share('check out my website https://gosync.com',
-                            subject:
-                                'Look what I found! golang language gosync.com');
+                            subject: 'Bugs & Suggestions emails');
                       }),
                   ListTile(
                       leading: const Icon(
@@ -203,7 +203,9 @@ class GoSyncNavDrawer extends StatelessWidget {
                         //       builder: (context) => const GoSyncScrollbar2()),
                         //   // MaterialPageRoute(builder: (context) => EthSyncShare()),
                         // );
-                        Share.share('check out my website https://gosync.com');
+                        Share.share('check out my website https://gosync.com',
+                            subject:
+                                'Look what I found! golang language assist app gosync.com');
                         // _launchJetbrainsGoLand();
                       }),
                   ListTile(
@@ -223,7 +225,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const GoSyncScrollbar2()),
+                              builder: (context) => const GoSyncAbout()),
                         );
                       }),
                 ],
