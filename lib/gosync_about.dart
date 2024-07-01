@@ -13,10 +13,6 @@ class GoSyncAbout extends StatelessWidget {
           '\nInstall Golang and GoEth Geth bare bones \n primaryTestTheme.headlineMedium\n',
           textAlign: TextAlign.center,
           style: Theme.of(context).primaryTextTheme.headlineMedium,
-          //   style: TextStyle(
-          //       // color: Colors.blueAccent,
-          //       fontSize: 40.0,
-          //       fontStyle: FontStyle.italic),
         ),
       ],
     );

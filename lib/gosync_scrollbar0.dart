@@ -57,7 +57,8 @@ class GoSyncScrollbar0 extends StatelessWidget {
             textAlign: TextAlign.center,
             // style: Theme.of(context).textTheme.headlineSmall,
             // style: Theme.of(context).primaryTextTheme.headlineMedium,
-            style: GoogleFonts.allura(textStyle: Theme.of(context).textTheme.headlineMedium,
+            style: GoogleFonts.allura(
+              textStyle: Theme.of(context).textTheme.headlineMedium,
               // fontSize: 48,
               // fontWeight: FontWeight.w700,
               // fontStyle: FontStyle.italic,
@@ -67,7 +68,8 @@ class GoSyncScrollbar0 extends StatelessWidget {
           Text(
             '\n3 override theme &  google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
             textAlign: TextAlign.center,
-            style: GoogleFonts.allura(textStyle: Theme.of(context).textTheme.headlineMedium,
+            style: GoogleFonts.allura(
+              textStyle: Theme.of(context).textTheme.headlineMedium,
               fontSize: 48,
               fontWeight: FontWeight.w700,
               fontStyle: FontStyle.italic,
@@ -77,9 +79,9 @@ class GoSyncScrollbar0 extends StatelessWidget {
             textAlign: TextAlign.center,
             ethSyncPrimaryGoals,
             style: TextStyle(
-                // color: Colors.green, backgroundColor: Colors.yellowAccent),
+              // color: Colors.green, backgroundColor: Colors.yellowAccent),
               color: Colors.lightGreen,
-                ),
+            ),
           ),
           Text(
             textAlign: TextAlign.center,
@@ -101,13 +103,12 @@ class GoSyncScrollbar0 extends StatelessWidget {
             style: GoogleFonts.acme(
               // style: Theme.of(context).primaryTextTheme.headlineSmall,
               // TextStyle
-                // color: Colors.green, backgroundColor: Colors.yellowAccent),
+              // color: Colors.green, backgroundColor: Colors.yellowAccent),
               textStyle: const TextStyle(
-                fontSize: 26,
-                // style:
-                // style: Theme.of(context).primaryTextTheme.headlineSmall,
-                color: Colors.lightBlueAccent
-              ),
+                  fontSize: 26,
+                  // style:
+                  // style: Theme.of(context).primaryTextTheme.headlineSmall,
+                  color: Colors.lightBlueAccent),
             ),
           ),
           const Text(
@@ -134,7 +135,22 @@ class GoSyncScrollbar0 extends StatelessWidget {
               // fontStyle: FontStyle.italic
             ),
           ),
-          // ),
+          Text(
+            // '\n2 google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
+            ethTextFonts,
+            textAlign: TextAlign.center,
+            // style: Theme.of(context).textTheme.headlineSmall,
+            // style: Theme.of(context).primaryTextTheme.headlineMedium,
+            style: GoogleFonts.notoSansEgyptianHieroglyphs(
+              textStyle: Theme.of(context).textTheme.headlineMedium,
+              fontSize: 48,
+              fontWeight: FontWeight.w700,
+              fontStyle: FontStyle.italic,
+              // fontSize: 48,
+              // fontWeight: FontWeight.w700,
+              // fontStyle: FontStyle.italic,
+            ),
+          ),
         ],
       ),
       // controller:
