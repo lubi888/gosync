@@ -52,8 +52,8 @@ class GoSyncScrollbar0 extends StatelessWidget {
             //       fontSize: 40.0,
             //       fontStyle: FontStyle.italic),
           ),
-          Text(
-            '\n2 google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
+          SelectableText(
+            '\n2 selectable text google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
             textAlign: TextAlign.center,
             // style: Theme.of(context).textTheme.headlineSmall,
             // style: Theme.of(context).primaryTextTheme.headlineMedium,

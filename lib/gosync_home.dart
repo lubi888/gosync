@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gosync/gosync_about.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
@@ -22,7 +23,8 @@ class GoSyncHome extends StatelessWidget {
     return const TabBarView(children: <Widget>[
       GoSyncScrollbar0(),
       GoSyncScrollbar1(),
-      GoSyncScrollbar2(),
+      // GoSyncScrollbar2(),
+      GoSyncAbout(),
       // gosyncscrollbar2(),
     ]);
   }
