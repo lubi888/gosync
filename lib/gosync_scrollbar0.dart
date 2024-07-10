@@ -9,15 +9,19 @@ class GoSyncScrollbar0 extends StatelessWidget {
   Widget build(BuildContext context) {
     // print("home loaded GoSyncScrollbar0 Home");
     // return const Placeholder();
+    debugPrint('scrollbar0 loaded install Golang');
+    ScrollController scrollbarController = ScrollController();
 
-    // final yourScrollController = ScrollController();
+    // final yourScrollScrollbarController = ScrollScrollbarController();
 
     return Scrollbar(
+      controller: scrollbarController,
       // thumbVisibility: true,
       // controller: yourScrollController,
       // controller: ScrollController.hasClients,
       // controller: PrimaryScrollController.of(context),
       child: ListView(
+        controller: scrollbarController,
         children: <Widget>[
           const Text(
             'Home \nInstall Golang Page 0',

@@ -54,10 +54,11 @@ class GoSyncScrollbar2 extends StatelessWidget {
   //   if (!await launchUrl(_launchLightChainSync)) {
   //     throw "could not launch $_ethLightChainSync";
   //   }
-
+  // ScrollController scrollbarController = ScrollController();
   @override
   Widget build(BuildContext context) {
-    debugPrint('scrollbar2 loaded');
+    debugPrint('scrollbar2 loaded install Golang');
+    ScrollController scrollbarController = ScrollController();
     // print('scrollbar2 loaded install Golang');
     // log('scrollbar1 loaded' as S);
 
@@ -71,11 +72,11 @@ class GoSyncScrollbar2 extends StatelessWidget {
     //   if (!await launchUrl(_launchLightChainSync)) {
     //     throw "could not launch $_ethLightChainSync";
     //   }
-    ScrollController scrollBarController = ScrollController();
+    // ScrollController scrollbarController = ScrollController();
     return Scrollbar(
-      controller: scrollBarController,
+      controller: scrollbarController,
       child: ListView(
-        controller: scrollBarController,
+        controller: scrollbarController,
         children: <Widget>[
           Container(
             padding: const EdgeInsets.all(15.0),

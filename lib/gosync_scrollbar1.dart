@@ -52,8 +52,8 @@ class GoSyncScrollbar1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('scrollbar1 loaded install Golang');
-
-    ScrollController scrollBarController = ScrollController();
+    // ScrollController controller = ScrollController();
+    ScrollController scrollbarController = ScrollController();
     const snackBarGoCodeCopy = SnackBar(
       backgroundColor: Colors.green,
       duration: Duration(seconds: 3),
@@ -72,9 +72,9 @@ class GoSyncScrollbar1 extends StatelessWidget {
     );
 
     return Scrollbar(
-      controller: scrollBarController,
+      controller: scrollbarController,
       child: ListView(
-        controller: scrollBarController,
+        controller: scrollbarController,
         children: <Widget>[
           //1st header bar 'install golang'
           Container(

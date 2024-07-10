@@ -11,6 +11,7 @@ class GoSyncAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // return
+    debugPrint('about page loaded for install Golang');
     return ListView(children: <Widget>[
       //     SelectableText(
       //   '\nInstall Golang and GoEth Geth bare bones.'

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:json_theme/json_theme.dart';
+// import 'package:json_theme/json_theme.dart';
 // import 'package:gosync/gosync_text.dart';
 // import 'package:google_fonts/google_fonts.dart';
 import 'package:url_launcher/url_launcher.dart';
