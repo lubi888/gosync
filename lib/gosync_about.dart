@@ -40,7 +40,7 @@ class GoSyncAbout extends StatelessWidget {
             '\nWritten using Flutter for mobile & desktop.'
             '\nCheck out our website www.GoSync.com.'
             '\nEmail us at bugs@gosync.com.'
-            '\nVersion 0.0.1'
+            '\nVersion 0.1.0'
             '\nLast update 07.2024',
         textAlign: TextAlign.center,
         style: GoogleFonts.allura(
@@ -74,7 +74,41 @@ class GoSyncAbout extends StatelessWidget {
             '\nWritten using Flutter for mobile & desktop.'
             '\nCheck out our website www.GoSync.com.'
             '\nEmail us at bugs@gosync.com.'
-            '\nVersion 0.0.1'
+            '\nVersion 0.1.0'
+            '\nLast update 07.2024',
+        textAlign: TextAlign.center,
+        // style: GoogleFonts.allura(
+        //   textStyle: Theme.of(context).textTheme.headlineMedium,
+        //   fontSize: 48,
+        //   fontWeight: FontWeight.w700,
+        //   fontStyle: FontStyle.italic,
+        //   // backgroundColor: Colors.black,
+        // ),
+        // linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        // Colors.blue,
+        style: const TextStyle(
+          color: Colors.green,
+          // backgroundColor: Colors.amber,
+          fontStyle: FontStyle.normal,
+          fontSize: 25.0,
+        ),
+        linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        // );
+      ),
+      Linkify(
+        onOpen: (link) async {
+          if (!await launchUrl(Uri.parse(link.url))) {
+            throw Exception('Could not launch ${link.url}');
+          }
+        },
+        // text: gosyncEmailAdress,
+        // selecetable: true
+        text: '\nThis is written under the Creative Commons License.'
+            '\nSee https://creativecommons.org for more info.'
+            '\nhttps://chooser-beta.creativecommons.org'
+            '\nthe license is CC-BY-NC-SA 4.0'
+            '\nhttps://creativecommons.org/licenses/by-nc-sa/4.0/'
+            '\nThis work is licensed under CC BY 4.0 '
             '\nLast update 07.2024',
         textAlign: TextAlign.center,
         // style: GoogleFonts.allura(

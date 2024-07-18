@@ -10,6 +10,10 @@ import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
+import './gosync_about.dart';
+import './gosync_scrollbar0.dart';
+import './gosync_scrollbar1.dart';
+import './gosync_scrollbar2.dart';
 
 // add async to main
 void main() async {
@@ -66,6 +70,15 @@ class GoSync extends StatelessWidget {
       // setting theme Material
       // theme: ThemeData(useMaterial3: true, colorScheme: lightColorScheme),
       // darkTheme: ThemeData(useMaterial3: true, colorScheme: darkColorScheme),
+      initialRoute: '/',
+      routes: {
+        // '/': (context) => const GoSyncHome(title: goSyncTitle),
+        '/about': (context) => const GoSyncAbout(),
+        '/scrollbar0': (context) => const GoSyncScrollbar0(),
+        '/scrollbar1': (context) => const GoSyncScrollbar1(),
+        '/scrollbar2': (context) => const GoSyncScrollbar2(),
+        '/navdrawer': (context) => const GoSyncNavDrawer(),
+      },
 
       localizationsDelegates: const [
         AppLocalizations.delegate,
@@ -80,6 +93,7 @@ class GoSync extends StatelessWidget {
         // Locale('ga'), // Gaeilge
       ],
       home: const DefaultTabController(
+        initialIndex: 2,
         length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),

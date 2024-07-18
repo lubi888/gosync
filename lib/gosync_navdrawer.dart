@@ -223,11 +223,11 @@ class GoSyncNavDrawer extends StatelessWidget {
                         color: Colors.orangeAccent,
                       ),
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const GoSyncAbout()),
-                        );
+                        // Navigator.of(context).push(
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const GoSyncAbout()),
+                        // );
+                        Navigator.pushNamed(context, '/about');
                       }),
                 ],
               ),
@@ -272,6 +272,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/scrollbar0');
                       }),
                   ListTile(
                       leading: const Icon(
@@ -297,6 +298,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/scrollbar1');
                       }),
                   // list tile 5 deep link youtube
                   ListTile(
@@ -323,6 +325,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/scrollbar2');
                       }),
                   // const Padding(
                   //   padding: EdgeInsets.all(16.0),
