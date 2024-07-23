@@ -157,7 +157,8 @@ class GoSyncNavDrawer extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const GoSyncScrollbar2()),
+                              builder: (BuildContext context) =>
+                                  const GoSyncScrollbar2()),
                           // MaterialPageRoute(builder: (context) => EthSyncShare()),
                         );
                       }),
