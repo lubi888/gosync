@@ -1,6 +1,7 @@
 {
   "appBarTheme": {
-    "foregroundColor": "#ff4caf50"
+    "foregroundColor": "#ff4caf50",
+    "backgroundColor": "88888888"    
   },
   "applyElevationOverlayColor": false,
   "brightness": "dark",

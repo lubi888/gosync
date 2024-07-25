@@ -11,6 +11,8 @@ class GoSyncAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // return
+    // Theme(data: data, child: child)
+    //  theme: theme,
     debugPrint('about page loaded for install Golang');
     return ListView(children: <Widget>[
       //     SelectableText(
@@ -36,7 +38,7 @@ class GoSyncAbout extends StatelessWidget {
         },
         // text: gosyncEmailAdress,
         // selecetable: true
-        text: '\nInstall Golang and GoEth Geth bare bones.'
+        text: '\n1 Install Golang and GoEth Geth bare bones.'
             '\nWritten using Flutter for mobile & desktop.'
             '\nCheck out our website www.GoSync.com.'
             '\nEmail us at bugs@gosync.com.'
@@ -62,6 +64,48 @@ class GoSyncAbout extends StatelessWidget {
         // );
         // )
       ),
+      Container(
+        padding: const EdgeInsets.all(20.0),
+        // color: Colors.black,
+        // color: Theme.of(context).dialogBackgroundColor,
+        color: Theme.of(context).appBarTheme.backgroundColor,
+
+        child: Linkify(
+          onOpen: (link) async {
+            if (!await launchUrl(Uri.parse(link.url))) {
+              throw Exception('Could not launch ${link.url}');
+            }
+          },
+          // text: gosyncEmailAdress,
+          // selecetable: true
+          text:
+              '\n1b background = black continaer from 1 Install Golang and GoEth Geth bare bones.'
+              '\nWritten using Flutter for mobile & desktop.'
+              '\nCheck out our website www.GoSync.com.'
+              '\nEmail us at bugs@gosync.com.'
+              '\nVersion 0.1.0'
+              '\nLast update 07.2024',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.allura(
+            textStyle: Theme.of(context).textTheme.headlineMedium,
+            fontSize: 48,
+            fontWeight: FontWeight.w700,
+            fontStyle: FontStyle.italic,
+            // backgroundColor: Colors.black,
+          ),
+          linkStyle: GoogleFonts.allura(color: Colors.yellow),
+          // Colors.blue,
+          // style: const TextStyle(
+          //   color: Colors.green,
+          //   // backgroundColor: Colors.amber,
+          //   fontStyle: FontStyle.normal,
+          //   fontSize: 25.0,
+          // ),
+          // linkStyle: GoogleFonts.allura(color: Colors.yellow),
+          // );
+          // )
+        ),
+      ),
       Linkify(
         onOpen: (link) async {
           if (!await launchUrl(Uri.parse(link.url))) {
@@ -70,7 +114,7 @@ class GoSyncAbout extends StatelessWidget {
         },
         // text: gosyncEmailAdress,
         // selecetable: true
-        text: '\nInstall Golang bare bones to professional level.'
+        text: '\n2 Install Golang bare bones to professional level.'
             '\nWritten using Flutter for mobile & desktop.'
             '\nCheck out our website www.GoSync.com.'
             '\nEmail us at bugs@gosync.com.'
@@ -103,7 +147,7 @@ class GoSyncAbout extends StatelessWidget {
         },
         // text: gosyncEmailAdress,
         // selecetable: true
-        text: '\nThis is written under the Creative Commons License.'
+        text: '\n3 This is written under the Creative Commons License.'
             '\nSee https://creativecommons.org for more info.'
             '\nhttps://chooser-beta.creativecommons.org'
             '\nthe license is CC-BY-NC-SA 4.0'
@@ -128,7 +172,45 @@ class GoSyncAbout extends StatelessWidget {
         ),
         linkStyle: GoogleFonts.allura(color: Colors.yellow),
         // );
-      )
+      ),
+      Container(
+        padding: const EdgeInsets.all(20.0),
+        color: Colors.black,
+        child: Linkify(
+          onOpen: (link) async {
+            if (!await launchUrl(Uri.parse(link.url))) {
+              throw Exception('Could not launch ${link.url}');
+            }
+          },
+          // text: gosyncEmailAdress,
+          // selecetable: true
+          text: '\n4 from 1 Install Golang and GoEth Geth bare bones.'
+              '\nWritten using Flutter for mobile & desktop.'
+              '\nCheck out our website www.GoSync.com.'
+              '\nEmail us at bugs@gosync.com.'
+              '\nVersion 0.1.0'
+              '\nLast update 07.2024',
+          textAlign: TextAlign.center,
+          style: GoogleFonts.allura(
+            textStyle: Theme.of(context).textTheme.headlineMedium,
+            fontSize: 48,
+            fontWeight: FontWeight.w700,
+            fontStyle: FontStyle.italic,
+            // backgroundColor: Colors.black,
+          ),
+          linkStyle: GoogleFonts.allura(color: Colors.yellow),
+          // Colors.blue,
+          // style: const TextStyle(
+          //   color: Colors.green,
+          //   // backgroundColor: Colors.amber,
+          //   fontStyle: FontStyle.normal,
+          //   fontSize: 25.0,
+          // ),
+          // linkStyle: GoogleFonts.allura(color: Colors.yellow),
+          // );
+          // )
+        ),
+      ),
       //
     ]);
   }

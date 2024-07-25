@@ -73,11 +73,45 @@ class GoSyncScrollbar0 extends StatelessWidget {
             '\n3 override theme &  google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
             textAlign: TextAlign.center,
             style: GoogleFonts.allura(
-              textStyle: Theme.of(context).textTheme.headlineMedium,
-              fontSize: 48,
-              fontWeight: FontWeight.w700,
-              fontStyle: FontStyle.italic,
+                textStyle: Theme.of(context).textTheme.headlineMedium,
+                fontSize: 48,
+                fontWeight: FontWeight.w700,
+                fontStyle: FontStyle.italic,
+                backgroundColor: Colors.black),
+          ),
+
+          Column(
+            children: [
+              Text(
+                '\n4 column override theme &  google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
+                textAlign: TextAlign.left,
+                softWrap: true,
+                style: GoogleFonts.allura(
+                    textStyle: Theme.of(context).textTheme.headlineMedium,
+                    fontSize: 48,
+                    fontWeight: FontWeight.w700,
+                    fontStyle: FontStyle.italic,
+                    backgroundColor: Colors.black),
+              ),
+            ],
+          ),
+
+          Container(
+            // children: [
+            padding: const EdgeInsets.all(20.0),
+            color: Colors.black,
+            child: Text(
+              '\n5 override theme &  google font Install Golang and GoEth Geth bare bones \n textTheme.headlineMedium\n',
+              textAlign: TextAlign.left,
+              softWrap: true,
+              style: GoogleFonts.allura(
+                  textStyle: Theme.of(context).textTheme.headlineMedium,
+                  fontSize: 48,
+                  fontWeight: FontWeight.w700,
+                  fontStyle: FontStyle.italic,
+                  backgroundColor: Colors.black),
             ),
+            // ],
           ),
           const Text(
             textAlign: TextAlign.center,
