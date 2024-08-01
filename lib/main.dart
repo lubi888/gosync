@@ -18,14 +18,18 @@ import './gosync_scrollbar2.dart';
 // add async to main
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
+  // https://appainter.dev/
   final themeStr =
       // await rootBundle.loadString('assets/themes/appainter_theme.json');
       // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
       // await rootBundle.loadString('assets/themes/appainter_theme_green.json');
       // await rootBundle.loadString('assets/themes/appainter_theme_green2.json');
+      // .loadString('assets/themes/appainter_theme_dark_green2.json');
+      // await rootBundle.loadString('assets/themes/appainter_theme3.json');
+      // .loadString('assets/themes/appainter_theme_seed_mint.json');
       await rootBundle
           .loadString('assets/themes/appainter_theme_dark_green.json');
+
   final themeJson = jsonDecode(themeStr);
   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
 
@@ -93,7 +97,7 @@ class GoSync extends StatelessWidget {
         // Locale('ga'), // Gaeilge
       ],
       home: const DefaultTabController(
-        initialIndex: 2,
+        initialIndex: 1,
         length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),

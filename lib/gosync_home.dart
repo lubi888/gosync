@@ -23,8 +23,8 @@ class GoSyncHome extends StatelessWidget {
     return const TabBarView(children: <Widget>[
       GoSyncScrollbar0(),
       GoSyncScrollbar1(),
-      // GoSyncScrollbar2(),
-      GoSyncAbout(),
+      GoSyncScrollbar2(),
+      // GoSyncAbout(),
       // gosyncscrollbar2(),
     ]);
   }

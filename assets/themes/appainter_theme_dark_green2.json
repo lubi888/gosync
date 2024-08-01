@@ -1,14 +1,13 @@
 {
   "appBarTheme": {
-    "foregroundColor": "#ff4caf50",
-    "backgroundColor": "00000000"    
+    "systemOverlayStyle": "light"
   },
   "applyElevationOverlayColor": false,
   "brightness": "dark",
   "buttonTheme": {
     "alignedDropdown": false,
     "colorScheme": {
-      "background": "#ff71f160",
+      "background": "#ff6bfb5f",
       "brightness": "dark",
       "error": "#ffcf6679",
       "errorContainer": "#ffcf6679",
@@ -28,15 +27,15 @@
       "onTertiaryContainer": "#ff000000",
       "outline": "#ffffffff",
       "outlineVariant": "#ffffffff",
-      "primary": "#ff34eb1c",
+      "primary": "#ff2cf91b",
       "primaryContainer": "#ffbb86fc",
       "scrim": "#ff000000",
-      "secondary": "#ff34eb1c",
+      "secondary": "#ff2cf91b",
       "secondaryContainer": "#ff03dac6",
       "shadow": "#ff000000",
-      "surface": "#ff121212",
+      "surface": "#ff6bfb5f",
+      "surfaceContainerHighest": "#ff121212",
       "surfaceTint": "#ffbb86fc",
-      "surfaceVariant": "#ff121212",
       "tertiary": "#ff03dac6",
       "tertiaryContainer": "#ff03dac6"
     },
@@ -83,10 +82,10 @@
     },
     "textTheme": "normal"
   },
-  "canvasColor": "#ff1c1b1f",
-  "cardColor": "#ff1c1b1f",
+  "canvasColor": "#ff141218",
+  "cardColor": "#ff141218",
   "colorScheme": {
-    "background": "#ff71f160",
+    "background": "#ff6bfb5f",
     "brightness": "dark",
     "error": "#ffcf6679",
     "errorContainer": "#ffcf6679",
@@ -106,30 +105,30 @@
     "onTertiaryContainer": "#ff000000",
     "outline": "#ffffffff",
     "outlineVariant": "#ffffffff",
-    "primary": "#ff34eb1c",
+    "primary": "#ff2cf91b",
     "primaryContainer": "#ffbb86fc",
     "scrim": "#ff000000",
-    "secondary": "#ff34eb1c",
+    "secondary": "#ff2cf91b",
     "secondaryContainer": "#ff03dac6",
     "shadow": "#ff000000",
-    "surface": "#ff121212",
+    "surface": "#ff6bfb5f",
+    "surfaceContainerHighest": "#ff121212",
     "surfaceTint": "#ffbb86fc",
-    "surfaceVariant": "#ff121212",
     "tertiary": "#ff03dac6",
     "tertiaryContainer": "#ff03dac6"
   },
-  "dialogBackgroundColor": "#ff1c1b1f",
+  "dialogBackgroundColor": "#ff141218",
   "disabledColor": "#62ffffff",
   "dividerColor": "#ff938f99",
   "floatingActionButtonTheme": {
-    "backgroundColor": "#ff3be624",
-    "foregroundColor": "#ff388e3c"
+    "backgroundColor": "#ff1cba18",
+    "foregroundColor": "#fffffbff"
   },
   "focusColor": "#1fffffff",
   "highlightColor": "#40cccccc",
   "hintColor": "#99ffffff",
   "hoverColor": "#0affffff",
-  "indicatorColor": "#ff34eb1c",
+  "indicatorColor": "#ff2cf91b",
   "inputDecorationTheme": {
     "alignLabelWithHint": false,
     "filled": false,
@@ -140,140 +139,127 @@
   },
   "materialTapTargetSize": "shrinkWrap",
   "platform": "windows",
-  "primaryColor": "#ff34eb1c",
-  "primaryColorDark": "#ff2abc16",
-  "primaryColorLight": "#ff85f377",
+  "primaryColor": "#ff2cf91b",
+  "primaryColorDark": "#ff23c716",
+  "primaryColorLight": "#ff80fb76",
   "primaryIconTheme": {
     "color": "#ff000000"
   },
   "primaryTextTheme": {
     "bodyLarge": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "bodyMedium": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "bodySmall": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "displayLarge": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "displayMedium": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "displaySmall": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "headlineLarge": {
-      "color": "#ffff00",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "headlineMedium": {
-      "color": "#727cfa",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "headlineSmall": {
-      "color": "#ff0000",      
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "labelLarge": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "labelMedium": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "labelSmall": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "titleLarge": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "titleMedium": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     },
     "titleSmall": {
-      "color": "#ff121212",
+      "color": "#ff6bfb5f",
       "decoration": "none",
-      "decorationColor": "#ff121212",
+      "decorationColor": "#ff6bfb5f",
       "fontFamily": "Segoe UI",
       "inherit": true
     }
   },
-  "scaffoldBackgroundColor": "#ff1c1b1f",
-  "secondaryHeaderColor": "#ff8ff482",
+  "scaffoldBackgroundColor": "#ff141218",
+  "secondaryHeaderColor": "#ff8bfc82",
   "shadowColor": "#ff000000",
   "splashColor": "#40cccccc",
   "splashFactory": "ripple",
-  "switchTheme": {
-    "thumbColor": {
-      "disabled": "#ffbdbdbd",
-      "dragged": "#ff8bc34a",
-      "empty": "#ff8bc34a",
-      "error": "#ff8bc34a",
-      "focused": "#ff8bc34a",
-      "hovered": "#ff8bc34a",
-      "pressed": "#ff8bc34a",
-      "scrolledUnder": "#ff8bc34a",
-      "selected": "#ff34eb1c"
-    }
-  },
   "textTheme": {
     "bodyLarge": {
-      "color": "#ff4caf50",
+      "color": "#ffffffff",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -286,7 +272,7 @@
       "textBaseline": "alphabetic"
     },
     "bodyMedium": {
-      "color": "#ff4caf50",
+      "color": "#ff16e00d",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -312,7 +298,7 @@
       "textBaseline": "alphabetic"
     },
     "displayLarge": {
-      "color": "#b34caf50",
+      "color": "#b323f814",
       "decoration": "none",
       "fontFamily": "Roboto_300",
       "fontFamilyFallback": [
@@ -325,7 +311,7 @@
       "textBaseline": "alphabetic"
     },
     "displayMedium": {
-      "color": "#b3ffffff",
+      "color": "#b3f44336",
       "decoration": "none",
       "fontFamily": "Roboto_300",
       "fontFamilyFallback": [
@@ -338,7 +324,7 @@
       "textBaseline": "alphabetic"
     },
     "displaySmall": {
-      "color": "#b3ffffff",
+      "color": "#b3141dd5",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -351,7 +337,7 @@
       "textBaseline": "alphabetic"
     },
     "headlineLarge": {
-      "color": "#b34caf50",
+      "color": "#b3edef15",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -364,7 +350,7 @@
       "textBaseline": "alphabetic"
     },
     "headlineMedium": {
-      "color": "#0080ff",
+      "color": "#b3253fe2",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -377,7 +363,7 @@
       "textBaseline": "alphabetic"
     },
     "headlineSmall": {
-      "color": "#ff0000",
+      "color": "#ffffffff",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -429,7 +415,7 @@
       "textBaseline": "alphabetic"
     },
     "titleLarge": {
-      "color": "#ff4caf50",
+      "color": "#ffffffff",
       "decoration": "none",
       "fontFamily": "Roboto_500",
       "fontFamilyFallback": [
@@ -442,7 +428,7 @@
       "textBaseline": "alphabetic"
     },
     "titleMedium": {
-      "color": "#ff4caf50",
+      "color": "#ffffffff",
       "decoration": "none",
       "fontFamily": "Roboto_regular",
       "fontFamilyFallback": [
@@ -455,7 +441,7 @@
       "textBaseline": "alphabetic"
     },
     "titleSmall": {
-      "color": "#ff4caf50",
+      "color": "#ffffffff",
       "decoration": "none",
       "fontFamily": "Roboto_500",
       "fontFamilyFallback": [
@@ -471,107 +457,107 @@
   "typography": {
     "black": {
       "bodyLarge": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "bodyMedium": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "bodySmall": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "displayLarge": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "displayMedium": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "displaySmall": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "headlineLarge": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "headlineMedium": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "headlineSmall": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "labelLarge": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "labelMedium": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "labelSmall": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "titleLarge": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "titleMedium": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       },
       "titleSmall": {
-        "color": "#ff121212",
+        "color": "#ff6bfb5f",
         "decoration": "none",
-        "decorationColor": "#ff121212",
+        "decorationColor": "#ff6bfb5f",
         "fontFamily": "Segoe UI",
         "inherit": true
       }
