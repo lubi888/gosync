@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
+import './gosync_appbar.dart';
+import './gosync_navdrawer.dart';
 // import './gosync_text.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -14,6 +16,8 @@ class GoSyncAbout extends StatelessWidget {
       // Theme(data: data, child: child)
       //  theme: theme,
       // debugPrint('about page loaded for install Golang');
+      // drawer: const GoSyncNavDrawer(),
+      // appBar: const GoSyncAppBar(),
       body: ListView(children: <Widget>[
         //     SelectableText(
         //   '\nInstall Golang and GoEth Geth bare bones.'

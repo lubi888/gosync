@@ -9,6 +9,8 @@ class GoSyncScrollbar0 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    ScrollController scrollbarController = ScrollController();
+
     return Scaffold(
       // print("home loaded GoSyncScrollbar0 Home");
       // return const Placeholder();
@@ -18,7 +20,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
       // const Scaffold();
       // return Scrollbar(
       body: Scrollbar(
-        // controller: scrollbarController,
+        controller: scrollbarController,
         // thumbVisibility: true,
         // controller: yourScrollController,
         // controller: ScrollController.hasClients,

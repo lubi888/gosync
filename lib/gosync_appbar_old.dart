@@ -45,6 +45,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         ),
       ),
       bottom: TabBar(tabs: <Widget>[
+        TabController tabController,
         Tab(
             icon: const Icon(Icons.home, color: Colors.redAccent),
             child: Align(

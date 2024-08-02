@@ -21,6 +21,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     () => Scaffold.of(context).openDrawer();
     // Scaffold.of(context).openDrawer();
     // return const Placeholder();
+    // TabController tabController;
     debugPrint("ethsync appbar loaded");
     print(TimeOfDay.now());
 

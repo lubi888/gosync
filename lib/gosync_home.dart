@@ -20,6 +20,7 @@ class GoSyncHome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint("gosync_home & tabs loaded");
+    // TabController tabController;
     return const TabBarView(children: <Widget>[
       GoSyncScrollbar0(),
       GoSyncScrollbar1(),
