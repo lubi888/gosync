@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:gosync/gosync_about.dart';
+// import 'package:gosync/gosync_about.dart';
+import 'package:gosync/gosync_navdrawer.dart';
+// import './main.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
@@ -19,14 +21,19 @@ class GoSyncHome extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    () => Scaffold.of(context).openDrawer();
     debugPrint("gosync_home & tabs loaded");
-    // TabController tabController;
-    return const TabBarView(children: <Widget>[
-      GoSyncScrollbar0(),
-      GoSyncScrollbar1(),
-      GoSyncScrollbar2(),
-      // GoSyncAbout(),
-      // gosyncscrollbar2(),
-    ]);
+    return const Scaffold(
+        // TabController tabController;
+        drawer: GoSyncNavDrawer(),
+        body: TabBarView(
+            // controller: TabController(length: 3, vsync: this),
+            children: <Widget>[
+              GoSyncScrollbar0(),
+              GoSyncScrollbar1(),
+              GoSyncScrollbar2(),
+              // GoSyncAbout(),
+              // gosyncscrollbar2(),
+            ]));
   }
 }

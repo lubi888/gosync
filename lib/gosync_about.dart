@@ -2,22 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+// import 'package:flutter_localizations/flutter_localizations.dart';
+// import 'package:intl/intl.dart';
+import './main.dart';
+import './gosync_home.dart';
 import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 // import './gosync_text.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class GoSyncAbout extends StatelessWidget {
+  // () => Scaffold.of(context).openDrawer();
   const GoSyncAbout({super.key});
 
   @override
   Widget build(BuildContext context) {
+    () => Scaffold.of(context).openDrawer();
+
     return Scaffold(
       // Theme(data: data, child: child)
       //  theme: theme,
-      // debugPrint('about page loaded for install Golang');
-      // drawer: const GoSyncNavDrawer(),
+      // Print('about page loaded for install Golang');
       // appBar: const GoSyncAppBar(),
+      // drawer: const GoSyncNavDrawer(),
       body: ListView(children: <Widget>[
         //     SelectableText(
         //   '\nInstall Golang and GoEth Geth bare bones.'

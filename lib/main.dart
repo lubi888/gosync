@@ -97,7 +97,8 @@ class GoSync extends StatelessWidget {
         // Locale('ga'), // Gaeilge
       ],
       home: const DefaultTabController(
-        initialIndex: 1,
+        // controller = TabController(vsync: this, length: 3);
+        initialIndex: 0,
         length: 3,
         child: Scaffold(
           appBar: GoSyncAppBar(),

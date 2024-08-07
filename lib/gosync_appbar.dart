@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import './main.dart';
+import './gosync_home.dart';
+import './gosync_scrollbar0.dart';
+import './gosync_scrollbar1.dart';
+import './gosync_scrollbar2.dart';
+import './gosync_about.dart';
+import './gosync_text.dart';
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
 
@@ -13,15 +20,27 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
   const GoSyncAppBar({super.key});
 
   @override
-  Size get preferredSize =>
-      const Size.fromHeight(kToolbarHeight); // whatever height you want
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 
   @override
   Widget build(BuildContext context) {
     () => Scaffold.of(context).openDrawer();
+    // TabController tabController = TabController(length: 3, vsync: this);
+    // TabController tabController;
     // Scaffold.of(context).openDrawer();
     // return const Placeholder();
     // TabController tabController;
+
+    // const TabBarView(
+    //     // controller: tabController,
+    //     children: <Widget>[
+    //       GoSyncScrollbar0(),
+    //       GoSyncScrollbar1(),
+    //       GoSyncScrollbar2(),
+    //       // GoSyncAbout(),
+    //       // gosyncscrollbar2(),
+    //     ]);
+
     debugPrint("ethsync appbar loaded");
     print(TimeOfDay.now());
 
@@ -45,55 +64,61 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
           fontWeight: FontWeight.bold,
         ),
       ),
-      bottom: TabBar(tabs: <Widget>[
-        Tab(
-            icon: const Icon(
-              Icons.home,
-              // color: Colors.redAccent
-            ),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                  // home
-                  AppLocalizations.of(context)!.home),
-            )),
-        Tab(
-            icon: const Icon(
-              Icons.code,
-              // color: Colors.orangeAccent
-            ),
-            height: 90.0,
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(
-                  // gocode
-                  AppLocalizations.of(context)!.golangInstall),
-              // install golang and geth
-            )),
-        Tab(
-            icon: const Icon(
-              Icons.laptop,
-              // color: Colors.greenAccent
-            ),
-            child: Align(
-              alignment: Alignment.center,
-              child: Text(AppLocalizations.of(context)!.danger),
-            )),
-        // Tab(
-        //     child: Align(
-        //       alignment: Alignment.center,
-        //       child: Text(learn),
-        //       // \ntechnical blockchain details
-        //     ),
-        //     icon: Icon(Icons.school, color: Colors.limeAccent)),
-        // Tab(
-        //     child: Align(
-        //       alignment: Alignment.center,
-        //       child: SelectableText(danger),
-        //       //  \nexperimental software
-        //     ),
-        //     icon: Icon(Icons.dangerous, color: Colors.red)),
-      ]),
+      bottom: TabBar(
+          // controller: TabController,
+          // controller: TabController(),
+          // // controller: DefaultTabController,
+          // controller = TabController(length: 3, vsync: this);
+
+          tabs: <Widget>[
+            Tab(
+                icon: const Icon(
+                  Icons.home,
+                  // color: Colors.redAccent
+                ),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                      // home
+                      AppLocalizations.of(context)!.home),
+                )),
+            Tab(
+                icon: const Icon(
+                  Icons.code,
+                  // color: Colors.orangeAccent
+                ),
+                height: 90.0,
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                      // gocode
+                      AppLocalizations.of(context)!.golangInstall),
+                  // install golang and geth
+                )),
+            Tab(
+                icon: const Icon(
+                  Icons.laptop,
+                  // color: Colors.greenAccent
+                ),
+                child: Align(
+                  alignment: Alignment.center,
+                  child: Text(AppLocalizations.of(context)!.danger),
+                )),
+            // Tab(
+            //     child: Align(
+            //       alignment: Alignment.center,
+            //       child: Text(learn),
+            //       // \ntechnical blockchain details
+            //     ),
+            //     icon: Icon(Icons.school, color: Colors.limeAccent)),
+            // Tab(
+            //     child: Align(
+            //       alignment: Alignment.center,
+            //       child: SelectableText(danger),
+            //       //  \nexperimental software
+            //     ),
+            //     icon: Icon(Icons.dangerous, color: Colors.red)),
+          ]),
     );
   }
 }
