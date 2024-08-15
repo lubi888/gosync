@@ -76,6 +76,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
         child: ListView(
           controller: scrollbarController,
           children: <Widget>[
+            // controller: scrollbarController,
             //1st header bar 'install golang'
             Container(
               padding: const EdgeInsets.all(15.0),
@@ -1527,9 +1528,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
   }
 }
 
-// void _launchGolangDLUrl() {
-// }
-
 final Uri _uriGolangDL = Uri.https("go.dev", "dl");
 final Uri _uriGolangMain = Uri.https("go.dev");
 final Uri _launchLightChainSync =
@@ -1574,14 +1572,6 @@ Future<void> _launchGolangDLUrl() async {
 // final Uri _urlPlayGolang = Uri.parse('https://play.golang.com/');
 final Uri _urlPlayGolangHelloCode =
     Uri.parse('https://play.golang.com/p/IBY3bOlTbu9');
-// // final Uri _urlGolangDL = Uri.parse('https://www.golang.org/dl');
-// Future<void> _launchPlayGolangUrl() async {
-//   debugPrint("customer left app to golang.org/dl at");
-//   print(TimeOfDay.now());
-//   if (!await launchUrl(_urlPlayGolang)) {
-//     throw Exception('Could not launch $_urlPlayGolang');
-//   }
-// }
 
 Future<void> _launchPlayGolangHelloCode() async {
   debugPrint("customer left app to golang.org/dl at");
@@ -1590,9 +1580,3 @@ Future<void> _launchPlayGolangHelloCode() async {
     throw Exception('Could not launch $_urlPlayGolangHelloCode');
   }
 }
-
-// Future<void> _launchGolangDLUrl() async {
-//   if (!await launchUrl(_url)) {
-//     throw Exception('Could not launch $_url');
-//   }
-// }

@@ -18,15 +18,20 @@ class GoSyncAbout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    () => Scaffold.of(context).openDrawer();
-
+    // () => Scaffold.of(context).openDrawer();
+    ScrollController scrollbarController = ScrollController();
     return Scaffold(
+
+        // ScrollController scrollbarController = ScrollController();
+      // controller: scrollbarController,
       // Theme(data: data, child: child)
       //  theme: theme,
       // Print('about page loaded for install Golang');
       // appBar: const GoSyncAppBar(),
       // drawer: const GoSyncNavDrawer(),
-      body: ListView(children: <Widget>[
+      body: ListView(
+          controller: scrollbarController,
+          children: <Widget>[
         //     SelectableText(
         //   '\nInstall Golang and GoEth Geth bare bones.'
         //   '\nWritten using Flutter for mobile & desktop.'

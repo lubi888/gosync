@@ -9,6 +9,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('scrollbar0 loaded install Golang');
     ScrollController scrollbarController = ScrollController();
 
     return Scaffold(
@@ -26,7 +27,7 @@ class GoSyncScrollbar0 extends StatelessWidget {
         // controller: ScrollController.hasClients,
         // controller: PrimaryScrollController.of(context),
         child: ListView(
-          // controller: scrollbarController,
+          controller: scrollbarController,
           children: <Widget>[
             const Text(
               'Home \nInstall Golang Page 0',
@@ -196,9 +197,6 @@ class GoSyncScrollbar0 extends StatelessWidget {
             ),
           ],
         ),
-        // controller:
-        // _scrollController = ScrollController(initialScrollOffset: 50.0);
-        // ),
       ),
     );
   }
