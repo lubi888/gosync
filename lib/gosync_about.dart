@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import './main.dart';
+import './gosync_home.dart';
+import './gosync_navdrawer.dart';
+import './gosync_appbar.dart';
 
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
@@ -18,7 +23,8 @@ class GoSyncAbout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // () => Scaffold.of(context).openDrawer();
+    debugPrint('about page loaded Golang');
+    () => Scaffold.of(context).openDrawer();
     ScrollController scrollbarController = ScrollController();
     return Scaffold(
 
@@ -28,7 +34,88 @@ class GoSyncAbout extends StatelessWidget {
       //  theme: theme,
       // Print('about page loaded for install Golang');
       // appBar: const GoSyncAppBar(),
-      // drawer: const GoSyncNavDrawer(),
+      // appBar: AppBar(),
+      // appBar: const GoSyncAppBar(),
+
+    // appBar: AppBar(
+    //   // title: const Text(goSyncTitle),
+    //   centerTitle: true,
+    //   // backgroundColor: Colors.amber,
+    //   // foregroundColor: Colors.red,
+    //   // elevation/: 30.0,
+    //   title: Text(
+    //     // goSyncTitle,
+    //     AppLocalizations.of(context)!.title,
+    //     textAlign: TextAlign.center,
+    //     style: const TextStyle(
+    //       // color: Colors.blue[900],
+    //       // color: Colors.green,
+    //       // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+    //       // backgroundColor: Colors.yellow,
+    //       fontStyle: FontStyle.italic,
+    //       fontSize: 24.0,
+    //       fontWeight: FontWeight.bold,
+    //     ),
+    //   ),
+    //   bottom: TabBar(
+    //     // controller: TabController(length: 3, vsync: vsync)
+    //     // controller:
+    //     // controller = TabController(length: 3, vsync: this);
+    //     // ScrollController scrollbarController = ScrollController();
+    //
+    //       tabs: <Widget>[
+    //         Tab(
+    //             icon: const Icon(
+    //               Icons.home,
+    //               // color: Colors.redAccent
+    //             ),
+    //             child: Align(
+    //               alignment: Alignment.center,
+    //               child: Text(
+    //                 // home
+    //                   AppLocalizations.of(context)!.home),
+    //             )),
+    //         Tab(
+    //             icon: const Icon(
+    //               Icons.code,
+    //               // color: Colors.orangeAccent
+    //             ),
+    //             height: 90.0,
+    //             child: Align(
+    //               alignment: Alignment.center,
+    //               child: Text(
+    //                 // gocode
+    //                   AppLocalizations.of(context)!.golangInstall),
+    //               // install golang and geth
+    //             )),
+    //         Tab(
+    //             icon: const Icon(
+    //               Icons.laptop,
+    //               // color: Colors.greenAccent
+    //             ),
+    //             child: Align(
+    //               alignment: Alignment.center,
+    //               child: Text(AppLocalizations.of(context)!.danger),
+    //             )),
+    //       ]),
+    // ),
+
+
+
+      appBar: AppBar(
+        // title: const Text('Tiny AppBar with hamburger button'),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
+      ),
+      drawer: const GoSyncNavDrawer(),
       body: ListView(
           controller: scrollbarController,
           children: <Widget>[
