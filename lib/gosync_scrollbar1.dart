@@ -7,6 +7,7 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
 import './gosync_text.dart';
+import './gosync_navdrawer.dart';
 
 class GoSyncScrollbar1 extends StatelessWidget {
   const GoSyncScrollbar1({super.key});
@@ -71,6 +72,20 @@ class GoSyncScrollbar1 extends StatelessWidget {
       duration: Duration(seconds: 3),
     );
     return Scaffold(
+      appBar: AppBar(
+        // title: const Text('Tiny AppBar with hamburger button'),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
+      ),
+      drawer: const GoSyncNavDrawer(),
       body: Scrollbar(
         controller: scrollbarController,
         child: ListView(

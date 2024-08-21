@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import './main.dart';
-import './gosync_home.dart';
+// import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import './main.dart';
+// import './gosync_home.dart';
 import './gosync_navdrawer.dart';
-import './gosync_appbar.dart';
+// import './gosync_appbar.dart';
 
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
-import './main.dart';
-import './gosync_home.dart';
-import './gosync_appbar.dart';
-import './gosync_navdrawer.dart';
+// import './main.dart';
+// import './gosync_home.dart';
+// import './gosync_appbar.dart';
+// import './gosync_navdrawer.dart';
 // import './gosync_text.dart';
 // import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

@@ -14,8 +14,10 @@ import 'package:share_plus/share_plus.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
 
-// import './gosync_scrollbar0.dart';
-// import './gosync_scrollbar1.dart';
+import './main.dart';
+import './gosync_home.dart';
+import './gosync_scrollbar0.dart';
+import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
 import './gosync_about.dart';
 
@@ -67,6 +69,28 @@ class GoSyncNavDrawer extends StatelessWidget {
                 childrenPadding:
                     const EdgeInsets.only(left: 30), //children padding
                 children: [
+                  ListTile(
+                      leading: const Icon(
+                        Icons.home,
+                        color: Colors.green,
+                      ),
+                      title: const Text(
+                        'home button',
+                        style: TextStyle(color: Colors.blue),
+                      ),
+                      trailing: const Icon(
+                        Icons.colorize,
+                        color: Colors.yellow,
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (BuildContext context) =>
+                              const GoSyncHome(title: 'GoSyncHome',)),
+                          // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                        );
+                      }),
                   SwitchListTile(
                     secondary: const Icon(
                       Icons.color_lens_outlined,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import './gosync_text.dart';
+import './gosync_navdrawer.dart';
 
 class GoSyncScrollbar0 extends StatelessWidget {
   const GoSyncScrollbar0({super.key});
@@ -20,6 +21,21 @@ class GoSyncScrollbar0 extends StatelessWidget {
       // final yourScrollScrollbarController = ScrollScrollbarController();
       // const Scaffold();
       // return Scrollbar(
+      // appBar: AppBar,
+      appBar: AppBar(
+        // title: const Text('Tiny AppBar with hamburger button'),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
+      ),
+      drawer: const GoSyncNavDrawer(),
       body: Scrollbar(
         controller: scrollbarController,
         // thumbVisibility: true,

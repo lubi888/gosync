@@ -4,6 +4,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_linkify/flutter_linkify.dart';
 // import 'package:permission_handler/permission_handler.dart';
 import './gosync_text.dart';
+import './gosync_navdrawer.dart';
 // import './ethsync_urllinks.dart';
 // import './ethsync_extendedimage.dart';
 
@@ -75,6 +76,20 @@ class GoSyncScrollbar2 extends StatelessWidget {
     // ScrollController scrollbarController = ScrollController();
 
     return Scaffold(
+      appBar: AppBar(
+        // title: const Text('Tiny AppBar with hamburger button'),
+        leading: Builder(
+          builder: (context) {
+            return IconButton(
+              icon: const Icon(Icons.menu),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+            );
+          },
+        ),
+      ),
+      drawer: const GoSyncNavDrawer(),
       body: Scrollbar(
         controller: scrollbarController,
         child: ListView(

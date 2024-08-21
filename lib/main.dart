@@ -77,6 +77,7 @@ class GoSync extends StatelessWidget {
       initialRoute: '/',
       routes: {
         // '/': (context) => const GoSyncHome(title: goSyncTitle),
+        '/home': (BuildContext context) => const GoSyncHome(title: goSyncTitle,),
         '/about': (BuildContext context) => const GoSyncAbout(),
         '/scrollbar0': (BuildContext context) => const GoSyncScrollbar0(),
         '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
