@@ -83,13 +83,14 @@ class GoSyncNavDrawer extends StatelessWidget {
                         color: Colors.yellow,
                       ),
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (BuildContext context) =>
-                              const GoSyncHome(title: 'GoSyncHome',)),
-                          // MaterialPageRoute(builder: (context) => EthSyncShare()),
-                        );
+                        Navigator.pushNamed(context, '/');
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (BuildContext context) =>
+                        //           const GoSyncScrollbar0()),
+                        // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                        // );
                       }),
                   SwitchListTile(
                     secondary: const Icon(

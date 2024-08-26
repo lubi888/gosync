@@ -2,11 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-// import 'package:intl/intl.dart';
+// import 'package:json_theme/json_theme.dart';
+// import 'dart:convert'; // json decode
+// import 'package:flutter/services.dart'; // for root bundle
+
 import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
 import './gosync_home.dart';
 import './gosync_text.dart';
+import './gosync_about.dart';
+import './gosync_scrollbar0.dart';
+import './gosync_scrollbar1.dart';
+import './gosync_scrollbar2.dart';
 
 void main() {
   runApp(const GoSync());
@@ -41,6 +48,18 @@ class GoSync extends StatelessWidget {
           displaySmall: GoogleFonts.pacifico(),
         ),
       ),
+      initialRoute: '/',
+      routes: {
+        // '/': (context) => const MaterialApp(),
+        '/home': (BuildContext context) => const GoSyncHome(
+              title: goSyncTitle,
+            ),
+        '/about': (BuildContext context) => const GoSyncAbout(),
+        '/scrollbar0': (BuildContext context) => const GoSyncScrollbar0(),
+        '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
+        '/scrollbar2': (BuildContext context) => const GoSyncScrollbar2(),
+        '/navdrawer': (BuildContext context) => const GoSyncNavDrawer(),
+      },
       localizationsDelegates: const [
         AppLocalizations.delegate,
         GlobalMaterialLocalizations.delegate,
