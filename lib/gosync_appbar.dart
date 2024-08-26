@@ -41,6 +41,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
     //       // gosyncscrollbar2(),
     //     ]);
 
+
     debugPrint("ethsync appbar loaded");
     print(TimeOfDay.now());
 
@@ -57,8 +58,6 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
         AppLocalizations.of(context)!.title,
         textAlign: TextAlign.center,
         style: const TextStyle(
-          // color: Colors.blue[900],
-          // color: Colors.green,
           // backgroundColor: Color.fromARGB(255, 207, 160, 17),
           // backgroundColor: Colors.yellow,
           fontStyle: FontStyle.italic,
@@ -68,10 +67,7 @@ class GoSyncAppBar extends StatelessWidget implements PreferredSizeWidget {
       ),
       bottom: TabBar(
         // controller: TabController(length: 3, vsync: vsync)
-        // controller:
-        // controller = TabController(length: 3, vsync: this);
           // ScrollController scrollbarController = ScrollController();
-
       tabs: <Widget>[
             Tab(
                 icon: const Icon(
