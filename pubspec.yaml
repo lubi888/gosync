@@ -1,5 +1,5 @@
 name: gosync
-description: "A new Flutter project."
+description: "A new Flutter project about Golang programming language."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -40,10 +40,9 @@ dependencies:
     sdk: flutter
   intl: any
   font_awesome_flutter: ^10.7.0
-  json_theme: ^6.5.0+1
   google_fonts: ^6.2.1
   share_plus: ^9.0.0
-  # google_fonts: ^6.2.1
+  # json_theme: ^6.5.0+1
   # flutter_gen: any
 
 dev_dependencies:
