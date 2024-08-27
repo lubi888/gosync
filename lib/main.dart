@@ -25,40 +25,40 @@ class GoSync extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: goSyncTitle,
-      theme: ThemeData(
-        // This is the theme of your application.
-        useMaterial3: true,
-
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.purple,
-          // ···
-          brightness: Brightness.dark,
-        ),
-        textTheme: TextTheme(
-          displayLarge: const TextStyle(
-            fontSize: 72,
-            fontWeight: FontWeight.bold,
-          ),
-          // ···
-          titleLarge: GoogleFonts.oswald(
-            fontSize: 30,
-            fontStyle: FontStyle.italic,
-          ),
-          bodyMedium: GoogleFonts.merriweather(),
-          displaySmall: GoogleFonts.pacifico(),
-        ),
-      ),
+      // theme: ThemeData(),
+      // theme: ThemeData(
+      //   // This is the theme of your application.
+      //   useMaterial3: true,
+      //
+      //   colorScheme: ColorScheme.fromSeed(
+      //     seedColor: Colors.purple,
+      //     // ···
+      //     brightness: Brightness.dark,
+      //   ),
+      //   textTheme: TextTheme(
+      //     displayLarge: const TextStyle(
+      //       fontSize: 72,
+      //       fontWeight: FontWeight.bold,
+      //     ),
+      //     // ···
+      //     titleLarge: GoogleFonts.oswald(
+      //       fontSize: 30,
+      //       fontStyle: FontStyle.italic,
+      //     ),
+      //     bodyMedium: GoogleFonts.merriweather(),
+      //     displaySmall: GoogleFonts.pacifico(),
+      //   ),
+      // ),
       initialRoute: '/',
       routes: {
         // '/': (context) => const MaterialApp(),
-        '/home': (BuildContext context) => const GoSyncHome(
-              title: goSyncTitle,
-            ),
+        '/home': (BuildContext context) => const GoSyncHome(title: goSyncTitle),
         '/about': (BuildContext context) => const GoSyncAbout(),
         '/scrollbar0': (BuildContext context) => const GoSyncScrollbar0(),
         '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
         '/scrollbar2': (BuildContext context) => const GoSyncScrollbar2(),
         '/navdrawer': (BuildContext context) => const GoSyncNavDrawer(),
+        '/appbar' : (BuildContext context) => const GoSyncAppBar(),
       },
       localizationsDelegates: const [
         AppLocalizations.delegate,

@@ -14,12 +14,7 @@ import 'package:share_plus/share_plus.dart';
 // import './ethsync_scrollbar0.dart';
 // import './ethsync_scrollbar1.dart';
 
-import './main.dart';
-import './gosync_home.dart';
-import './gosync_scrollbar0.dart';
-import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
-import './gosync_about.dart';
 
 const String _kAsset1 = 'assets/images/golang_developers.png';
 

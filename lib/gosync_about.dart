@@ -6,7 +6,7 @@ import 'package:url_launcher/url_launcher.dart';
 // import './main.dart';
 // import './gosync_home.dart';
 import './gosync_navdrawer.dart';
-// import './gosync_appbar.dart';
+import './gosync_appbar.dart';
 
 // import 'package:flutter_localizations/flutter_localizations.dart';
 // import 'package:intl/intl.dart';
@@ -24,7 +24,7 @@ class GoSyncAbout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     debugPrint('about page loaded Golang');
-    () => Scaffold.of(context).openDrawer();
+    // () => Scaffold.of(context).openDrawer();
     ScrollController scrollbarController = ScrollController();
     return Scaffold(
 
