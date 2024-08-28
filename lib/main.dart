@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+// import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:json_theme/json_theme.dart';
@@ -58,7 +58,7 @@ class GoSync extends StatelessWidget {
         '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
         '/scrollbar2': (BuildContext context) => const GoSyncScrollbar2(),
         '/navdrawer': (BuildContext context) => const GoSyncNavDrawer(),
-        '/appbar' : (BuildContext context) => const GoSyncAppBar(),
+        '/appbar': (BuildContext context) => const GoSyncAppBar(),
       },
       localizationsDelegates: const [
         AppLocalizations.delegate,

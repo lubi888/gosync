@@ -17,6 +17,9 @@ import 'package:share_plus/share_plus.dart';
 import './gosync_scrollbar2.dart';
 
 const String _kAsset1 = 'assets/images/golang_developers.png';
+const String _kAsset2 = 'assets/images/_kAsset32.png';
+const String _kAsset3 = 'assets/images/footer-gopher.jpg';
+const String _kAsset4 = 'assets/images/gethTerm.png';
 
 class GoSyncNavDrawer extends StatelessWidget {
   const GoSyncNavDrawer({super.key});
@@ -27,10 +30,35 @@ class GoSyncNavDrawer extends StatelessWidget {
     // Scaffold.of(context).openDrawer();
     return Drawer(
         width: 400.0,
+        backgroundColor: Colors.black,
         // child: SafeArea(
         child: ListView(
             // child: Column(
             children: [
+              ListTile(
+                  leading: const Icon(
+                    Icons.home,
+                    color: Colors.green,
+                  ),
+                  title: const Text(
+                    'home button',
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                  trailing: const Icon(
+                    Icons.colorize,
+                    color: Colors.yellow,
+                  ),
+                  onTap: () {
+                    Navigator.pushNamed(context, '/');
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(
+                    //       builder: (BuildContext context) =>
+                    //           const GoSyncScrollbar0()),
+                    // MaterialPageRoute(builder: (context) => EthSyncShare()),
+                    // );
+                  }),
+              // drawer header 1
               DrawerHeader(
                 decoration: const BoxDecoration(
                   color: Colors.black,
@@ -639,6 +667,29 @@ class GoSyncNavDrawer extends StatelessWidget {
                   // list tile 5 deep link XTwitter
                   // list tile 5 deep link youtube
                 ],
+              ),
+              // try something new drawer header 2
+              DrawerHeader(
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  image: DecorationImage(
+                      image: AssetImage(_kAsset2), fit: BoxFit.contain),
+                ),
+                child: Text(
+                  // drawerHeader 'go designers,
+                  AppLocalizations.of(context)!.drawerHeader2,
+                  // style: const TextStyle(color: Colors.purpleAccent),
+                  textAlign: TextAlign.center,
+                  // overflow: TextOverflow.visible,
+                  // softWrap: true,
+                  // maxLines: 2,
+                  style: const TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    color: Colors.yellow,
+                  ),
+                ),
               ),
               ExpansionTile(
                 title: const Text(
@@ -1350,6 +1401,34 @@ class GoSyncNavDrawer extends StatelessWidget {
                       }),
                 ],
               ),
+              // drawer header 3
+              DrawerHeader(
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  image: DecorationImage(
+                      image: AssetImage(_kAsset3), fit: BoxFit.contain),
+                ),
+                // onTap: () {
+                //   // Navigator.of(context).pop();
+                //   _launchGoGDG();
+                //   //   launch deep linking youtube.
+                // },
+                child: Text(
+                  // drawerHeader 'go designers,
+                  AppLocalizations.of(context)!.drawerHeader3,
+                  // style: const TextStyle(color: Colors.purpleAccent),
+                  textAlign: TextAlign.center,
+                  // overflow: TextOverflow.visible,
+                  // softWrap: true,
+                  // maxLines: 2,
+                  style: const TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    color: Colors.yellow,
+                  ),
+                ),
+              ),
               const ExpansionTile(
                 title: Text(
                   "go art logos, photos & screenshots",
@@ -1596,6 +1675,29 @@ class GoSyncNavDrawer extends StatelessWidget {
                     },
                   )
                 ],
+              ),
+              // drawer header 4
+              DrawerHeader(
+                decoration: const BoxDecoration(
+                  color: Colors.black,
+                  image: DecorationImage(
+                      image: AssetImage(_kAsset4), fit: BoxFit.contain),
+                ),
+                child: Text(
+                  // drawerHeader 'go designers,
+                  AppLocalizations.of(context)!.drawerHeader4,
+                  // style: const TextStyle(color: Colors.purpleAccent),
+                  textAlign: TextAlign.center,
+                  // overflow: TextOverflow.visible,
+                  // softWrap: true,
+                  // maxLines: 2,
+                  style: const TextStyle(
+                    // fontStyle: FontStyle.italic,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 16.0,
+                    color: Colors.yellow,
+                  ),
+                ),
               ),
               ExpansionTile(
                 title: const Text(

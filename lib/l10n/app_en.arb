@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 240827",
+  "title": "goSync.go 240828",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -34,6 +34,18 @@
   "drawerHeader": "\n\n\n\ngo architecture designers",
   "@drawerHeader": {
     "description": "empty string"
+  },
+  "drawerHeader2": "\n\n\n\ngolang home",
+  "@drawerHeader": {
+    "description": "goland home go.dev"
+  },
+  "drawerHeader3": "\n\n\n\ngolang gopher",
+  "@drawerHeader": {
+    "description": "goland home go.dev"
+  },
+  "drawerHeader4": "\n\n\n\ngolang terminal",
+  "@drawerHeader": {
+    "description": "goland home go.dev"
   },
   "ethCheckGoHelp": "Now let us check that our installation of golang is working.\nOpen up a terminal (linux & mac) or a command prompt (windows) and type in the following code:\ngo version\nThis is your go version and it should be 1.12-1.13 as these are the latest versions\nType in the following code:\ngo help\nThis is a list of all available commands.",
   "@ethCheckGoHelp": {
