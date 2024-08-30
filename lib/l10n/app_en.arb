@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 240828",
+  "title": "goSync.go 240830",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -35,7 +35,7 @@
   "@drawerHeader": {
     "description": "empty string"
   },
-  "drawerHeader2": "\n\n\n\ngolang home",
+  "drawerHeader2": "\n\n\n\ngolang home go.dev",
   "@drawerHeader": {
     "description": "goland home go.dev"
   },
