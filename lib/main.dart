@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+// import 'package:google_fonts/google_fonts.dart';
 // import 'package:json_theme/json_theme.dart';
-// import 'dart:convert'; // json decode
-// import 'package:flutter/services.dart'; // for root bundle
+import 'package:json_theme_plus/json_theme_plus.dart';
+import 'package:flutter/services.dart'; // for root bundle
+import 'dart:convert'; // json decode
 
 import './gosync_appbar.dart';
 import './gosync_navdrawer.dart';
@@ -15,21 +16,64 @@ import './gosync_scrollbar0.dart';
 import './gosync_scrollbar1.dart';
 import './gosync_scrollbar2.dart';
 
-void main() {
-  runApp(const GoSync());
+// add async to main
+// void main() async {
+//   WidgetsFlutterBinding.ensureInitialized();
+
+//   final themeStr =
+//       await rootBundle.loadString('assets/themes/appainter_theme.json');
+//   // await rootBundle.loadString('assets/themes/appainter_theme_dark.json');
+//   // await rootBundle.loadString('assets/themes/appainter_theme_green.json');
+//   final themeJson = jsonDecode(themeStr);
+//   final theme = ThemeDecoder.decodeThemeData(themeJson)!;
+//   // final theme = ThemeDecoder.decodeThemeData(themeJson)!;
+
+//   runApp(GoSync(theme: theme));
+// }
+
+// class GoSync extends StatelessWidget {
+//   final ThemeData theme;
+//   // const GoSync({super.key});
+//   // const GoSync({super.key, required this.theme});
+//   const GoSync({Key? key, required this.theme}) : super(key: key);
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       title: goSyncTitle,
+//       theme: theme,
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  final themeStr = await rootBundle
+      .loadString('assets/themes/appainter_theme_dark_green.json');
+  final themeJson = jsonDecode(themeStr);
+  final theme = ThemeDecoder.decodeThemeData(themeJson)!;
+
+  runApp(GoSync(theme: theme));
 }
 
 class GoSync extends StatelessWidget {
-  const GoSync({super.key});
+  final ThemeData theme;
+
+  const GoSync({super.key, required this.theme});
+  // const GoSync({Key? key, required this.theme}) : super(key: key);
+
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      // home: HomePage(),
       title: goSyncTitle,
-      // theme: ThemeData(),
+      theme: theme,
+//   }
+// }
+
       // theme: ThemeData(
       //   // This is the theme of your application.
       //   useMaterial3: true,
-      //
+
       //   colorScheme: ColorScheme.fromSeed(
       //     seedColor: Colors.purple,
       //     // ···
@@ -51,14 +95,16 @@ class GoSync extends StatelessWidget {
       // ),
       initialRoute: '/',
       routes: {
-        // '/': (context) => const MaterialApp(),
-        '/home': (BuildContext context) => const GoSyncHome(title: goSyncTitle),
+        // '/': (context) => const GoSyncHome(title: goSyncTitle),
+        // '/': (BuildContext context) => const MaterialApp(),
+        '/home': (BuildContext context) => const GoSyncHome(
+              title: goSyncTitle,
+            ),
         '/about': (BuildContext context) => const GoSyncAbout(),
         '/scrollbar0': (BuildContext context) => const GoSyncScrollbar0(),
         '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
         '/scrollbar2': (BuildContext context) => const GoSyncScrollbar2(),
         '/navdrawer': (BuildContext context) => const GoSyncNavDrawer(),
-        '/appbar': (BuildContext context) => const GoSyncAppBar(),
       },
       localizationsDelegates: const [
         AppLocalizations.delegate,

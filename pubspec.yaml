@@ -43,6 +43,7 @@ dependencies:
   google_fonts: ^6.2.1
   share_plus: ^9.0.0
   json_theme: ^6.5.0+1
+  json_theme_plus: ^6.6.1
   # flutter_gen: any
 
 dev_dependencies:
@@ -75,7 +76,7 @@ flutter:
   assets:
     - assets/images/
     - assets/themes/
-    # - assets/fonts/
+    - assets/fonts/
     # - google_fonts/
     # - assets/themes/appainter_theme.json
     # - assets/themes/appainter_theme_dark.json
@@ -94,12 +95,13 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: NotoSansEgyptianHieroglyps
+    - family: NotoSansEgyptianHieroglyphs-Regular
       fonts:
-        - asset: fonts/NotoSansEgyptianHieroglyps-Regular.ttf       
+        - asset: assets/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf
+        # - asset: assets/fonts/NotoSansEgyptianHieroglyphs-Regular.ttf     
     - family: Allura
       fonts:
-        - asset: fonts/Allura-Regular.ttf
+        - asset: assets/fonts/Allura-Regular.ttf
   # fonts:
   #   - family: Schyler
   #     fonts:

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-// import 'package:google_fonts/google_fonts.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 // import 'package:gosync/main%20copy.dart';
@@ -7,7 +7,7 @@ import 'package:json_theme/json_theme.dart';
 import 'package:flutter/services.dart'; // for root bundle
 import 'dart:convert'; //
 
-// import 'package:intl/intl.dart';
+import 'package:intl/intl.dart';
 import './gosync_appbar.dart';
 // import './gosync_navdrawer.dart';
 import './gosync_navdrawer.dart';
