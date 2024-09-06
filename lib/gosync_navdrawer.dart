@@ -45,18 +45,11 @@ class GoSyncNavDrawer extends StatelessWidget {
                     style: TextStyle(color: Colors.blue),
                   ),
                   trailing: const Icon(
-                    Icons.colorize,
+                    Icons.home_max,
                     color: Colors.yellow,
                   ),
                   onTap: () {
                     Navigator.pushNamed(context, '/');
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(
-                    //       builder: (BuildContext context) =>
-                    //           const GoSyncScrollbar0()),
-                    // MaterialPageRoute(builder: (context) => EthSyncShare()),
-                    // );
                   }),
               // drawer header 1
               DrawerHeader(
@@ -66,15 +59,9 @@ class GoSyncNavDrawer extends StatelessWidget {
                       image: AssetImage(_kAsset1), fit: BoxFit.contain),
                 ),
                 child: Text(
-                  // drawerHeader 'go designers,
                   AppLocalizations.of(context)!.drawerHeader,
-                  // style: const TextStyle(color: Colors.purpleAccent),
                   textAlign: TextAlign.center,
-                  // overflow: TextOverflow.visible,
-                  // softWrap: true,
-                  // maxLines: 2,
                   style: const TextStyle(
-                    // fontStyle: FontStyle.italic,
                     fontWeight: FontWeight.bold,
                     fontSize: 16.0,
                     color: Colors.yellow,
