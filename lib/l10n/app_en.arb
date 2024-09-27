@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 240923",
+  "title": "goSync.go 240927",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -15,7 +15,7 @@
   "@golangInstall": {
     "description": "golang install in respective languages"
   },
-  "goSyncHeading": "Goland Install on Windows, Apple, Linux in English",
+  "goSyncHeading": "Golang Install on Windows, Apple, Linux",
   "@goSyncHeading": {
     "description": "headliners"
   },
@@ -36,19 +36,23 @@
     "description": "empty string"
   },
   "drawerHeader2": "\n\n\n\ngolang home go.dev",
-  "@drawerHeader": {
+  "@drawerHeader2": {
     "description": "goland home go.dev"
   },
   "drawerHeader3": "\n\n\n\ngolang gopher",
-  "@drawerHeader": {
+  "@drawerHeade3r": {
     "description": "goland home go.dev"
   },
   "drawerHeader4": "\n\n\n\ngolang terminal",
-  "@drawerHeader": {
+  "@drawerHeader4": {
     "description": "goland home go.dev"
   },
   "ethCheckGoHelp": "Now let us check that our installation of golang is working.\nOpen up a terminal (linux & mac) or a command prompt (windows) and type in the following code:\ngo version\nThis is your go version and it should be 1.12-1.13 as these are the latest versions\nType in the following code:\ngo help\nThis is a list of all available commands.",
   "@ethCheckGoHelp": {
+    "description": "check go environment"
+  },  
+  "golangInstallInstructions": "Otherwise Go can run from Program Files and Program Files (x86)",
+    "@goInstallInstructions": {
     "description": "check go environment"
   }  
 }

@@ -792,6 +792,107 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 ),
               ),
             ),
+            // const Padding(padding: EdgeInsets.all(8.0)),
+
+            // start instructions again here
+            const Padding(padding: EdgeInsets.all(16.0)),
+            SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.blue,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+            // ethInstallGolangInstallInstructions
+
+            //start instructions here after header
+            const SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              ethInstallGolangInstallInstructions,
+              // AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.left,
+              style: TextStyle(
+                color: Colors.yellow,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+
+            const SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              ethInstallGolangInstallInstructions,
+              // AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.right,
+              style: TextStyle(
+                color: Colors.purple,
+                fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+
+            const SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              ethInstallGolangInstallInstructions,
+              // AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.orange,
+                // fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+
+            const SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              ethInstallGolangInstallInstructions,
+              // AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.pink,
+                // fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+
+            const SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              ethInstallGolangInstallInstructions,
+              // AppLocalizations.of(context)!.goSyncHeading,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.cyanAccent,
+                // fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
+            const Padding(padding: EdgeInsets.all(8.0)),
+
+            SelectableText(
+              // Padding(padding: EdgeInsets.all(8.0)) as String,
+              // ethCheckGoHelp,
+              // ethInstallGolangInstallInstructions,
+              AppLocalizations.of(context)!.golangInstallInstructions,
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                color: Colors.indigoAccent,
+                // fontStyle: FontStyle.italic,
+                fontSize: 20.0,
+              ),
+            ),
             const Padding(padding: EdgeInsets.all(8.0)),
 
             Text(

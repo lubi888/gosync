@@ -120,6 +120,7 @@ class GoSync extends StatelessWidget {
       ],
       home: const DefaultTabController(
         length: 3,
+        initialIndex: 1,
         child: Scaffold(
           appBar: GoSyncAppBar(),
           drawer: GoSyncNavDrawer(),
