@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 240927",
+  "title": "goSync.go 240928",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -15,7 +15,7 @@
   "@golangInstall": {
     "description": "golang install in respective languages"
   },
-  "goSyncHeading": "Golang Install on Windows, Apple, Linux",
+  "goSyncHeading": "Golang Install on desktop for Windows, Apple, Linux",
   "@goSyncHeading": {
     "description": "headliners"
   },
@@ -51,7 +51,7 @@
   "@ethCheckGoHelp": {
     "description": "check go environment"
   },  
-  "golangInstallInstructions": "Otherwise Go can run from Program Files and Program Files (x86)",
+  "golangInstallInstructions": "Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\nFor windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system. C:\\Go is preferable when wanting to program.",
     "@goInstallInstructions": {
     "description": "check go environment"
   }  
