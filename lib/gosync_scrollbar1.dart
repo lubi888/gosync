@@ -919,7 +919,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 fontSize: 20.0,
               ),
             ),
-            const Padding(padding: EdgeInsets.all(8.0)),
+            // const Padding(padding: EdgeInsets.all(8.0)),
             const Padding(padding: EdgeInsets.all(8.0)),
             Padding(
               padding: const EdgeInsets.all(44.0),

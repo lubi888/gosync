@@ -68,8 +68,6 @@ class GoSync extends StatelessWidget {
       title: goSyncTitle,
       theme: theme,
 //   }
-// }
-
       // theme: ThemeData(
       //   // This is the theme of your application.
       //   useMaterial3: true,
@@ -95,11 +93,6 @@ class GoSync extends StatelessWidget {
       // ),
       initialRoute: '/',
       routes: {
-        // '/': (context) => const GoSyncHome(title: goSyncTitle),
-        // '/': (BuildContext context) => const MaterialApp(),
-        '/home': (BuildContext context) => const GoSyncHome(
-              title: goSyncTitle,
-            ),
         '/about': (BuildContext context) => const GoSyncAbout(),
         '/scrollbar0': (BuildContext context) => const GoSyncScrollbar0(),
         '/scrollbar1': (BuildContext context) => const GoSyncScrollbar1(),
@@ -130,7 +123,6 @@ class GoSync extends StatelessWidget {
           ),
           //add bottom navigation from top app || side nav drawer.
           // bottomNavigationBar: GoSyncBottomNavBar(),
-          // drawerDragStartBehavior:
         ),
       ),
     );

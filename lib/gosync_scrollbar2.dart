@@ -150,8 +150,6 @@ class GoSyncScrollbar2 extends StatelessWidget {
                 height: 200.0,
                 width: 300.0,
               ),
-              // onPressed: EthSyncUrl.launchURLGolangOrgDL,
-              // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
             ),
             Container(
               child: Image.asset(
@@ -159,7 +157,6 @@ class GoSyncScrollbar2 extends StatelessWidget {
                 height: 200.0,
                 width: 300.0,
               ),
-              // onPressed: EthSyncUrl.launchURLGolangOrgDL,
               // // onPressed: EthSyncUrl.launchURLGolangOrgDL(),
             ),
             Container(
@@ -173,7 +170,6 @@ class GoSyncScrollbar2 extends StatelessWidget {
                 },
                 text: ethInstallGolangInstallInstructions,
                 // humanize: true,
-                // text: EthSyncLocalizations.of(context)
                 //     .ethInstallGolangInstallInstructions,
                 textAlign: TextAlign.left,
                 style: const TextStyle(
