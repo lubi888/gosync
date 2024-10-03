@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241001",
+  "title": "goSync.go 241003",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -54,5 +54,9 @@
   "golangInstallInstructions": "Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\nFor windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system. C:\\Go is preferable when wanting to program.",
     "@goInstallInstructions": {
     "description": "check go environment"
-  }  
+  },
+  "golangInstallInstructions2": "\nexport PATH=$PATH:/usr/local/go/bin\n",
+  "@goInstallInstructions2": {
+  "description": "check go environment 2"
+}  
 }

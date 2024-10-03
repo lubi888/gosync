@@ -934,7 +934,20 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 ),
               ),
             ),
-
+            // const Padding(padding: EdgeInsets.all(8.0)),
+            Padding(
+              padding: const EdgeInsets.all(44.0),
+              child: SelectableText(
+                // ethInstallGolangInstallInstructions,
+                AppLocalizations.of(context)!.golangInstallInstructions2,
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: Colors.pinkAccent,
+                  // fontStyle: FontStyle.italic,
+                  fontSize: 20.0,
+                ),
+              ),
+            ),
             const Padding(padding: EdgeInsets.all(8.0)),
             Text(
               // Padding(padding: EdgeInsets.all(8.0)) as String,
