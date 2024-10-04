@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import './gosync_text.dart';
 import './gosync_navdrawer.dart';
 
@@ -49,6 +50,129 @@ class GoSyncScrollbar0 extends StatelessWidget {
               'Home \nInstall Golang Page 0',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 50.0),
+            ),
+            // expansion tile
+            ExpansionTile(
+              initiallyExpanded: true,
+              title: const Text(
+                "platform installation",
+                textAlign: TextAlign.center,
+                style: TextStyle(color: Colors.blue),
+              ),
+              leading: const Icon(
+                FontAwesomeIcons.computer,
+                color: Colors.green,
+              ), //add icon
+              childrenPadding:
+                  const EdgeInsets.only(left: 30), //children padding
+              children: [
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.windows,
+                      color: Colors.lightBlue,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'windows platform golang',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'windows go install',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.yellow),
+                    ),
+                    trailing: const Icon(FontAwesomeIcons.windows,
+                        color: Colors.lightGreen),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                      Navigator.pushNamed(context, '/windowsInstall');
+                    }),
+                // list tile 5 deep link XTwitter
+                // list tile 5 deep link youtube
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.apple,
+                      color: Colors.grey,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'visit Apple iOS',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'apple programming',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.yellow),
+                    ),
+                    trailing: const Icon(FontAwesomeIcons.apple,
+                        color: Colors.blueGrey),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                      Navigator.pushNamed(context, '/appleInstall');
+                    }),
+                // list tile 5 deep link youtube
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.linux,
+                      color: Colors.red,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'visit Linux golang install',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'deep link linux',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.yellow),
+                    ),
+                    trailing:
+                        const Icon(FontAwesomeIcons.linux, color: Colors.blue),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                      Navigator.pushNamed(context, '/linuxInstall');
+                    }),
+                ListTile(
+                    leading: const Icon(
+                      // Icons.tv,
+                      FontAwesomeIcons.linux,
+                      color: Colors.yellow,
+                    ),
+                    title: const Text(
+                      // 'add eth|etc address - acccount',
+                      'visit GNU Not Unix golang install',
+                      // AppLocalizations.of(context)!.visitGoDevPlay,
+                      style: TextStyle(color: Colors.lightBlue),
+                    ),
+                    subtitle: const Text(
+                      // 'https://play.golang.com/',
+                      'deep gnu linux',
+                      // https://go.dev/play/
+                      style: TextStyle(
+                          fontStyle: FontStyle.italic, color: Colors.purple),
+                    ),
+                    trailing:
+                        const Icon(FontAwesomeIcons.linux, color: Colors.pink),
+                    onTap: () {
+                      // Navigator.of(context).pop();
+                      // _launchYouTube();
+                    }),
+              ],
             ),
             Text(
               '\nInstall Golang and GoEth Geth bare bones \n primaryTextTheme.headlineLarge\n',

@@ -375,6 +375,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                 ],
               ),
               ExpansionTile(
+                initiallyExpanded: true,
                 title: const Text(
                   "platform installation",
                   textAlign: TextAlign.center,
@@ -411,6 +412,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/windowsInstall');
                       }),
                   // list tile 5 deep link XTwitter
                   // list tile 5 deep link youtube
@@ -438,6 +440,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/appleInstall');
                       }),
                   // list tile 5 deep link youtube
                   ListTile(
@@ -464,6 +467,7 @@ class GoSyncNavDrawer extends StatelessWidget {
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/linuxInstall');
                       }),
                   ListTile(
                       leading: const Icon(
