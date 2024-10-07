@@ -7,5 +7,6 @@ hook up a.i. api key
 
 add photo_view or photo album.
 multi image layout photo gallery
+https://www.includehelp.com/golang/   go prog libraries.
 
 

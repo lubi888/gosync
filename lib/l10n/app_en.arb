@@ -58,5 +58,25 @@
   "golangInstallInstructions2": "\nexport PATH=$PATH:/usr/local/go/bin\n",
   "@goInstallInstructions2": {
   "description": "check go environment 2"
-}  
+  },
+  "gosyncWindowsInstallInstructions": "1, Open the MSI file you downloaded and follow the prompts to install Go. \n\nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
+  "@gosyncWindowsInstallInstructions": {
+    "description": "windows install instructions 1"
+  },
+  "gosyncWindowsInstallInstructions2": "2, Verify that you've installed Go.\nIn Windows, click the Start menu.\nIn the menu's search box, type cmd, then press the Enter key.\nIn the Command Prompt window that appears, type the following command:\n\t\t$ go version\n\nConfirm that the command prints the installed version of Go.",
+  "@gosyncWindowsInstallInstructions2": {
+    "description": "windows install instructions 2"
+  },
+  "gosyncWindowsInstallInstructions3": "3, the output should give the go version number and the architecture type. Something like this: ",
+  "@gosyncWindowsInstallInstructions3": {
+    "description": "windows install instructions 3"
+  },
+  "gosyncWindowsInstallInstructions4": "go version go1.23.1 windows/amd64",
+  "@gosyncWindowsInstallInstructions4": {
+    "description": "windows install instructions 4"
+  },
+  "gosyncWindowsInstallInstructions5": "5, AS of November 2024 the current release of Go is 1.23. To find the most recent release check the main website https://go.dev/dl/",
+  "@gosyncWindowsInstallInstructions5": {
+    "description": "windows install instructions 5"
+  }
 }
