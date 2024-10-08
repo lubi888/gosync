@@ -4,6 +4,7 @@ import 'package:flutter_linkify/flutter_linkify.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import './gosync_navdrawer.dart';
+import './gosync_text.dart';
 
 class GoSyncWindowsInstall extends StatelessWidget {
   const GoSyncWindowsInstall({super.key});
@@ -149,6 +150,38 @@ class GoSyncWindowsInstall extends StatelessWidget {
           ),
           linkStyle: GoogleFonts.allura(color: Colors.yellow),
         ),
+        const Padding(padding: EdgeInsets.all(8.0)),
+        //header bar 'postinstall golang'
+        Container(
+          padding: const EdgeInsets.all(15.0),
+          // width: 300.0,
+          // height: 84.0,
+          decoration: BoxDecoration(
+            border: Border.all(
+              // style: BorderStyle.none  ,
+              width: 10.0,
+              color: Colors.yellow,
+            ),
+            shape: BoxShape.rectangle,
+            color: Colors.red.shade500,
+            borderRadius: const BorderRadius.all(Radius.circular(25.0)),
+          ),
+          child: Text(
+            // goSyncHeading,
+            AppLocalizations.of(context)!.gosyncHeaderWindowsPostInstall,
+            overflow: TextOverflow.fade,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              // color: Colors.blue[900],
+              color: Colors.yellow,
+              // backgroundColor: Color.fromARGB(255, 207, 160, 17),
+              backgroundColor: Colors.red,
+              fontStyle: FontStyle.italic,
+              fontSize: 24.0,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ),
         Container(
           padding: const EdgeInsets.all(20.0),
           color: Theme.of(context).colorScheme.surface,
@@ -159,12 +192,7 @@ class GoSyncWindowsInstall extends StatelessWidget {
               }
             },
             text:
-                '\n1b background = black continaer from 1 Install Golang and GoEth Geth bare bones.'
-                '\nWritten using Flutter for mobile & desktop.'
-                '\nCheck out our website www.GoSync.com.'
-                '\nEmail us at bugs@gosync.com.'
-                '\nVersion 0.1.0'
-                '\nLast update 07.2024',
+                '\n1b Type in \"go env\" to find out the most important details of the setup.',
             textAlign: TextAlign.center,
             // selectable: true,
             style: GoogleFonts.allura(
@@ -177,6 +205,107 @@ class GoSyncWindowsInstall extends StatelessWidget {
             linkStyle: GoogleFonts.allura(color: Colors.yellow),
           ),
         ),
+        const Padding(padding: EdgeInsets.all(8.0)),
+        // container eg white box terminal Windows
+        //windows Power Shell design widjet
+        Container(
+          padding: const EdgeInsets.all(8.0),
+          // width: 50.0,
+          // height: 260.0,
+          decoration: BoxDecoration(
+            // image: DecorationImage(image: AssetImage(_kAsset2)),
+            border: Border.all(
+              width: 10.0,
+              color: Colors.white,
+            ),
+            shape: BoxShape.rectangle,
+            // color: Colors.green.shade600,
+            color: Colors.black,
+            borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          ),
+          child: Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text: goPowerShell,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.white,
+              backgroundColor: Colors.black,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+              // fontFamily: Fami),
+            ),
+          ),
+        ),
+        //txt without box
+
+        const Padding(padding: EdgeInsets.all(8.0)),
+        // container eg white box terminal Windows
+        //windows Power Shell design widjet
+        Container(
+          padding: const EdgeInsets.all(8.0),
+          // width: 50.0,
+          // height: 260.0,
+          decoration: BoxDecoration(
+            // image: DecorationImage(image: AssetImage(_kAsset2)),
+            border: Border.all(
+              width: 10.0,
+              color: Colors.white,
+            ),
+            shape: BoxShape.rectangle,
+            // color: Colors.green.shade600,
+            color: Colors.black,
+            borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          ),
+          child: Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text: goPowerShellGoEnv,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.white,
+              backgroundColor: Colors.black,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+              // fontFamily: Fami),
+            ),
+          ),
+        ),
+        //txt without box
+        Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: SelectableText(
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.gosyncHeaderWindowsPostInstallCheck,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.cyanAccent,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+            ),
+          ),
+        ),
+
+        Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: SelectableText(
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.gosyncGopathPurpose,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.cyanAccent,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+            ),
+          ),
+        ),
+
         Linkify(
           onOpen: (link) async {
             if (!await launchUrl(Uri.parse(link.url))) {

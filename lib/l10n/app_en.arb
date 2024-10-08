@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241004",
+  "title": "goSync.go 241008",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -78,5 +78,17 @@
   "gosyncWindowsInstallInstructions5": "5, AS of November 2024 the current release of Go is 1.23. To find the most recent release check the main website https://go.dev/dl/",
   "@gosyncWindowsInstallInstructions5": {
     "description": "windows install instructions 5"
+  },
+  "gosyncHeaderWindowsPostInstall": "Windows Post Install and Setup validation",
+  "@gosyncHeaderWindowsPostInstall": {
+    "description": "windows post install"
+  },
+  "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is listed as C:/Users/adam/go but this folder is not created yet. Let's do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam",
+  "@gosyncHeaderWindowsPostInstallCheck": {
+    "description": "windows post install check go env"
+  },
+  "gosyncGopathPurpose": "The GOPATH is a folder with elevated user rights to write and run go programmes. \nThe system no knows to allow go applications to run from here. \nModules are also stored here.",
+  "@gosyncGopathPurpose": {
+    "description": "windows post install check go env"
   }
 }
