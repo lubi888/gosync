@@ -222,16 +222,15 @@ const String goHelloCode = ('package main\n\n'
     );
 
 const String goPowerShell = ('Windows PowerShell\n\n'
-        'Copyright (C) Microsoft Corporation. All rights reserved.\n\n'
-        'Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\n\n'
-        'PS C:\\Users\\gosync>go env\n\n'
-        'PS C:\\Users\\gosync>'
-    );
+    'Copyright (C) Microsoft Corporation. All rights reserved.\n\n'
+    'Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\n\n'
+    'PS C:\\Users\\adam>go env\n\n'
+    'PS C:\\Users\\adam>');
 
 const String goPowerShellGoEnv = ('Windows PowerShell\n\n'
     'Copyright (C) Microsoft Corporation. All rights reserved.\n\n'
     'Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\n\n'
-    'PS C:\\Users\\gosync>go env'
+    'PS C:\\Users\\adam>go env'
     '\nset GO111MODULE='
     '\nset GOARCH=amd64'
     '\nset GOBIN='
@@ -275,8 +274,7 @@ const String goPowerShellGoEnv = ('Windows PowerShell\n\n'
     '\nset CGO_LDFLAGS=-O2 -g'
     '\nset PKG_CONFIG=pkg-config'
     '\nset GOGCCFLAGS=-m64 -map=C:\WINDOWS\TEMP\go-build=/tmp/go-build -gno-record-gcc-switches'
-    '\nPS C:\\Users\\gosync>'
-);
+    '\nPS C:\\Users\\adam>');
 
 const String ethGoBuild =
     ('Now all that is left is to build or install the go hello program. A local build can be performed with \'go build\'.\n\n'

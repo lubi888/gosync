@@ -192,7 +192,7 @@ class GoSyncWindowsInstall extends StatelessWidget {
               }
             },
             text:
-                '\n1b Type in \"go env\" to find out the most important details of the setup.',
+                '\n1b Type in "go env" to find out the most important details of the setup. \nTake a loot at GOPATH, GOROOT, etc.',
             textAlign: TextAlign.center,
             // selectable: true,
             style: GoogleFonts.allura(
@@ -304,6 +304,38 @@ class GoSyncWindowsInstall extends StatelessWidget {
               fontSize: 20.0,
             ),
           ),
+        ),
+
+        Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: SelectableText(
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.gosyncWinMakeFolders,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.cyanAccent,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+            ),
+          ),
+        ),
+        // online tutorial
+        // linkify humanize
+        Linkify(
+          onOpen: (link) async {
+            if (!await launchUrl(Uri.parse(link.url))) {
+              throw Exception('Could not launch ${link.url}');
+            }
+          },
+          text: AppLocalizations.of(context)!.gosyncOnlineTutorial,
+          textAlign: TextAlign.left,
+          options: const LinkifyOptions(humanize: true),
+          style: const TextStyle(
+            color: Colors.blueAccent,
+            fontStyle: FontStyle.normal,
+            fontSize: 25.0,
+          ),
+          linkStyle: GoogleFonts.allura(color: Colors.yellow),
         ),
 
         Linkify(

@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241008",
+  "title": "goSync.go 241009",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -90,5 +90,13 @@
   "gosyncGopathPurpose": "The GOPATH is a folder with elevated user rights to write and run go programmes. \nThe system no knows to allow go applications to run from here. \nModules are also stored here.",
   "@gosyncGopathPurpose": {
     "description": "windows post install check go env"
+  },
+  "gosyncWinMakeFolders": "To create 3 folders /go/pkg/mod in /Users/adam open up a terminal and change to your home directory. \nType in 'mkdir /go/pkg/mod'",
+  "@gosyncWinMakeFolders": {
+    "description": "windows make files"
+  },
+  "gosyncOnlineTutorial": "Now changed directy to 'go' and make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started",
+  "@gosyncOnlineTutorial": {
+    "description": "windows make files"
   }
 }
