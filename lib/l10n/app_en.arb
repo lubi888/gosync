@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241009",
+  "title": "goSync.go 241010",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -83,7 +83,7 @@
   "@gosyncHeaderWindowsPostInstall": {
     "description": "windows post install"
   },
-  "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is listed as C:/Users/adam/go but this folder is not created yet. Let's do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam",
+  "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is set as C:/Users/adam/go but this folder is not created yet. Let's do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam",
   "@gosyncHeaderWindowsPostInstallCheck": {
     "description": "windows post install check go env"
   },
@@ -91,11 +91,15 @@
   "@gosyncGopathPurpose": {
     "description": "windows post install check go env"
   },
-  "gosyncWinMakeFolders": "To create 3 folders /go/pkg/mod in /Users/adam open up a terminal and change to your home directory. \nType in 'mkdir /go/pkg/mod'",
+  "gosyncGorootPurpose": "The GOROOT is a folder is where the go.exe||go.bin executable program file is located. This is where Go lives as go.ext or go.bin. \nThe system no knows to allow go applications to run from here. \nInside this folder are go and gofmt go format.",
+  "@gosyncGorootPurpose": {
+    "description": "windows post install check go env"
+  },
+  "gosyncWinMakeFolders": "To create 3 folders /go/pkg/mod in /Users/adam open up a terminal and change to your home directory. \nType in 'mkdir /go/pkg/mod' or create these folders visually using File Explorer.",
   "@gosyncWinMakeFolders": {
     "description": "windows make files"
   },
-  "gosyncOnlineTutorial": "Now changed directy to 'go' and make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started",
+  "gosyncOnlineTutorial": "Now change directly to 'go' and make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started/ and you can also start here if you want to run a web server, etc. https://go.dev/learn/ ",
   "@gosyncOnlineTutorial": {
     "description": "windows make files"
   }
