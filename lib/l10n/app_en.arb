@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241010",
+  "title": "goSync.go 241011",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -40,7 +40,7 @@
     "description": "goland home go.dev"
   },
   "drawerHeader3": "\n\n\n\ngolang gopher",
-  "@drawerHeade3r": {
+  "@drawerHeader3": {
     "description": "goland home go.dev"
   },
   "drawerHeader4": "\n\n\n\ngolang terminal",
@@ -52,11 +52,11 @@
     "description": "check go environment"
   },  
   "golangInstallInstructions": "Visit https://golang.org/doc/install and browse for assistance with ways to install golang on different system architectures.\nFor windows use the recommended .msi installer and it is fine to put the goland files deep within the windows system. C:\\Go is preferable when wanting to program.",
-    "@goInstallInstructions": {
+    "@golangInstallInstructions": {
     "description": "check go environment"
   },
   "golangInstallInstructions2": "\nexport PATH=$PATH:/usr/local/go/bin\n",
-  "@goInstallInstructions2": {
+  "@golangInstallInstructions2": {
   "description": "check go environment 2"
   },
   "gosyncWindowsInstallInstructions": "1, Open the MSI file you downloaded and follow the prompts to install Go. \n\nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
@@ -83,9 +83,9 @@
   "@gosyncHeaderWindowsPostInstall": {
     "description": "windows post install"
   },
-  "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is set as C:/Users/adam/go but this folder is not created yet. Let's do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam",
+  "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is set as C:/Users/adam/go but this folder is not created yet. Let''s do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam ",
   "@gosyncHeaderWindowsPostInstallCheck": {
-    "description": "windows post install check go env"
+    "description": "windows post install check"
   },
   "gosyncGopathPurpose": "The GOPATH is a folder with elevated user rights to write and run go programmes. \nThe system no knows to allow go applications to run from here. \nModules are also stored here.",
   "@gosyncGopathPurpose": {

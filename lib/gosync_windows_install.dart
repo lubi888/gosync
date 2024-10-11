@@ -36,13 +36,15 @@ class GoSyncWindowsInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "Windows Install directions\nfrom go.dev.",
+          text:
+              "1, Open the MSI file you downloaded and follow the prompts to install Go. \n\nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
           textAlign: TextAlign.center,
           style: GoogleFonts.allura(
             textStyle: Theme.of(context).textTheme.headlineMedium,
             fontSize: 48,
             fontWeight: FontWeight.w700,
             fontStyle: FontStyle.italic,
+            // backgroundColor: Colors.black,
           ),
           linkStyle: GoogleFonts.allura(color: Colors.yellow),
         ),
@@ -118,21 +120,27 @@ class GoSyncWindowsInstall extends StatelessWidget {
             ),
           ),
         ),
-        Linkify(
-          onOpen: (link) async {
-            if (!await launchUrl(Uri.parse(link.url))) {
-              throw Exception('Could not launch ${link.url}');
-            }
-          },
-          text: AppLocalizations.of(context)!.gosyncWindowsInstallInstructions5,
-          textAlign: TextAlign.left,
-          style: const TextStyle(
-            color: Colors.green,
-            fontStyle: FontStyle.normal,
-            fontSize: 25.0,
+
+        Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: Linkify(
+            onOpen: (link) async {
+              if (!await launchUrl(Uri.parse(link.url))) {
+                throw Exception('Could not launch ${link.url}');
+              }
+            },
+            text:
+                AppLocalizations.of(context)!.gosyncWindowsInstallInstructions5,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.green,
+              fontStyle: FontStyle.normal,
+              fontSize: 25.0,
+            ),
+            // linkStyle: GoogleFonts.allura(color: Colors.orangeAccent),
           ),
-          // linkStyle: GoogleFonts.allura(color: Colors.orangeAccent),
         ),
+
         Linkify(
           onOpen: (link) async {
             if (!await launchUrl(Uri.parse(link.url))) {
@@ -308,20 +316,6 @@ class GoSyncWindowsInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncGorootPurpose,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.orangeAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
             AppLocalizations.of(context)!.gosyncWinMakeFolders,
             textAlign: TextAlign.left,
             style: const TextStyle(
@@ -341,7 +335,7 @@ class GoSyncWindowsInstall extends StatelessWidget {
           },
           text: AppLocalizations.of(context)!.gosyncOnlineTutorial,
           textAlign: TextAlign.left,
-          // options: const LinkifyOptions(humanize: true),
+          options: const LinkifyOptions(humanize: true),
           style: const TextStyle(
             color: Colors.blueAccent,
             fontStyle: FontStyle.normal,
@@ -349,7 +343,7 @@ class GoSyncWindowsInstall extends StatelessWidget {
           ),
           linkStyle: GoogleFonts.allura(color: Colors.yellow),
         ),
-        // padding on linkify. LinkifyPadding
+        // LinkifyPadding
         Padding(
           padding: const EdgeInsets.all(24.0),
           child: Linkify(
@@ -360,75 +354,76 @@ class GoSyncWindowsInstall extends StatelessWidget {
             },
             text: AppLocalizations.of(context)!.gosyncOnlineTutorial,
             textAlign: TextAlign.left,
-            // options: const LinkifyOptions(humanize: true),
+            options: const LinkifyOptions(humanize: true),
             style: const TextStyle(
-              color: Colors.redAccent,
+              color: Colors.orangeAccent,
               fontStyle: FontStyle.normal,
               fontSize: 25.0,
             ),
             linkStyle: GoogleFonts.allura(color: Colors.yellow),
           ),
         ),
-        Linkify(
-          onOpen: (link) async {
-            if (!await launchUrl(Uri.parse(link.url))) {
-              throw Exception('Could not launch ${link.url}');
-            }
-          },
-          text:
-              "Open the MSI file you downloaded and follow the prompts to install Go. By default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
-          textAlign: TextAlign.center,
-          style: const TextStyle(
-            color: Colors.green,
-            fontStyle: FontStyle.normal,
-            fontSize: 25.0,
-          ),
-          linkStyle: GoogleFonts.allura(color: Colors.yellow),
-        ),
-        Linkify(
-          onOpen: (link) async {
-            if (!await launchUrl(Uri.parse(link.url))) {
-              throw Exception('Could not launch ${link.url}');
-            }
-          },
-          text:
-              "Open the MSI file you downloaded and follow the prompts to install Go. \nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
-          textAlign: TextAlign.left,
-          style: const TextStyle(
-            color: Colors.yellowAccent,
-            // backgroundColor: Colors.amber,
-            fontStyle: FontStyle.normal,
-            fontSize: 25.0,
-          ),
-          linkStyle: GoogleFonts.allura(color: Colors.greenAccent),
-          // );
-        ),
-        Container(
-          padding: const EdgeInsets.all(20.0),
-          color: Colors.black,
-          child: Linkify(
-            onOpen: (link) async {
-              if (!await launchUrl(Uri.parse(link.url))) {
-                throw Exception('Could not launch ${link.url}');
-              }
-            },
-            text: '\n4 from 1 Install Golang and GoEth Geth bare bones.'
-                '\nWritten using Flutter for mobile & desktop.'
-                '\nCheck out our website www.GoSync.com.'
-                '\nEmail us at bugs@gosync.com.'
-                '\nVersion 0.1.0'
-                '\nLast update 07.2024',
-            textAlign: TextAlign.center,
-            style: GoogleFonts.allura(
-              textStyle: Theme.of(context).textTheme.headlineMedium,
-              fontSize: 48,
-              fontWeight: FontWeight.w700,
-              fontStyle: FontStyle.italic,
-              // backgroundColor: Colors.black,
-            ),
-            linkStyle: GoogleFonts.allura(color: Colors.yellow),
-          ),
-        ),
+        // Linkify(
+        //   onOpen: (link) async {
+        //     if (!await launchUrl(Uri.parse(link.url))) {
+        //       throw Exception('Could not launch ${link.url}');
+        //     }
+        //   },
+        //   text:
+        //       "Open the MSI file you downloaded and follow the prompts to install Go. By default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
+        //   textAlign: TextAlign.center,
+        //   style: const TextStyle(
+        //     color: Colors.green,
+        //     fontStyle: FontStyle.normal,
+        //     fontSize: 25.0,
+        //   ),
+        //   linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        // ),
+
+        // Linkify(
+        //   onOpen: (link) async {
+        //     if (!await launchUrl(Uri.parse(link.url))) {
+        //       throw Exception('Could not launch ${link.url}');
+        //     }
+        //   },
+        //   text:
+        //       "Open the MSI file you downloaded and follow the prompts to install Go. \nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
+        //   textAlign: TextAlign.left,
+        //   style: const TextStyle(
+        //     color: Colors.yellowAccent,
+        //     // backgroundColor: Colors.amber,
+        //     fontStyle: FontStyle.normal,
+        //     fontSize: 25.0,
+        //   ),
+        //   linkStyle: GoogleFonts.allura(color: Colors.greenAccent),
+        //   // );
+        // ),
+        // Container(
+        //   padding: const EdgeInsets.all(20.0),
+        //   color: Colors.black,
+        //   child: Linkify(
+        //     onOpen: (link) async {
+        //       if (!await launchUrl(Uri.parse(link.url))) {
+        //         throw Exception('Could not launch ${link.url}');
+        //       }
+        //     },
+        //     text: '\n4 from 1 Install Golang and GoEth Geth bare bones.'
+        //         '\nWritten using Flutter for mobile & desktop.'
+        //         '\nCheck out our website www.GoSync.com.'
+        //         '\nEmail us at bugs@gosync.com.'
+        //         '\nVersion 0.1.0'
+        //         '\nLast update 07.2024',
+        //     textAlign: TextAlign.center,
+        //     style: GoogleFonts.allura(
+        //       textStyle: Theme.of(context).textTheme.headlineMedium,
+        //       fontSize: 48,
+        //       fontWeight: FontWeight.w700,
+        //       fontStyle: FontStyle.italic,
+        //       // backgroundColor: Colors.black,
+        //     ),
+        //     linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        //   ),
+        // ),
         //
       ]),
     );
