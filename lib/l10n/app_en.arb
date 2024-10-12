@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241011",
+  "title": "goSync.go 241012",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -99,8 +99,8 @@
   "@gosyncWinMakeFolders": {
     "description": "windows make files"
   },
-  "gosyncOnlineTutorial": "Now change directly to 'go' and make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started/ and you can also start here if you want to run a web server, etc. https://go.dev/learn/ ",
+  "gosyncOnlineTutorial": "Now change directly to the 'go' directory. Make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started/ and you can also start here if you want to run a web server, etc. https://go.dev/learn/ ",
   "@gosyncOnlineTutorial": {
-    "description": "windows make files"
+    "description": "windows make files follow tutorial"
   }
 }

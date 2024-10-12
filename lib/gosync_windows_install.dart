@@ -36,10 +36,9 @@ class GoSyncWindowsInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text:
-              "1, Open the MSI file you downloaded and follow the prompts to install Go. \n\nBy default, the installer will install Go to Program Files or Program Files (x86). You can change the location as needed. After installing, you will need to close and reopen any open command prompts so that changes to the environment made by the installer are reflected at the command prompt.",
+          text: "1 Official Windows Instructions from Go.dev",
           textAlign: TextAlign.center,
-          style: GoogleFonts.allura(
+          style: GoogleFonts.notoSans(
             textStyle: Theme.of(context).textTheme.headlineMedium,
             fontSize: 48,
             fontWeight: FontWeight.w700,
@@ -306,6 +305,20 @@ class GoSyncWindowsInstall extends StatelessWidget {
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.pinkAccent,
+              fontStyle: FontStyle.normal,
+              fontSize: 20.0,
+            ),
+          ),
+        ),
+
+        Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: SelectableText(
+            // ethCheckGoHelp,
+            AppLocalizations.of(context)!.gosyncGorootPurpose,
+            textAlign: TextAlign.left,
+            style: const TextStyle(
+              color: Colors.yellowAccent,
               fontStyle: FontStyle.normal,
               fontSize: 20.0,
             ),
