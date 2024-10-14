@@ -1,11 +1,11 @@
 {
-    "name": "gosync",
-    "short_name": "gosync",
+    "name": "gosync0",
+    "short_name": "gosync0",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project to help install golang and geth ethereum",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

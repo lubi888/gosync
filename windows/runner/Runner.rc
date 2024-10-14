@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.ethsync.xyz" "\0"
-            VALUE "FileDescription", "gosync" "\0"
+            VALUE "CompanyName", "com.example" "\0"
+            VALUE "FileDescription", "gosync0" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "gosync" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2022 com.ethsync.xyz. All rights reserved." "\0"
-            VALUE "OriginalFilename", "gosync.exe" "\0"
-            VALUE "ProductName", "gosync" "\0"
+            VALUE "InternalName", "gosync0" "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
+            VALUE "OriginalFilename", "gosync0.exe" "\0"
+            VALUE "ProductName", "gosync0" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
