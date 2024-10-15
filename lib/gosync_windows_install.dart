@@ -36,16 +36,57 @@ class GoSyncWindowsInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "1 Official Windows Instructions from Go.dev",
+          text: "1 Official Windows Instructions from https://go.dev",
           textAlign: TextAlign.center,
           style: GoogleFonts.notoSans(
-            textStyle: Theme.of(context).textTheme.headlineMedium,
+            // textStyle: Theme.of(context).textTheme.headlineMedium,
             fontSize: 48,
             fontWeight: FontWeight.w700,
             fontStyle: FontStyle.italic,
             // backgroundColor: Colors.black,
           ),
           linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        ),
+
+        // linkify 2
+        Linkify(
+          onOpen: (link) async {
+            if (!await launchUrl(Uri.parse(link.url))) {
+              throw Exception('Could not launch ${link.url}');
+            }
+          },
+          text: "2 Official Windows Instructions from https://go.dev",
+          textAlign: TextAlign.center,
+          // style: GoogleFonts.notoSans(
+          style: const TextStyle(
+            // textStyle: Theme.of(context).textTheme.headlineMedium,
+            fontSize: 48,
+            fontWeight: FontWeight.w700,
+            fontStyle: FontStyle.italic,
+            // backgroundColor: Colors.black,
+          ),
+          // linkStyle: GoogleFonts.allura(color: Colors.yellow),
+        ),
+
+        // linkify 3
+        Linkify(
+          onOpen: (link) async {
+            if (!await launchUrl(Uri.parse(link.url))) {
+              throw Exception('Could not launch ${link.url}');
+            }
+          },
+          text:
+              "3 Official Windows Instructions from https://go.dev/doc/install",
+          textAlign: TextAlign.center,
+          style: GoogleFonts.notoSans(
+            // style: const TextStyle(
+            // textStyle: Theme.of(context).textTheme.headlineMedium,
+            fontSize: 48,
+            // fontWeight: FontWeight,
+            // fontStyle: FontStyle.italic,
+            // backgroundColor: Colors.black,
+          ),
+          linkStyle: GoogleFonts.notoSans(color: Colors.red),
         ),
 
         const Padding(padding: EdgeInsets.all(16.0)),
@@ -138,22 +179,6 @@ class GoSyncWindowsInstall extends StatelessWidget {
             ),
             // linkStyle: GoogleFonts.allura(color: Colors.orangeAccent),
           ),
-        ),
-
-        Linkify(
-          onOpen: (link) async {
-            if (!await launchUrl(Uri.parse(link.url))) {
-              throw Exception('Could not launch ${link.url}');
-            }
-          },
-          text: AppLocalizations.of(context)!.gosyncWindowsInstallInstructions5,
-          textAlign: TextAlign.left,
-          style: const TextStyle(
-            color: Colors.green,
-            fontStyle: FontStyle.normal,
-            fontSize: 25.0,
-          ),
-          linkStyle: GoogleFonts.allura(color: Colors.yellow),
         ),
         const Padding(padding: EdgeInsets.all(8.0)),
         //header bar 'postinstall golang'

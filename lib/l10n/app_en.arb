@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241014",
+  "title": "goSync.go 241015",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -83,6 +83,10 @@
   "@gosyncHeaderWindowsPostInstall": {
     "description": "windows post install"
   },
+  "gosyncHeaderLinuxPostInstall": "Linux Post Install and Setup validation",
+  "@gosyncHeaderLinuxPostInstall": {
+    "description": "windows post install"
+  },
   "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is set as C:/Users/adam/go but this folder is not created yet. Let''s do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam ",
   "@gosyncHeaderWindowsPostInstallCheck": {
     "description": "windows post install check"
@@ -102,5 +106,37 @@
   "gosyncOnlineTutorial": "Now change directly to the 'go' directory. Make a folder called 'hello' and follow the opening steps online here https://go.dev/doc/tutorial/getting-started/ and you can also start here if you want to run a web server, etc. https://go.dev/learn/ ",
   "@gosyncOnlineTutorial": {
     "description": "windows make files follow tutorial"
+  },
+  "gosyncLinuxInstallInstructions": "1, Remove any previous Go installation by deleting the /usr/local/go folder (if it exists), then extract the archive you just downloaded into /usr/local, creating a fresh Go tree in /usr/local/go:",
+  "@gosyncLinuxInstallInstructions": {
+    "description": ".k install instructions 1"
+  },
+  "gosyncLinuxInstallInstructions2": "2, $ rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.2.linux-amd64.tar.gz",
+  "@gosyncLinuxInstallInstructions2": {
+    "description": "linux install instructions 2"
+  },
+  "gosyncLinuxInstallInstructions3": "3,(You may need to run the command as root or through sudo). \nDo not untar the archive into an existing /usr/local/go tree. This is known to produce broken Go installations. ",
+  "@gosyncLinuxInstallInstructions3": {
+    "description": "linux install instructions 3"
+  },
+  "gosyncLinuxInstallInstructions4": "4, Add /usr/local/go/bin to the PATH environment variable. \nYou can do this by adding the following line to your $HOME/.profile or /etc/profile (for a system-wide installation):",
+  "@gosyncLinuxInstallInstructions4": {
+    "description": "linux install instructions 4"
+  },
+  "gosyncLinuxInstallInstructions5": "5 export PATH=$PATH:/usr/local/go/bin",
+  "@gosyncLinuxInstallInstructions5": {
+    "description": "linux install instructions 5"
+  },
+  "gosyncLinuxInstallInstructions6": "6 Note: Changes made to a profile file may not apply until the next time you log into your computer. To apply the changes immediately, just run the shell commands directly or execute them from the profile using a command such as source $HOME/.profile.",
+  "@gosyncLinuxInstallInstructions6": {
+    "description": "linux install instructions 5"
+  },
+  "gosyncLinuxInstallInstructions7": "7 Verify that you''ve installed Go by opening a command prompt and typing the following command:\n  $ go version",
+  "@gosyncLinuxInstallInstructions7": {
+    "description": "linux install instructions 5"
+  },
+  "gosyncLinuxInstallInstructions8": "8 Confirm that the command prints the installed version of Go.",
+  "@gosyncLinuxInstallInstructions8": {
+    "description": "linux install instructions 5"
   }
 }
