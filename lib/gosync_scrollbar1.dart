@@ -407,12 +407,6 @@ class GoSyncScrollbar1 extends StatelessWidget {
               width: 450.0,
               // fit:
             ),
-            // Image.asset(
-            //   _kAsset32,
-            //   // height: 200.0,
-            //   // width: 300.0,
-            //   // fit:
-            // ),
 
             // convert this to ledgeable code with << >>
             const SelectableText(
@@ -449,7 +443,7 @@ class GoSyncScrollbar1 extends StatelessWidget {
                 ),
               ),
             ),
-            //main example code widget selectable code only. greenscreen border
+            //main example code widget selectable code only. greenterm greenscreen border
             Container(
               padding: const EdgeInsets.all(8.0),
               // width: 50.0,

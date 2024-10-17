@@ -36,7 +36,7 @@ class GoSyncWindowsInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "1 Official Windows Instructions from https://go.dev",
+          text: "Windows Instructions from https://go.dev/doc/install",
           textAlign: TextAlign.center,
           style: GoogleFonts.notoSans(
             // textStyle: Theme.of(context).textTheme.headlineMedium,

@@ -7,12 +7,12 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import './gosync_navdrawer.dart';
 import './gosync_text.dart';
 
-class GoSyncLinuxInstall extends StatelessWidget {
-  const GoSyncLinuxInstall({super.key});
+class GoSyncUninstall extends StatelessWidget {
+  const GoSyncUninstall({super.key});
 
   @override
   Widget build(BuildContext context) {
-    debugPrint('windows install  page loaded Golang');
+    debugPrint('uninstall page loaded Golang');
     // () => Scaffold.of(context).openDrawer();
     ScrollController scrollbarController = ScrollController();
     // snackbar
@@ -55,7 +55,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "Linux Instructions from https://go.dev/doc/install",
+          text: "Uninstall Instructions from https://go.dev/doc/manage-install",
           textAlign: TextAlign.center,
           style: GoogleFonts.notoSans(
             // textStyle: Theme.of(context).textTheme.headlineMedium,
@@ -74,7 +74,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "2 Official Linux Instructions from https://go.dev",
+          text: "Uninstall Instructions from https://go.dev/doc/manage-install",
           textAlign: TextAlign.center,
           // style: GoogleFonts.notoSans(
           style: const TextStyle(
@@ -94,7 +94,8 @@ class GoSyncLinuxInstall extends StatelessWidget {
               throw Exception('Could not launch ${link.url}');
             }
           },
-          text: "3 Official Linux Instructions from https://go.dev/doc/install",
+          text:
+              "3 Uninstall Instructions from https://go.dev/doc/manage-install",
           textAlign: TextAlign.center,
           style: GoogleFonts.notoSans(
             // style: const TextStyle(
@@ -112,7 +113,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.yellowAccent,
@@ -127,7 +128,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions2,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions2,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.cyanAccent,
@@ -141,7 +142,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions3,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions3,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.deepPurpleAccent,
@@ -155,7 +156,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions4,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions4,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.yellowAccent,
@@ -169,7 +170,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions5,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions5,
             textAlign: TextAlign.right,
             style: const TextStyle(
               color: Colors.deepPurpleAccent,
@@ -187,7 +188,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
                 throw Exception('Could not launch ${link.url}');
               }
             },
-            text: AppLocalizations.of(context)!.gosyncLinuxInstallInstructions5,
+            text: AppLocalizations.of(context)!.gosyncUninstallInstructions5,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.green,
@@ -202,7 +203,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions6,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions6,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.yellowAccent,
@@ -216,7 +217,7 @@ class GoSyncLinuxInstall extends StatelessWidget {
           padding: const EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions7,
+            AppLocalizations.of(context)!.gosyncUninstallInstructions7,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.yellowAccent,
@@ -226,47 +227,47 @@ class GoSyncLinuxInstall extends StatelessWidget {
           ),
         ),
 
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructions8,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.yellowAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.all(24.0),
+        //   child: SelectableText(
+        //     // ethCheckGoHelp,
+        //     AppLocalizations.of(context)!.gosyncLinuxInstallInstructions8,
+        //     textAlign: TextAlign.left,
+        //     style: const TextStyle(
+        //       color: Colors.yellowAccent,
+        //       fontStyle: FontStyle.normal,
+        //       fontSize: 20.0,
+        //     ),
+        //   ),
+        // ),
 
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncWindowsInstallInstructions3,
-            textAlign: TextAlign.center,
-            style: const TextStyle(
-              color: Colors.deepPurpleAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.all(24.0),
+        //   child: SelectableText(
+        //     // ethCheckGoHelp,
+        //     AppLocalizations.of(context)!.gosyncWindowsInstallInstructions3,
+        //     textAlign: TextAlign.center,
+        //     style: const TextStyle(
+        //       color: Colors.deepPurpleAccent,
+        //       fontStyle: FontStyle.normal,
+        //       fontSize: 20.0,
+        //     ),
+        //   ),
+        // ),
 
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncLinuxInstallInstructionsReadout,
-            textAlign: TextAlign.right,
-            style: const TextStyle(
-              color: Colors.yellowAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
+        // Padding(
+        //   padding: const EdgeInsets.all(24.0),
+        //   child: SelectableText(
+        //     // ethCheckGoHelp,
+        //     AppLocalizations.of(context)!.gosyncLinuxInstallInstructionsReadout,
+        //     textAlign: TextAlign.right,
+        //     style: const TextStyle(
+        //       color: Colors.yellowAccent,
+        //       fontStyle: FontStyle.normal,
+        //       fontSize: 20.0,
+        //     ),
+        //   ),
+        // ),
 
         const Padding(padding: EdgeInsets.all(8.0)),
         //header bar 'postinstall golang'

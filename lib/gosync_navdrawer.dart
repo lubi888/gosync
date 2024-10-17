@@ -472,27 +472,28 @@ class GoSyncNavDrawer extends StatelessWidget {
                   ListTile(
                       leading: const Icon(
                         // Icons.tv,
-                        FontAwesomeIcons.linux,
+                        FontAwesomeIcons.trash,
                         color: Colors.yellow,
                       ),
                       title: const Text(
                         // 'add eth|etc address - acccount',
-                        'visit GNU Not Unix golang install',
+                        'uninstall',
                         // AppLocalizations.of(context)!.visitGoDevPlay,
                         style: TextStyle(color: Colors.lightBlue),
                       ),
                       subtitle: const Text(
                         // 'https://play.golang.com/',
-                        'deep gnu linux',
+                        'multiple versions and uninstall directions',
                         // https://go.dev/play/
                         style: TextStyle(
                             fontStyle: FontStyle.italic, color: Colors.purple),
                       ),
-                      trailing: const Icon(FontAwesomeIcons.linux,
+                      trailing: const Icon(FontAwesomeIcons.trashCan,
                           color: Colors.pink),
                       onTap: () {
                         // Navigator.of(context).pop();
                         // _launchYouTube();
+                        Navigator.pushNamed(context, '/uninstall');
                       }),
                 ],
               ),

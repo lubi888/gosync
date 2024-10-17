@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241015",
+  "title": "goSync.go 241017",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -138,5 +138,37 @@
   "gosyncLinuxInstallInstructions8": "8 Confirm that the command prints the installed version of Go.",
   "@gosyncLinuxInstallInstructions8": {
     "description": "linux install instructions 5"
+  },
+  "gosyncLinuxInstallInstructionsReadout": "go version go1.23.2 linux/amd64",
+  "@gosyncLinuxInstallInstructionsReadout": {
+    "description": "linux install instructions readout"
+  },
+  "gosyncUninstallInstructions": "1, Linux / macOS / FreeBSD   \nDelete the go directory.  \nThis is usually /usr/local/go.",
+  "@gosyncUninstallInstructions": {
+    "description": "uninstall instructions 1"
+  },
+  "gosyncUninstallInstructions2": "2, Remove the Go bin directory from your PATH environment variable. \nUnder Linux and FreeBSD, edit /etc/profile or $HOME/.profile. If you installed Go with the macOS package, remove the /etc/paths.d/go file.",
+  "@gosyncUninstallInstructions2": {
+    "description": "uninstall instructions 2"
+  },
+  "gosyncUninstallInstructions3": "3,Windows \nThe simplest way to remove Go is via Add/Remove Programs in the Windows control panel: ",
+  "@gosyncUninstallInstructions3": {
+    "description": "uninstall instructions 3"
+  },
+  "gosyncUninstallInstructions4": "4, In Control Panel, double-click Add/Remove Programs. \nIn Add/Remove Programs, select Go Programming Language, click Uninstall, then follow the prompts.",
+  "@gosyncUninstallInstructions4": {
+    "description": "uninstall instructions 4"
+  },
+  "gosyncUninstallInstructions5": "5, For removing Go with tools, you can also use the command line: \nUninstall using the command line by running the following command:",
+  "@gosyncUninstallInstructions5": {
+    "description": "uninstall instructions 5"
+  },
+  "gosyncUninstallInstructions6": "6, msiexsi /q ",
+  "@gosyncUninstallInstructions6": {
+    "description": "uninstall instructions 6"
+  },
+  "gosyncUninstallInstructions7": "7, Note: Using this uninstall process for Windows will automatically remove Windows environment variables created by the original installation.",
+  "@gosyncUninstallInstructions7": {
+    "description": "uninstall instructions 7"
   }
 }
