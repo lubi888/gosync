@@ -322,6 +322,9 @@ const String goLinuxShellGoEnv = ('tortek@gosync:~\$go env'
     '\nGOGCCFLAGS=-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/tmp/go-build470115624=/tmp/go-build -gno-record-gcc-switches'
     '\ntortek@gosync\$');
 
+const String gosyncUninstallInstructions6text =
+    ('msiexec /x go{{version}}.windows-{{cpu-arch}}.msi /q \n\texample: msiexec /x go1.23.1.windows-amd64.msi /q');
+
 const String ethGoBuild =
     ('Now all that is left is to build or install the go hello program. A local build can be performed with \'go build\'.\n\n'
         'Now check the contents of this folder and notice that there will be an executable file. This executable will end with \'.exe\' for windows and \'hello\' in linux and mac but they are executable.\n\n'

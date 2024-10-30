@@ -1,5 +1,5 @@
 {
-  "title": "goSync.go 241017",
+  "title": "goSync.go 241030",
   "@title": {
     "description": "The conventional newborn programmer greeting"
   },
@@ -85,6 +85,10 @@
   },
   "gosyncHeaderLinuxPostInstall": "Linux Post Install and Setup validation",
   "@gosyncHeaderLinuxPostInstall": {
+    "description": "windows post install"
+  },
+  "gosyncHeaderMultiInstall": "Multiple Golang Installations",
+  "@gosyncHeaderMultiInstall": {
     "description": "windows post install"
   },
   "gosyncHeaderWindowsPostInstallCheck": "The GOPATH is set as C:/Users/adam/go but this folder is not created yet. Let''s do that now. \nWe actually need to create 3 folders /go/pkg/mod in /Users/adam ",

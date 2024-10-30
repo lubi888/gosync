@@ -199,11 +199,12 @@ class GoSyncUninstall extends StatelessWidget {
           ),
         ),
 
-        Padding(
-          padding: const EdgeInsets.all(24.0),
+        const Padding(
+          padding: EdgeInsets.all(24.0),
           child: SelectableText(
             // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncUninstallInstructions6,
+            gosyncUninstallInstructions6text,
+            // AppLocalizations.of(context)!.gosyncUninstallInstructions6,
             textAlign: TextAlign.left,
             style: const TextStyle(
               color: Colors.yellowAccent,
@@ -287,7 +288,7 @@ class GoSyncUninstall extends StatelessWidget {
           ),
           child: Text(
             // goSyncHeading,
-            AppLocalizations.of(context)!.gosyncHeaderLinuxPostInstall,
+            AppLocalizations.of(context)!.gosyncHeaderMultiInstall,
             overflow: TextOverflow.fade,
             textAlign: TextAlign.center,
             style: const TextStyle(
@@ -311,7 +312,7 @@ class GoSyncUninstall extends StatelessWidget {
               }
             },
             text:
-                '\n1b Type in "go env" to find out the most important details of the setup. \nTake a loot at GOPATH, GOROOT, etc.',
+                '\n1b for multi install dirrections check out this link https://go.dev/doc/manage-install#installing-multiple ',
             textAlign: TextAlign.center,
             // selectable: true,
             style: GoogleFonts.allura(
@@ -325,9 +326,6 @@ class GoSyncUninstall extends StatelessWidget {
           ),
         ),
         const Padding(padding: EdgeInsets.all(8.0)),
-        // container eg green box terminal Linux
-        //linux widjet
-        // convert this to ledgeable code with << >>
         const SelectableText(
           ethCheckGoEnv,
           textAlign: TextAlign.left,
@@ -338,7 +336,6 @@ class GoSyncUninstall extends StatelessWidget {
             fontSize: 20.0,
           ),
         ),
-        //Box Decoration
         //Example Code Widget Container
         Container(
           height: 80.0,
@@ -454,165 +451,6 @@ class GoSyncUninstall extends StatelessWidget {
                 ),
               ),
             ],
-          ),
-        ),
-
-        const Padding(padding: EdgeInsets.all(8.0)),
-        // 3rd container eg green box   copy & open go playland.
-        Container(
-          // FloatingActionButtonLocation.endTop;
-
-          padding: const EdgeInsets.all(8.0),
-          decoration: BoxDecoration(
-            // image: DecorationImage(image: AssetImage(_kAsset2)),
-            border: Border.all(
-              width: 10.0,
-              color: Colors.green,
-            ),
-            shape: BoxShape.rectangle,
-            // color: Colors.green.shade600,
-            color: Colors.black,
-            borderRadius: const BorderRadius.all(Radius.circular(8.0)),
-          ),
-          child: Column(
-            // mainAxisAlignment: ,
-            mainAxisAlignment: MainAxisAlignment.start,
-            // mainAxisSize: MainAxisSize.max,
-            children: [
-              const SelectableText(
-                goHelloCode,
-                textAlign: TextAlign.left,
-                // selectionWidthStyle: ui.BoxWidthStyle,
-                showCursor: true,
-                autofocus: true,
-                cursorColor: Colors.green,
-                enableInteractiveSelection: true,
-                style: TextStyle(
-                  color: Colors.green,
-                  backgroundColor: Colors.black,
-                  fontStyle: FontStyle.italic,
-                  fontSize: 20.0,
-                ),
-              ),
-              // FloatingActionButtonLocation.centerTop,
-              // FloatingActionButtonLocation.endTop(
-              // static const
-              // FloatingActionButtonLocation endTop = _EndTopFabLocation();
-
-              FloatingActionButton(
-                // onPressed: () {debugPrint('that is a print');},
-                backgroundColor: Colors.black,
-                foregroundColor: Colors.green,
-                splashColor: Colors.green,
-                tooltip: tooltipCopyAndWeb,
-                hoverColor: Colors.lightGreen,
-                onPressed: () {
-                  Clipboard.setData(const ClipboardData(text: goHelloCode));
-                  ScaffoldMessenger.of(context)
-                      .showSnackBar(snackBarGoCodeCopy);
-                  // _launchPlayGolangUrl();
-                  _launchPlayGolangHelloCode();
-                },
-                child: const Icon(Icons.web),
-              ),
-            ],
-          ),
-          // ),
-          // ],
-        ),
-
-        //txt without box
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncHeaderWindowsPostInstallCheck,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.cyanAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncGopathPurpose,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.pinkAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncGorootPurpose,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.yellowAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: SelectableText(
-            // ethCheckGoHelp,
-            AppLocalizations.of(context)!.gosyncWinMakeFolders,
-            textAlign: TextAlign.left,
-            style: const TextStyle(
-              color: Colors.greenAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 20.0,
-            ),
-          ),
-        ),
-        // online tutorial
-        // linkify humanize
-        Linkify(
-          onOpen: (link) async {
-            if (!await launchUrl(Uri.parse(link.url))) {
-              throw Exception('Could not launch ${link.url}');
-            }
-          },
-          text: AppLocalizations.of(context)!.gosyncOnlineTutorial,
-          textAlign: TextAlign.left,
-          options: const LinkifyOptions(humanize: true),
-          style: const TextStyle(
-            color: Colors.blueAccent,
-            fontStyle: FontStyle.normal,
-            fontSize: 25.0,
-          ),
-          linkStyle: GoogleFonts.allura(color: Colors.yellow),
-        ),
-        // LinkifyPadding
-        Padding(
-          padding: const EdgeInsets.all(24.0),
-          child: Linkify(
-            onOpen: (link) async {
-              if (!await launchUrl(Uri.parse(link.url))) {
-                throw Exception('Could not launch ${link.url}');
-              }
-            },
-            text: AppLocalizations.of(context)!.gosyncOnlineTutorial,
-            textAlign: TextAlign.left,
-            options: const LinkifyOptions(humanize: true),
-            style: const TextStyle(
-              color: Colors.orangeAccent,
-              fontStyle: FontStyle.normal,
-              fontSize: 25.0,
-            ),
-            linkStyle: GoogleFonts.allura(color: Colors.yellow),
           ),
         ),
       ]),
