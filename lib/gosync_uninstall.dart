@@ -338,7 +338,7 @@ class GoSyncUninstall extends StatelessWidget {
         ),
         //Example Code Widget Container
         Container(
-          height: 80.0,
+          height: 120.0,
           decoration: BoxDecoration(
             // image: DecorationImage(image: AssetImage(_kAsset2)),
             shape: BoxShape.rectangle,
@@ -346,10 +346,31 @@ class GoSyncUninstall extends StatelessWidget {
             // borderRadius: const BorderRadius.all(Radius.circular(8.0)),
           ),
           child: const Text(
-            ethCheckGoEnv,
+            // ethCheckGoEnv,
+            '\$ go install golang.org/dl/go1.10.7@latest\n\$ go1.10.7 version\ngo version go1.10.7 linux/amd64',
             textAlign: TextAlign.left,
             style: TextStyle(
-              color: Colors.green,
+              color: Colors.yellow,
+              backgroundColor: Colors.black,
+              fontStyle: FontStyle.italic,
+              fontSize: 24.0,
+            ),
+          ),
+        ),
+        Container(
+          height: 120.0,
+          decoration: BoxDecoration(
+            // image: DecorationImage(image: AssetImage(_kAsset2)),
+            shape: BoxShape.rectangle,
+            color: Colors.red.shade500,
+            // borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+          ),
+          child: const Text(
+            // ethCheckGoEnv,
+            'When you have multiple versions installed, you can discover where each is installed, look at the version\'s GOROOT value. For example, run a command such as the following\: \n\$ go1.10.7 env GOROOT',
+            textAlign: TextAlign.left,
+            style: TextStyle(
+              color: Colors.yellow,
               backgroundColor: Colors.black,
               fontStyle: FontStyle.italic,
               fontSize: 24.0,
