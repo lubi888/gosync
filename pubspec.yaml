@@ -47,7 +47,7 @@ dependencies:
   json_theme: ^6.5.3+2
   json_theme_plus: ^6.6.3
 #  path_provider: ^2.1.5
-  # flutter_gen: any
+  flutter_gen: any
 
 dev_dependencies:
   flutter_test:
